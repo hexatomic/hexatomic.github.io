@@ -20,6 +20,7 @@ number GA 1288/11-1 and runs from October 2018 until September 2021.
 
 The project aims to implement, test, and document *a minimal infrastructure for
 the sustainable development, provision, and maintenance of research software*.
+The [complete project proposal is available as a PDF]({{ './assets/pdf/hexatomic_project_description_website.pdf' | relative_url }}).
 
 This infrastructure will be used to provide the linguistic community with
 *software for deep multi-layer annotation of linguistic corpora*.
