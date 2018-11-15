@@ -37,6 +37,6 @@ repository. Without customization, the documentation will be served at
 
 The Hexatomic documentation is licensed under a Creative Commons 
 Attribution-ShareAlike 4.0 International license
-[![CC-By-SA-4.0 badge](src/static/img/cc-by-sa.png)](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
+[![CC-By-SA-4.0 badge](src/static/img/cc-by-sa.png)](LICENSE).
 
 Copyright (c) 2018ff. The [Hexatomic project team](https://github.com/orgs/hexatomic/teams/project/members)
