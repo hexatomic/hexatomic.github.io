@@ -1,0 +1,7 @@
+[book]
+authors = ["Stephan Druskat"]
+multilingual = false
+src = "src"
+title = "Hexatomic"
+[output.html]
+theme = "src/theme"
