@@ -33,6 +33,57 @@ To serve the documentation locally, run `mdbook serve` in the root of this
 repository. Without customization, the documentation will be served at 
 <http://localhost:3000/>.
 
+## Hosting
+
+The documentation is hosted as a [GitHub page](https://pages.github.com/) on 
+<hexatomic.github.io>.
+
+The deployment is automated via [Travis CI](https://travis-ci.org/) continuous 
+integration, see section `deploy` in the Travis configuration file 
+[`.travis.yml`](.travis.yml).
+
+## Making changes
+
+The structure of the documentation is configured in 
+[`src/SUMMARY.md`](src/SUMMARY.md). Only files that are added to the structure
+there appear in the documentation.
+
+To add new sections to the documentation, create a 
+[Markdown](https://en.wikipedia.org/wiki/Markdown) file called
+`{name}.md` in a reasonable place in the `src` directory. 
+
+Add a link to your file to `src/SUMMARY.md` to render it, either in the front or
+back matter (as a simple Markdown link `[text](relative path)`), or in the 
+nested list of contents (as a Markdown list item `- [text](relative path)`).
+
+### Images & code style
+
+If you want to use images, place them in the same directory as your Markdown
+file. Only files that are used globally should go in `src/static/img/`. This
+makes it easier and less verbose to reference files in the Markdown (instead of
+`![text](../../../static/img/img.png)` you can simply use `![text](img.png)`).
+
+### Markdown dialect
+
+*mdBook* uses the
+[CommonMark](https://commonmark.org/) specification of Markdown, specifically in 
+its Rust implementation 
+[*pulldown-cmark*](https://github.com/raphlinus/pulldown-cmark).
+
+This is a generic Markdown implementation which is feature-complete and also
+supports tables in the 
+[PHP Markdown Extra](https://michelf.ca/projects/php-markdown/extra/#table) 
+syntax.
+
+### Known bugs
+
+- [Table headers aren't always aligned correctly in the second and following 
+tables in the same file](https://github.com/rust-lang-nursery/mdBook/issues/825).
+
+## Creating a PDF file of the documentation
+
+*mdBook*
+
 ## License
 
 The Hexatomic documentation is licensed under a Creative Commons 
