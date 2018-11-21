@@ -4,6 +4,24 @@ The project documentation for Hexatomic is built with
 [**mdBook**](https://github.com/rust-lang-nursery/mdBook). *mdBook* is built
 in [*Rust*](https://www.rust-lang.org).
 
+## Development
+
+Development, i.e., additions and changes to the project documentation, are
+pushed to the [**`src`**](https://github.com/hexatomic/hexatomic.github.io/tree/src) 
+branch, i.e., the default branch. Travis CI automatically
+picks up the changes from this branch, makes the build, and pushes the product
+to the 
+[`master` branch](https://github.com/hexatomic/hexatomic.github.io/tree/master), 
+from where it is automatically rendered on 
+[hexatomic.guithub.io](https://hexatomic.guithub.io) via the 
+[GitHub Pages](https://pages.github.com/) functionality. 
+
+GitHub Pages looks for a repository in
+a GitHub [organization](https://help.github.com/articles/about-organizations/) 
+called `{organization}.github.io` (e.g., 
+`hexatomic.github.io`), and will try to render the files in the `master` branch
+of this repository.
+
 ## Requirements
 
 You do **not** need to install *Rust* in order to build the documentation.
@@ -82,7 +100,9 @@ tables in the same file](https://github.com/rust-lang-nursery/mdBook/issues/825)
 
 ## Creating a PDF file of the documentation
 
-*mdBook*
+PDFs, or single page HTML views, of the documentation can be created via the
+print button in the upper right corner of the documentation. The browser can
+be used to print to PDF.
 
 ## License
 
