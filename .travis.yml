@@ -23,4 +23,4 @@ deploy:
   keep-history: false
   on:
     branch: src
-    target-branch: master
+  target-branch: master
