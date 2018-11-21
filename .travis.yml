@@ -22,4 +22,5 @@ deploy:
   local-dir: book
   keep-history: false
   on:
-    branch: master
+    branch: src
+    target-branch: master
