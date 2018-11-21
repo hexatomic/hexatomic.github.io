@@ -42,7 +42,7 @@ only the [Handlebars](https://handlebarsjs.com/) template file
 [`index.hbs`](/home/stephan/src/hexatomic.github.io/src/theme/index.hbs) has 
 been changed (you can compare it with the original file by running
 `mdbook init --theme` in another directory to create a vanilla setup of 
-*mdBook*).
+*mdBook*, and then diffing the two `index.hbs` files).
 
 ## Build
 
