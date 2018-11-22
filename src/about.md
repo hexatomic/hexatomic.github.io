@@ -29,10 +29,11 @@ including software engineering decisions, infrastructural components,
 architectural decisions, workflow decisions, tooling decisions, etc.
 
 The right place to document processes and decisions is the documentation of the
-project itself which is provided here, and will inform project results, 
-best practices, and reports.
+project itself which is provided here.
 
 The project documentation is a "living document", i.e., it is constantly added
-to and may change in its structure. It does not refer to a specific version of 
-**Hexatomic**, and is not versioned like the user, developer and maintainer 
-documentation for the software.
+to and changed, and may change in its structure. It does not refer to a specific 
+version of **Hexatomic**, and is not versioned like the user, developer and 
+maintainer documentation for the software. Instead, it is a place where the
+practices of our project are iteratively developed as a base for discussion and
+extraction of good practices in sustainable research software development.
