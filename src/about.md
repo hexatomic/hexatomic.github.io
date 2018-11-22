@@ -29,7 +29,8 @@ including software engineering decisions, infrastructural components,
 architectural decisions, workflow decisions, tooling decisions, etc.
 
 The right place to document processes and decisions is the documentation of the
-project itself which is provided here.
+project itself which is provided here. Among other things, the project 
+documentation will therefore serve as a decision log.
 
 The project documentation is a "living document", i.e., it is constantly added
 to and changed, and may change in its structure. It does not refer to a specific 
