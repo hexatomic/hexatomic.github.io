@@ -57,13 +57,76 @@ in place of, e.g., HTML- or PDF-rendered documentation.
 We use a combination of hierarchical directory structures and human-readable
 source file formats to achieve this.
 
-#### Javadoc integration
+##### Javadoc integration
 
-#### Continuous integration capabilities
+As **Hexatomic** is written in Java, we use 
+[Javadoc](https://en.wikipedia.org/wiki/Javadoc) to document source code 
+in situ. This way, we can generate 
+[API](https://en.wikipedia.org/wiki/Application_programming_interface) 
+documentation in HTML directly from the source code via the 
+[javadoc](https://docs.oracle.com/javase/1.5.0/docs/tooldocs/solaris/javadoc.html) 
+tool. This specific API documentation format is used standardly across most
+Java software projects[^ossrh-requirements] and is something that code contributors will expect to
+find.
 
-#### Maintainability
+In order to boost findability of the API documentation, it would be helpful
+to be able to integrate the Javadoc HTML in the text documentation for 
+developers as easily as possible, ideally through native support for this by the
+documentation software.
 
-#### Usability of build artifacts XXX
+[^ossrh-requirements]: For example, all release artifacts of open source 
+projects that are hosted on "Maven Central", the main repository for the 
+dominant build system for Java (cf. [2]), are uploaded through the [Open Source
+Software Repository Hosting 
+(OSSRH)](https://central.sonatype.org/pages/ossrh-guide.html) system, which 
+requires artifacts to include a bundled version of the Javadoc API documentation.
 
-### Export capabilities
+[2] S. Maple and A. Binstock, 'The Largest Survey Ever of Java Developers', 
+*Java Magazine*, November/December, p. 20, 2018. Available:
+<http://www.javamagazine.mozaicreader.com/NovemberDecember2018#&pageSet=20&page=0>.
+[Accessed: 30-Nov-2018]
+
+##### Continuous integration capabilities
+
+In order to embed documentation deeply in the project as well as the development 
+workflow, editing documentation must be as easy as possible and should ideally
+not require more than making the actual change in the documentation without 
+having to care about building the representation, deployment, etc.
+
+The default way to achieve this for any kind of code, including documentation
+sources, is to employ a continuous integration (CI) system which polls the 
+version control system where the code is held for changes, and reacts to these 
+changes by starting the appropriate action, e.g., by building the code and 
+deploying the artifacts.
+
+The documentation software should therefore enable continuous integration of its
+builds and automated deployment of the documentation representations, either 
+natively, or via the continuous integration system used in the project, or by 
+simply not preventing the application of a CI system to trigger builds and
+deploys through, e.g., a custom script run on the CI system.
+
+In addition to providing an easy way to produce documentation, automated 
+deployment will also ensure that the user-facing representation of the
+documentation can be up-to-date at all times.
+
+##### Maintainability
+
+The documentation software should be very easily maintainable.
+
+This includes factors like easy updates to new versions of the software; 
+no installation required or very simple to install; no or very few dependencies
+on other software, or ready-made packages that include all dependencies.
+
+##### Usability of representations
+
+The documentation representations produced by the documentation software should
+have a high level of usability. While some of the features that make 
+documentation "usable" for a reader may depend on a specific reader's
+approach to documentation as well as her own preferences, some factors of
+usability are more easily quantifiable, e.g., a representation's ability to
+display well on different devices - what is usually a feature of responsive or 
+reactive design paradigms.
+
+
+#### Export capabilities
 
