@@ -1,10 +1,10 @@
-## Tooling
+# Tooling
 
 This section provides details on *how* documentation for the research project,
 and the **Hexatomic** software as well as the infrastructure used to develop and
 provide it, is facilitated.
 
-### Requirements
+## Requirements
 
 The requirements for documentation tooling are specific to our research project
 in some respects (e.g., pertaining to Javadoc), but all others can be applied
@@ -12,7 +12,7 @@ to generic (research) software project setups. And those that are
 project-specific can probably be transferred to other use cases relatively 
 easily.
 
-#### Sustainability
+### Sustainability
 
 The [documentation sustainability](../sustainability/) section establishes that
 
@@ -39,16 +39,16 @@ operationable enough to use in the context of documentation tooling:
 Available: <https://web.archive.org/web/20181122140500/https://danielskatzblog.wordpress.com/2016/09/13/defining-software-sustainability/>. 
 [Accessed: 22-Nov-2018]
 
-#### Single tool "toolchain"
+### Single tool "toolchain"
 
 One of the key motivations behind the choice of tooling is to have *one single 
 software* which we use for all of our (textual) documentation. This makes
 maintainership transitions easier as it requires less learning effort from new
 maintainers, as well as contributors.
 
-#### Usability
+### Usability
 
-##### Human-readable sources
+#### Human-readable sources
 
 In the event of a failure in the documentation *software*, the documentation
 *sources* must be readable and well-structured enough to function as a fallback
@@ -57,7 +57,7 @@ in place of, e.g., HTML- or PDF-rendered documentation.
 We use a combination of hierarchical directory structures and human-readable
 source file formats to achieve this.
 
-##### Javadoc integration
+#### Javadoc integration
 
 As **Hexatomic** is written in Java, we use 
 [Javadoc](https://en.wikipedia.org/wiki/Javadoc) to document source code 
@@ -86,7 +86,7 @@ requires artifacts to include a bundled version of the Javadoc API documentation
 <http://www.javamagazine.mozaicreader.com/NovemberDecember2018#&pageSet=20&page=0>.
 [Accessed: 30-Nov-2018]
 
-##### Continuous integration capabilities
+#### Continuous integration capabilities
 
 In order to embed documentation deeply in the project as well as the development 
 workflow, editing documentation must be as easy as possible and should ideally
@@ -109,7 +109,7 @@ In addition to providing an easy way to produce documentation, automated
 deployment will also ensure that the user-facing representation of the
 documentation can be up-to-date at all times.
 
-##### Maintainability
+#### Maintainability
 
 The documentation software should be very easily maintainable.
 
@@ -117,16 +117,20 @@ This includes factors like easy updates to new versions of the software;
 no installation required or very simple to install; no or very few dependencies
 on other software, or ready-made packages that include all dependencies.
 
-##### Usability of representations
+#### Usability of representations
 
 The documentation representations produced by the documentation software should
-have a high level of usability. While some of the features that make 
+have a high level of usability. 
+
+While some of the features that make 
 documentation "usable" for a reader may depend on a specific reader's
 approach to documentation as well as her own preferences, some factors of
 usability are more easily quantifiable, e.g., a representation's ability to
 display well on different devices - what is usually a feature of responsive or 
-reactive design paradigms.
+reactive design paradigms. Further factors include the existence and behaviour
+of a table of contents or menu, font choices, colour schemes, intuitivity of
+interfaces, simplicity, and a consistent style that users can "learn".
 
 
-#### Export capabilities
+### Different representation forms
 
