@@ -1,4 +1,4 @@
-## Documentation sustainability
+# Documentation sustainability
 
 The sustainability of software documentation is directly related to the
 sustainability of the software it pertains to. Without documentation that is 
