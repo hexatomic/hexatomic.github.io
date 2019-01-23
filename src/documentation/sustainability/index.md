@@ -30,7 +30,7 @@ In the context of software projects, this yields the following concrete
 requirements:
 
 1. Synchronic sustainability must be ensured by applying software engineering
-methods to the documentation workflow. This includes, code and 
+methods to the documentation workflow. This includes code and 
 documentation review, leveraging IDE support for in situ documentation of source 
 code, implementation of code styles such as naming conventions, [runnable 
 documentation](https://githubengineering.com/runnable-documentation/), etc.
