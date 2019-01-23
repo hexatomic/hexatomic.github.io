@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/hexatomic/hexatomic.github.io.svg?branch=src)](https://travis-ci.org/hexatomic/hexatomic.github.io)
+
 # Sources for the Hexatomic project documentation
 
 The project documentation for Hexatomic is built with 
@@ -30,7 +32,7 @@ releases page](https://github.com/rust-lang-nursery/mdBook/releases).
 
 In order to build, you need:
 
-- [**mdBook v0.2.1**](https://github.com/rust-lang-nursery/mdBook/releases/tag/v0.2.1)
+- [**mdBook >= v0.2.1**](https://github.com/rust-lang-nursery/mdBook/releases/tag/v0.2.1)
 [[Installation guide](https://rust-lang-nursery.github.io/mdBook/cli/index.html)]
 
 ## Setup
