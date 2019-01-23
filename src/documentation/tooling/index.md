@@ -102,8 +102,8 @@ deploying the artifacts.
 The documentation software should therefore enable continuous integration of its
 builds and automated deployment of the documentation representations, either 
 natively, or via the continuous integration system used in the project, or by 
-simply not preventing the application of a CI system to trigger builds and
-deploys through, e.g., a custom script run on the CI system.
+simply not preventing the application of a CI system, to trigger builds and
+deploy artifacts through, e.g., a custom script run on the CI system.
 
 In addition to providing an easy way to produce documentation, automated 
 deployment will also ensure that the user-facing representation of the
@@ -126,7 +126,7 @@ While some of the features that make
 documentation "usable" for a reader may depend on a specific reader's
 approach to documentation as well as her own preferences, some factors of
 usability are more easily quantifiable, e.g., a representation's ability to
-display well on different devices - what is usually a feature of responsive or 
+display well on different devices - which is usually a feature of responsive or 
 reactive design paradigms. Further factors include the existence and behaviour
 of a table of contents or menu, font choices, colour schemes, intuitivity of
 interfaces, simplicity, and a consistent style that users can "learn".
@@ -134,3 +134,14 @@ interfaces, simplicity, and a consistent style that users can "learn".
 
 ### Different representation forms
 
+The documentation software should ideally be able to produce representations
+in different formats, e.g., produce a HTML representation of the documentation,
+a PDF file, an EPUB file, etc.
+
+Different representations are required to serve the purposes of different
+parts of the documentation. While API documentation may be read mainly
+during development work and should therefore be provided as hyperlinked
+documents in a website for quick accessibility and browsing, user documentation
+may be read in larger portions at a time, e.g., during preparation or evaluation
+phases, and should therefore *also* be available as a portable and potentially
+printable format such as PDF or EPUB.
