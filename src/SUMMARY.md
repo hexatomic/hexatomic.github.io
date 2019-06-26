@@ -1,7 +1,7 @@
 # Summary
 
-[Hexatomic](./index.md)
-[Project documentation](./about.md)
+[The Hexatomic project](./index.md)
+[About this project documentation](./about.md)
 
 ---
 
