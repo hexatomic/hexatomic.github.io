@@ -72,12 +72,12 @@ The calculations below are also available as a
 
 |     Tool     | 1 | 3a | 3b | 3c | 3d | 3e | 3f | x̄(3)  | 4 |
 |--------------|---|----|----|----|----|----|----|-------|---|
-| Sphinx (rST) |   |    |    |    |    |    |    |       |   |
-| Sphinx (CM)  |   |    |    |    |    |    |    |       |   |
-| Asciidoctor  |   |    |    |    |    |    |    |       |   |
-| mkDocs       |   |    |    |    |    |    |    |       |   |
-| mdBook       |   |    |    |    |    |    |    |       |   |
-| Jekyll       |   |    |    |    |    |    |    |       |   |
+| Sphinx (rST) | 5 | 3  | 4  | 3  | 4  | 3  | 4  |  3.5  | 4 |
+| Sphinx (CM)  | 3 | 5  | 1  | 3  | 2  | 3  | 4  |  3.0  | 4 |
+| Asciidoctor  | 3 | 4  | 1  | 4  | 3  | 3  | 3  |  3.0  | 3 |
+| mkDocs       | 3 | 5  | 1  | 3  | 4  | 3  | 2  |  3.0  | 1 |
+| mdBook       | 4 | 5  | 1  | 3  | 4  | 4  | 5  |  3.67 | 3 |
+| Jekyll       | 4 | 5  | 1  | 3  | 4  | 2  | 2  |  2.83 | 2 |
 
 
 ### Sustainability
@@ -97,14 +97,55 @@ level of documentation, maturity of its dependencies, etc.
 In the evaluation process, we have tried to approximate each candidate's
 potential for sustainability, which we present in the following.
 
-#### Sphinx
+#### Sphinx <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
 
 [Sphinx](http://www.sphinx-doc.org/) is a documentation generator written in
-Python. It is used the generate the [documentation for the Python programming
+Python. It is used to generate the [documentation for the Python programming
 language](https://docs.python.org/) itself as well as many large 
 [Python projects](http://www.sphinx-doc.org/en/master/examples.html). The
 documentation platform [Read the Docs](https://readthedocs.org/) uses Sphinx to
 automate the creation and deployment of software documentation.
+
+We have rated the sustainability of Sphinx as very high (5).
+
+Python, Sphinx' implementation language, is a highly used programming language, with an estimated [**39% market share**](https://insights.stackoverflow.com/survey/2018#technology-_-programming-scripting-and-markup-languages),
+as of 2018, and the [**highest popularity with learners (28%)**](http://web.archive.org/web/20190622130443/https://pypl.github.io/PYPL.html) as of June 2019.
+Sphinx has a **high criticality** due to its use as the Python language documentation platform,
+and its **pervasiveness** of the Python community, where it must be regarded as the default documentation tool.
+As of June 2019, Sphinx is [**used by over 57,000 projects**](https://github.com/sphinx-doc/sphinx/network/dependents) on Github alone.
+The Sphinx hosting service Read the Docs has hosted around [100,000 projects](https://blog.readthedocs.com/read-the-docs-2018-stats/) in 2018 (including Sphinx and mkDocs projects).
+Sphinx is a mature project, with **[126 releases](https://github.com/sphinx-doc/sphinx/releases)**, the first one from [Mar 2008](https://github.com/sphinx-doc/sphinx/releases/tag/v0.1.61611).
+It is also actively developed, with an average around **3 commits per day**, with the last **100 commits within the last 17 days** at the time of writing, a **contributor base of [422](https://github.com/sphinx-doc/sphinx/graphs/contributors)**, averages of **0.9 issues per day** and **0.5 pull requests per day**.
+Its **5 dependencies** seem to be mature, based on the fact that they all have been released in major versions.
+
+#### mdBook <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+
+[mdBook](https://rust-lang-nursery.github.io/mdBook/) is a documentation generator written in
+Rust. It is used to generate the main documentation (both the [reference documentation](https://doc.rust-lang.org/nightly/reference/), and "[The Book](https://doc.rust-lang.org/book/)") for the [Rust programming
+language](https://www.rust-lang.org/) itself. It seems to be emerging as the standard tool to write documentation for Rust code. [TODO Evidence?]
+
+We have rated the sustainability of mdBook as high (4).
+
+Python, Sphinx' implementation language, is a highly used programming language, with an estimated [**39% market share**](https://insights.stackoverflow.com/survey/2018#technology-_-programming-scripting-and-markup-languages),
+as of 2018, and the [**highest popularity with learners (28%)**](http://web.archive.org/web/20190622130443/https://pypl.github.io/PYPL.html) as of June 2019.
+Sphinx has a **high criticality** due to its use as the Python language documentation platform,
+and its **pervasiveness** of the Python community, where it must be regarded as the default documentation tool.
+As of June 2019, Sphinx is [**used by over 57,000 projects**](https://github.com/sphinx-doc/sphinx/network/dependents) on Github alone.
+The Sphinx hosting service Read the Docs has hosted around [100,000 projects](https://blog.readthedocs.com/read-the-docs-2018-stats/) in 2018 (including Sphinx and mkDocs projects).
+Sphinx is a mature project, with **[126 releases](https://github.com/sphinx-doc/sphinx/releases)**, the first one from [Mar 2008](https://github.com/sphinx-doc/sphinx/releases/tag/v0.1.61611).
+It is also actively developed, with an average around **3 commits per day**, with the last **100 commits within the last 17 days** at the time of writing, a **contributor base of [422](https://github.com/sphinx-doc/sphinx/graphs/contributors)**, averages of **0.9 issues per day** and **0.5 pull requests per day**.
+Its **5 dependencies** seem to be mature, based on the fact that they all have been released in major versions.
+
+#### Jekyll <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+
+#### mdBook <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+
+#### Asciidoctor <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+
+#### mkDocs <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+
+---
+
 
 [1] S. Druskat, 'A proposal for the measurement and documentation of research 
 software sustainability in interactive metadata repositories', in Proceedings of 

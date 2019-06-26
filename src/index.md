@@ -1,4 +1,4 @@
-# Hexatomic
+# The Hexatomic project
 
 **"A minimal infrastructure for the sustainable provision of extensible multi-layer 
 annotation software for linguistic corpora" (Hexatomic)** is a joint research project
@@ -23,3 +23,6 @@ The project is located at the
 [![Logo of Friedrich-Schiller Universität Jena](fsu.png)](https://www.uni-jena.de/en/start.html)
 
 [![Logo of Humboldt-Universität zu Berlin](hu.png)](https://www.hu-berlin.de/en?set_language=en)
+
+> The **Hexatomic software documentation** will be hosted at  
+<i class="fa fa-floppy-o"></i> **https://hexatomic.github.io/hexatomic**.
