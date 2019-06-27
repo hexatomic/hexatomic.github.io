@@ -108,37 +108,51 @@ automate the creation and deployment of software documentation.
 
 We have rated the sustainability of Sphinx as very high (5).
 
-Python, Sphinx' implementation language, is a highly used programming language, with an estimated [**39% market share**](https://insights.stackoverflow.com/survey/2018#technology-_-programming-scripting-and-markup-languages),
-as of 2018, and the [**highest popularity with learners (28%)**](http://web.archive.org/web/20190622130443/https://pypl.github.io/PYPL.html) as of June 2019.
+Python, Sphinx' implementation language, is a highly used programming language, with an estimated [**41% market share**](https://insights.stackoverflow.com/survey/2019#technology-_-programming-scripting-and-markup-languages),
+as of 2019, and [**increasing interest**](https://trends.google.com/trends/explore?date=all&q=%2Fm%2F05z1_#TIMESERIES) as of June 2019.
 Sphinx has a **high criticality** due to its use as the Python language documentation platform,
 and its **pervasiveness** of the Python community, where it must be regarded as the default documentation tool.
 As of June 2019, Sphinx is [**used by over 57,000 projects**](https://github.com/sphinx-doc/sphinx/network/dependents) on Github alone.
 The Sphinx hosting service Read the Docs has hosted around [100,000 projects](https://blog.readthedocs.com/read-the-docs-2018-stats/) in 2018 (including Sphinx and mkDocs projects).
 Sphinx is a mature project, with **[126 releases](https://github.com/sphinx-doc/sphinx/releases)**, the first one from [Mar 2008](https://github.com/sphinx-doc/sphinx/releases/tag/v0.1.61611).
-It is also actively developed, with an average around **3 commits per day**, with the last **100 commits within the last 17 days** at the time of writing, a **contributor base of [422](https://github.com/sphinx-doc/sphinx/graphs/contributors)**, averages of **0.9 issues per day** and **0.5 pull requests per day**.
+It is also actively developed, with an average of around **3 commits per day**, with the last **100 commits within the last 17 days** at the time of writing, 
+a **contributor base of [422](https://github.com/sphinx-doc/sphinx/graphs/contributors)**, averages of **0.9 issues per day** and **0.5 pull requests per day**.
 Its **5 dependencies** seem to be mature, based on the fact that they all have been released in major versions.
 
 #### mdBook <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
 
 [mdBook](https://rust-lang-nursery.github.io/mdBook/) is a documentation generator written in
 Rust. It is used to generate the main documentation (both the [reference documentation](https://doc.rust-lang.org/nightly/reference/), and "[The Book](https://doc.rust-lang.org/book/)") for the [Rust programming
-language](https://www.rust-lang.org/) itself. It seems to be emerging as the standard tool to write documentation for Rust code. [TODO Evidence?]
+language](https://www.rust-lang.org/) itself.
 
 We have rated the sustainability of mdBook as high (4).
 
-Python, Sphinx' implementation language, is a highly used programming language, with an estimated [**39% market share**](https://insights.stackoverflow.com/survey/2018#technology-_-programming-scripting-and-markup-languages),
-as of 2018, and the [**highest popularity with learners (28%)**](http://web.archive.org/web/20190622130443/https://pypl.github.io/PYPL.html) as of June 2019.
-Sphinx has a **high criticality** due to its use as the Python language documentation platform,
-and its **pervasiveness** of the Python community, where it must be regarded as the default documentation tool.
-As of June 2019, Sphinx is [**used by over 57,000 projects**](https://github.com/sphinx-doc/sphinx/network/dependents) on Github alone.
-The Sphinx hosting service Read the Docs has hosted around [100,000 projects](https://blog.readthedocs.com/read-the-docs-2018-stats/) in 2018 (including Sphinx and mkDocs projects).
-Sphinx is a mature project, with **[126 releases](https://github.com/sphinx-doc/sphinx/releases)**, the first one from [Mar 2008](https://github.com/sphinx-doc/sphinx/releases/tag/v0.1.61611).
-It is also actively developed, with an average around **3 commits per day**, with the last **100 commits within the last 17 days** at the time of writing, a **contributor base of [422](https://github.com/sphinx-doc/sphinx/graphs/contributors)**, averages of **0.9 issues per day** and **0.5 pull requests per day**.
-Its **5 dependencies** seem to be mature, based on the fact that they all have been released in major versions.
+Although Rust, mdBook's implementation language, is relatively young - [development has started in 2006](http://web.archive.org/web/20160609195720/https://www.rust-lang.org/faq.html#project) -
+it is growing [in popularity](https://insights.stackoverflow.com/survey/2019#most-loved-dreaded-and-wanted) and sees [increasing interest](https://trends.google.com/trends/explore?date=all&q=%2Fm%2F0dsbpg6#TIMESERIES).
+Major software projects are written in Rust, such as the [Quantum and Servo browser engines](https://en.wikipedia.org/wiki/Quantum_(Mozilla)), developed by Mozilla and used in the Firefox web browser,
+Facebook's Libra cryptocurrency, Dropbox's file system, and security features in the [Tor](https://www.torproject.org/) project. 
+mdBook has a **high criticality** as the main documentation tool for the Rust language itself and its pervasiveness as the documentation tool for many Rust projects.
+mdBook is a relatively mature project, with [**44 releases**](https://github.com/rust-lang-nursery/mdBook/releases), the first one from [Aug 2015](https://github.com/rust-lang-nursery/mdBook/releases/tag/v0.0.1).
+It is also actively developed, with an average of around **0.86 commits per day**, with the last **100 commits within the last 96 days** at the time of writing, 
+a **contributor base of [124](https://github.com/rust-lang-nursery/mdBook/graphs/contributors)**, averages of **0.34 issues per day** and **0.33 pull requests per day**.
+Its **25 dependencies** seem somewhat mature, with 13 of them having been released in major versions.
 
 #### Jekyll <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
 
-#### mdBook <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+[Jekyll](https://jekyllrb.com/) is a static site generator written in
+Ruby. It is the tool used to automatically generate [Github Pages](https://pages.github.com/) from Markdown files.
+
+We have rated the sustainability of Jekyll as high (4).
+
+The popularity of Jekyll's implementation language, Ruby, seems to stagnate at around [**9% market share**](https://insights.stackoverflow.com/survey/2019#technology-_-programming-scripting-and-markup-languages) and sees [**decreasing interest**](https://trends.google.com/trends/explore?date=all&q=%2Fm%2F06ff5#TIMESERIES).
+Nevertheless, its market share has remained largely unchanged in the developer community over the last 6 years, and several large software projects are written in Ruby,
+including the [Github](https://github.com/) development platform, Airbnb, Kickstarter, SlideShare.
+Jekyll has a **high criticality** as the main tool for generating Github pages.
+It is a mature project, with [**136 releases**](https://github.com/jekyll/jekyll/releases), the first one from [Dec 2008](https://github.com/jekyll/jekyll/releases/tag/v0.1.3).
+Jekyll is also actively developed, with an average of around **2.7 commits per day**, with the last **100 commits within the last 76 days** at the time of writing.
+It has a **contributor base of [852](https://github.com/jekyll/jekyll/graphs/contributors)**, averages of **1 issue per day** and **0.9 pull requests per day**.
+As of June 2019, Jekyll is [**used by over 296,000 projects**](https://github.com/jekyll/jekyll/network/dependents) on Github alone.
+Its **13 dependencies** seem to be mostly mature, based on the fact that all but 2 have been released in major versions.
 
 #### Asciidoctor <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
 
