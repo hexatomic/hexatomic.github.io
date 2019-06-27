@@ -170,7 +170,6 @@ The popularity of Asciidoctor's implementation language, Ruby, seems to stagnate
 Nevertheless, its market share has remained largely unchanged in the developer community over the last 6 years, and several large software projects are written in Ruby,
 including the [Github](https://github.com/) development platform, Airbnb, Kickstarter, SlideShare.
 It is a mature project, with [**60 releases**](https://github.com/asciidoctor/asciidoctor/releases), the first one from [Feb 2014](https://github.com/asciidoctor/asciidoctor/releases/tag/v1.5.0.preview.2).
-
 Asciidoctor is actively developed, with an average of around **1.7 commits per day**, with the last **100 commits within the last 82 days** at the time of writing.
 It has a **contributor base of [115](https://github.com/asciidoctor/asciidoctor/graphs/contributors)**, of which **21 (18%) have contributed over the last year**, and in this period, **6 contributors (5%) have made more than 1 commit**.
 Asciidoctor has averages of **0.8 issues per day** and **0.5 pull requests per day**.
@@ -178,6 +177,20 @@ Its **3 dependencies** seem to be immature, as none of them have a major release
 
 
 #### mkDocs <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+
+[mkDocs](https://www.mkdocs.org/) is a static site generator for project documentation.
+It is written in Python.
+
+We have rated the sustainability of mkDocs as medium (3).
+
+Python, mkDocs' implementation language, is a highly used programming language, with an estimated [**41% market share**](https://insights.stackoverflow.com/survey/2019#technology-_-programming-scripting-and-markup-languages),
+as of 2019, and [**increasing interest**](https://trends.google.com/trends/explore?date=all&q=%2Fm%2F05z1_#TIMESERIES) as of June 2019.
+Its **criticality** seems to be low, as we could not find any large software projects documented with it.
+It is a mature project, with [**41 releases**](https://github.com/mkdocs/mkdocs/releases), the first one from [Jan 2014](https://github.com/mkdocs/mkdocs/releases/tag/0.2).
+mkDocs is actively developed, with an average of around **0.7 commits per day**, with the last **100 commits within the last 444 days** at the time of writing.
+It has a **contributor base of [126](https://github.com/mkdocs/mkdocs/graphs/contributors)**, of which **27 (21%) have contributed over the last year**, and in this period, **6 contributors (5%) have made more than 1 commit**.
+mkDocs has averages of **0.6 issues per day** and **0.4 pull requests per day**.
+Its **7 dependencies** seem to be mature, as 6 out of 7 have a major release version.
 
 ---
 
