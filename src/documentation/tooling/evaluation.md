@@ -116,7 +116,8 @@ As of June 2019, Sphinx is [**used by over 57,000 projects**](https://github.com
 The Sphinx hosting service Read the Docs has hosted around [100,000 projects](https://blog.readthedocs.com/read-the-docs-2018-stats/) in 2018 (including Sphinx and mkDocs projects).
 Sphinx is a mature project, with **[126 releases](https://github.com/sphinx-doc/sphinx/releases)**, the first one from [Mar 2008](https://github.com/sphinx-doc/sphinx/releases/tag/v0.1.61611).
 It is also actively developed, with an average of around **3 commits per day**, with the last **100 commits within the last 17 days** at the time of writing, 
-a **contributor base of [422](https://github.com/sphinx-doc/sphinx/graphs/contributors)**, averages of **0.9 issues per day** and **0.5 pull requests per day**.
+a **contributor base of [422](https://github.com/sphinx-doc/sphinx/graphs/contributors)**, of which **51 (12%) have actively contributed over the last year**, and in this period, **45 contributors (11%) have made more than 1 commit**.
+Sphinx has averages of **0.9 issues per day** and **0.5 pull requests per day**.
 Its **5 dependencies** seem to be mature, based on the fact that they all have been released in major versions.
 
 #### mdBook <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
@@ -134,7 +135,8 @@ Facebook's Libra cryptocurrency, Dropbox's file system, and security features in
 mdBook has a **high criticality** as the main documentation tool for the Rust language itself and its pervasiveness as the documentation tool for many Rust projects.
 mdBook is a relatively mature project, with [**44 releases**](https://github.com/rust-lang-nursery/mdBook/releases), the first one from [Aug 2015](https://github.com/rust-lang-nursery/mdBook/releases/tag/v0.0.1).
 It is also actively developed, with an average of around **0.86 commits per day**, with the last **100 commits within the last 96 days** at the time of writing, 
-a **contributor base of [124](https://github.com/rust-lang-nursery/mdBook/graphs/contributors)**, averages of **0.34 issues per day** and **0.33 pull requests per day**.
+a **contributor base of [124](https://github.com/rust-lang-nursery/mdBook/graphs/contributors)**, of which **43 (35%) have contributed over the last year**, and in this period, **22 contributors (18%) have made more than 1 commit**.
+mdBook has averages of **0.34 issues per day** and **0.33 pull requests per day**.
 Its **25 dependencies** seem somewhat mature, with 13 of them having been released in major versions.
 
 #### Jekyll <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
@@ -150,11 +152,30 @@ including the [Github](https://github.com/) development platform, Airbnb, Kickst
 Jekyll has a **high criticality** as the main tool for generating Github pages.
 It is a mature project, with [**136 releases**](https://github.com/jekyll/jekyll/releases), the first one from [Dec 2008](https://github.com/jekyll/jekyll/releases/tag/v0.1.3).
 Jekyll is also actively developed, with an average of around **2.7 commits per day**, with the last **100 commits within the last 76 days** at the time of writing.
-It has a **contributor base of [852](https://github.com/jekyll/jekyll/graphs/contributors)**, averages of **1 issue per day** and **0.9 pull requests per day**.
+It has a **contributor base of [852](https://github.com/jekyll/jekyll/graphs/contributors)**, of which **12 (1%) have contributed over the last year**, and in this period, **7 contributors (<1%) have made more than 1 commit**.
+Jekyll has averages of **1 issue per day** and **0.9 pull requests per day**.
 As of June 2019, Jekyll is [**used by over 296,000 projects**](https://github.com/jekyll/jekyll/network/dependents) on Github alone.
 Its **13 dependencies** seem to be mostly mature, based on the fact that all but 2 have been released in major versions.
 
 #### Asciidoctor <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+
+[Asciidoctor](https://asciidoctor.org/) is a processor and publishing toolchain for the [AsciiDoc](https://asciidoctor.org/docs/what-is-asciidoc/#what-is-asciidoc) markup language.
+It is written in Ruby.
+Asciidoctor is used to build documentation for a number of larger software projects, including Grails, the Gradle build automation tool, Red Hat documentation, 
+Solr, [and many others](https://github.com/asciidoctor/asciidoctor.org/issues/270).
+
+We have rated the sustainability of Asciidoctor as medium (3).
+
+The popularity of Asciidoctor's implementation language, Ruby, seems to stagnate at around [**9% market share**](https://insights.stackoverflow.com/survey/2019#technology-_-programming-scripting-and-markup-languages) and sees [**decreasing interest**](https://trends.google.com/trends/explore?date=all&q=%2Fm%2F06ff5#TIMESERIES).
+Nevertheless, its market share has remained largely unchanged in the developer community over the last 6 years, and several large software projects are written in Ruby,
+including the [Github](https://github.com/) development platform, Airbnb, Kickstarter, SlideShare.
+It is a mature project, with [**60 releases**](https://github.com/asciidoctor/asciidoctor/releases), the first one from [Feb 2014](https://github.com/asciidoctor/asciidoctor/releases/tag/v1.5.0.preview.2).
+
+Asciidoctor is actively developed, with an average of around **1.7 commits per day**, with the last **100 commits within the last 82 days** at the time of writing.
+It has a **contributor base of [115](https://github.com/asciidoctor/asciidoctor/graphs/contributors)**, of which **21 (18%) have contributed over the last year**, and in this period, **6 contributors (5%) have made more than 1 commit**.
+Asciidoctor has averages of **0.8 issues per day** and **0.5 pull requests per day**.
+Its **3 dependencies** seem to be immature, as none of them have a major release version.
+
 
 #### mkDocs <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
 
