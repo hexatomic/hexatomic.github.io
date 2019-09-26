@@ -12,6 +12,21 @@ to generic (research) software project setups. And those that are
 project-specific can probably be transferred to other use cases relatively 
 easily.
 
+> **Requirements summary**
+> 
+> The requirements for documentation tools for sustainable software development are
+> 
+> - (1) Sustainability
+> - (2) Single tool toolchain
+> - (3) Usability  
+>     - (3a) Human-readable source format  
+>     - (3b) Javadoc integration  
+>     - (3c) Continuous integration capabilities  
+>     - (3d) Maintainability
+>     - (3e) Maintainability (dependencies)
+>     - (3f) Usability of representations
+> - (4) Different representation forms  
+
 ### Sustainability
 
 The [documentation sustainability](../sustainability/) section establishes that
@@ -145,3 +160,51 @@ documents in a website for quick accessibility and browsing, user documentation
 may be read in larger portions at a time, e.g., during preparation or evaluation
 phases, and should therefore *also* be available as a portable and potentially
 printable format such as PDF or EPUB.
+
+## Available tools
+
+To find a tool that fulfills as many of the requirements as well as possible,
+and that is suitable for our project context, we have surveyed different 
+documentation software.
+
+---
+
+These tools would be
+feasible to use as the single tool for text-based documentation (as compared to
+Javadoc) in our project (requirement (2)). At the same time, we only considered
+tools that use a human-readable source format as input to create documentation
+representations (requirement (3a)). This included only tools that use an
+easily human-readable text-based markup language, i.e., a 
+[Markdown](https://en.wikipedia.org/wiki/Markdown) dialect,
+[reStructuredText](https://en.wikipedia.org/wiki/ReStructuredText), or
+[AsciiDoc](https://en.wikipedia.org/wiki/AsciiDoc).
+
+It also excluded other commonly used tools, e.g., 
+[Pandoc](https://en.wikipedia.org/wiki/Pandoc), if they are not mainly
+targeted at creating software documentation. Pandoc, for example,
+does not support out-of-the-box conversion to HTML beyond single pages.
+
+Additionally, we have excluded tools which seemed too little known, i.e., which
+failed the "list test", the hypothesis being that if a tool would not be 
+included in a sample of list websites ("Top 10 software documentation tools", 
+"15+ Software Documentation Tools That Will Simplify Your Life", etc.) it would
+not have enough market share, which may imply a small user base and therefore
+not enough community incentive to keep it alive over the next few years.
+
+Out of the whole section of generic static site generators (of which most 
+documentation tools are a subset of), we have chosen Jekyll because it is
+natively supported by [GitHub Pages](https://pages.github.com/), our chosen
+documentation hosting solution. The reasons why we use GitHub Pages are
+explained in another section (forthcoming). <!-- FIXME Replace with link to actual section-->
+
+We ended up with the following shortlist of tool options.
+
+- [Sphinx](http://www.sphinx-doc.org/en/master/) (Python) with reStructuredText (rST) input
+- Sphinx with [CommonMark](https://recommonmark.readthedocs.io/en/latest/index.html) (CM) input
+- [Asciidoctor](https://asciidoctor.org/) (Ruby) with AsciiDoc input
+- [mkDocs](https://www.mkdocs.org/) (Python) with [Markdown](https://python-markdown.github.io/) input
+- [mdBook](https://github.com/rust-lang-nursery/mdBook) (Rust) with [CommonMark](https://github.com/raphlinus/pulldown-cmark) input
+- [Jekyll](https://jekyllrb.com/) (Ruby) with [Kramdown](https://kramdown.gettalong.org/) or other Markdown input
+
+In our subsequent [evaluation of the tools](./evaluation.md), we have not taken into account the specifics of the different Markdown dialects
+for our evaluation.
