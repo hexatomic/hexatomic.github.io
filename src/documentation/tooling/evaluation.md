@@ -10,19 +10,7 @@
 > here may be useful to record the criteria we have taken into account.
 
 
-In order to choose a suitable documentation tool that fulfils the requirements
-outlined in the [previous section](./index.md) (listed below for reference), 
-we[^1] have built a shortlist of dedicated documentation tools that would be
-feasible to use as the single tool for text-based documentation (as compared to
-Javadoc) in our project (requirement (2)). At the same time, we only considered
-tools that use a human-readable source format as input to create documentation
-representations from (requirement (3a)). This included only tools that use an
-easily human-readable text-based markup language, i.e., a 
-[Markdown](https://en.wikipedia.org/wiki/Markdown) dialect,
-[reStructuredText](https://en.wikipedia.org/wiki/ReStructuredText) or
-[AsciiDoc](https://en.wikipedia.org/wiki/AsciiDoc).
-
-Requirements:
+Requirements for single tool documentation software (cf. [documentation tooling section](./index.md)):
 - (1) Sustainability
 - (2) Single tool toolchain
 - (3) Usability  
@@ -33,35 +21,6 @@ Requirements:
 	- (3e) Maintainability (dependencies)
 	- (3f) Usability of representations
 - (4) Different representation forms  
-
-It also excluded other commonly used tools, e.g., 
-[Pandoc](https://en.wikipedia.org/wiki/Pandoc), if they are not mainly
-targeted at creating software documentation.
-
-Additionally, we have excluded tools which seemed too little known, i.e., which
-failed the "list test", the hypothesis being that if a tool would not be 
-included in a sample of list websites ("Top 10 software documentation tools", 
-"15+ Software Documentation Tools That Will Simplify Your Life", etc.) it would
-not have enough market share, which may imply a small user base and therefore
-not enough community incentive to keep it alive over the next few years.
-
-Out of the whole section of generic static site generators (of which most 
-documentation tools are a subset of), we have chosen Jekyll because it is
-natively supported by [GitHub Pages](https://pages.github.com/), our chosen
-documentation hosting solution. The reasons why we use GitHub Pages are
-explained in another section (forthcoming).
-
-We ended up with the following shortlist of tool options.
-
-- [Sphinx](http://www.sphinx-doc.org/en/master/) (Python) with reStructuredText (rST) input
-- Sphinx with [CommonMark](https://recommonmark.readthedocs.io/en/latest/index.html) (CM) input
-- [Asciidoctor](https://asciidoctor.org/) (Ruby) with AsciiDoc input
-- [mkDocs](https://www.mkdocs.org/) (Python) with [Markdown](https://python-markdown.github.io/) input
-- [mdBook](https://github.com/rust-lang-nursery/mdBook) (Rust) with [CommonMark](https://github.com/raphlinus/pulldown-cmark) input
-- [Jekyll](https://jekyllrb.com/) (Ruby) with [Kramdown](https://kramdown.gettalong.org/) or other Markdown input
-
-We have not taken into account the specifics of the different Markdown dialects
-for our evaluation.
 
 To evaluate which documentation tool may be the most suitable for our needs, we
 have marked it with a value from 1-5 for each requirement, with 1 being the
@@ -96,6 +55,7 @@ level of documentation, maturity of its dependencies, etc.
 
 In the evaluation process, we have tried to approximate each candidate's
 potential for sustainability, which we present in the following.
+Additionally, we give the [SourceRank metric for high quality packages]() used by libraries.io, based on the actual products we would employ.
 
 #### Sphinx <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
 
@@ -106,7 +66,8 @@ language](https://docs.python.org/) itself as well as many large
 documentation platform [Read the Docs](https://readthedocs.org/) uses Sphinx to
 automate the creation and deployment of software documentation.
 
-We have rated the sustainability of Sphinx as very high (5).
+We have rated the sustainability of Sphinx as very high (5).  
+SourceRank metric: [23](https://libraries.io/pypi/Sphinx/sourcerank)
 
 Python, Sphinx' implementation language, is a highly used programming language, with an estimated [**41% market share**](https://insights.stackoverflow.com/survey/2019#technology-_-programming-scripting-and-markup-languages),
 as of 2019, and [**increasing interest**](https://trends.google.com/trends/explore?date=all&q=%2Fm%2F05z1_#TIMESERIES) as of June 2019.
@@ -126,7 +87,8 @@ Its **5 dependencies** seem to be mature, based on the fact that they all have b
 Rust. It is used to generate the main documentation (both the [reference documentation](https://doc.rust-lang.org/nightly/reference/), and "[The Book](https://doc.rust-lang.org/book/)") for the [Rust programming
 language](https://www.rust-lang.org/) itself.
 
-We have rated the sustainability of mdBook as high (4).
+We have rated the sustainability of mdBook as high (4).  
+SourceRank metric: [15](https://libraries.io/cargo/mdbook/sourcerank)
 
 Although Rust, mdBook's implementation language, is relatively young - [development has started in 2006](http://web.archive.org/web/20160609195720/https://www.rust-lang.org/faq.html#project) -
 it is growing [in popularity](https://insights.stackoverflow.com/survey/2019#most-loved-dreaded-and-wanted) and sees [increasing interest](https://trends.google.com/trends/explore?date=all&q=%2Fm%2F0dsbpg6#TIMESERIES).
@@ -144,7 +106,8 @@ Its **25 dependencies** seem somewhat mature, with 13 of them having been releas
 [Jekyll](https://jekyllrb.com/) is a static site generator written in
 Ruby. It is the tool used to automatically generate [Github Pages](https://pages.github.com/) from Markdown files.
 
-We have rated the sustainability of Jekyll as high (4).
+We have rated the sustainability of Jekyll as high (4).  
+SourceRank metric: [27](https://libraries.io/rubygems/jekyll/sourcerank)
 
 The popularity of Jekyll's implementation language, Ruby, seems to stagnate at around [**9% market share**](https://insights.stackoverflow.com/survey/2019#technology-_-programming-scripting-and-markup-languages) and sees [**decreasing interest**](https://trends.google.com/trends/explore?date=all&q=%2Fm%2F06ff5#TIMESERIES).
 Nevertheless, its market share has remained largely unchanged in the developer community over the last 6 years, and several large software projects are written in Ruby,
@@ -164,7 +127,8 @@ It is written in Ruby.
 Asciidoctor is used to build documentation for a number of larger software projects, including Grails, the Gradle build automation tool, Red Hat documentation, 
 Solr, [and many others](https://github.com/asciidoctor/asciidoctor.org/issues/270).
 
-We have rated the sustainability of Asciidoctor as medium (3).
+We have rated the sustainability of Asciidoctor as medium (3).  
+SourceRank metric of the AsciiDoctor Maven plugin: [10](https://libraries.io/maven/org.asciidoctor:asciidoctor-maven-plugin/sourcerank)
 
 The popularity of Asciidoctor's implementation language, Ruby, seems to stagnate at around [**9% market share**](https://insights.stackoverflow.com/survey/2019#technology-_-programming-scripting-and-markup-languages) and sees [**decreasing interest**](https://trends.google.com/trends/explore?date=all&q=%2Fm%2F06ff5#TIMESERIES).
 Nevertheless, its market share has remained largely unchanged in the developer community over the last 6 years, and several large software projects are written in Ruby,
@@ -181,7 +145,8 @@ Its **3 dependencies** seem to be immature, as none of them have a major release
 [mkDocs](https://www.mkdocs.org/) is a static site generator for project documentation.
 It is written in Python.
 
-We have rated the sustainability of mkDocs as medium (3).
+We have rated the sustainability of mkDocs as medium (3).  
+SourceRank metric: [9](https://libraries.io/pypi/mkdocs/sourcerank)
 
 Python, mkDocs' implementation language, is a highly used programming language, with an estimated [**41% market share**](https://insights.stackoverflow.com/survey/2019#technology-_-programming-scripting-and-markup-languages),
 as of 2019, and [**increasing interest**](https://trends.google.com/trends/explore?date=all&q=%2Fm%2F05z1_#TIMESERIES) as of June 2019.
@@ -191,6 +156,54 @@ mkDocs is actively developed, with an average of around **0.7 commits per day**,
 It has a **contributor base of [126](https://github.com/mkdocs/mkdocs/graphs/contributors)**, of which **27 (21%) have contributed over the last year**, and in this period, **6 contributors (5%) have made more than 1 commit**.
 mkDocs has averages of **0.6 issues per day** and **0.4 pull requests per day**.
 Its **7 dependencies** seem to be mature, as 6 out of 7 have a major release version.
+
+### Usability
+
+Assessing the usability of software is an opinionated process which takes into account encountered and predicted use in a specific context.
+In our evaluation, we have taken into account the readability of the source format, Javadoc integration, continuous integration capabilities,
+maintainability, maintainability of dependencies, and the usability of representations.
+
+#### Human-readable source format
+
+*Sphinx (rST)* <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>   
+We have evaluated reStructuredText to be less-than-perfectly human-readable and human-usable due to 
+
+- its syntax for hyperlinks, which is not in-situ but instead uses an in-text underscore syntax ``Text `link text_` text`` in combination
+with a text-external external footnote syntax `.. _link text: https://hyperlink` for named links, which compares unfavourably with the Markdown
+format;
+- the four-whitespace indentation convention for code blocks, which disallows easy copy and paste of valid source code snippets.
+
+*Sphinx (CM), mkDocs, mdBook, Jekyll* <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>  
+We have evaluated Markdown to be very human-readable and human-usable, independent of implementation dialects. Markdown
+does not exhibit the same syntax-specific issues as reStructuredText.
+
+*Asciidoctor* <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>  
+We have evaluated AsciiDoc, the input format for Asciidoctor, to be human-readable, despite some idiosyncrasies in the syntax, such as
+`<whitespace>+` for single line breaks, and the less graphic headline syntax.
+
+#### Javadoc integration
+
+We have eventually decided to disregard the integration of Javadoc API documentation as a deciding factor for the best-suited documentation
+tool for the project. Javadoc-based HTML generation has been a standard feature of Java and Maven for years, and linking from any 
+running text documentation to the respective API documentation is trivial, and can be automated in continuous integration. 
+Nevertheless we provide a quick overview of the evaluations here.
+
+
+
+
+- (3a) Human-readable source format  
+    - (3b) Javadoc integration  
+    - (3c) Continuous integration capabilities  
+    - (3d) Maintainability
+    - (3e) Maintainability (dependencies)
+    - (3f) Usability of representations
+
+| Sphinx (rST) | 5 | 3  | 4  | 3  | 4  | 3  | 4  |  3.5  | 4 |
+| Sphinx (CM)  | 3 | 5  | 1  | 3  | 2  | 3  | 4  |  3.0  | 4 |
+| Asciidoctor  | 3 | 4  | 1  | 4  | 3  | 3  | 3  |  3.0  | 3 |
+| mkDocs       | 3 | 5  | 1  | 3  | 4  | 3  | 2  |  3.0  | 1 |
+| mdBook       | 4 | 5  | 1  | 3  | 4  | 4  | 5  |  3.67 | 3 |
+| Jekyll       | 4 | 5  | 1  | 3  | 4  | 2  | 2  |  2.83 | 2 |
 
 ---
 

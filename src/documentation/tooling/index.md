@@ -167,8 +167,6 @@ To find a tool that fulfills as many of the requirements as well as possible,
 and that is suitable for our project context, we have surveyed different 
 documentation software.
 
----
-
 These tools would be
 feasible to use as the single tool for text-based documentation (as compared to
 Javadoc) in our project (requirement (2)). At the same time, we only considered
