@@ -1,4 +1,4 @@
-## Documentation tooling &mdash; evaluation and implementation
+## Documentation tooling - evaluation and implementation
 
 > **Disclaimer**
 >
@@ -27,7 +27,7 @@ Requirements for single tool documentation software (cf. [documentation tooling 
 
 To evaluate which documentation tool may be the most suitable for our needs, we
 have marked it with a value from 1-5 for each requirement, with 1 being the
-lowest ("worst") mark and 5 the highest ("best").
+lowest ("worst") mark and 5 the highest ("best").[^1]
 
 
 |     Tool     | 1 | 3a | 3b | 3c | 3d | 3e | 3f | x̄(3)  | 4 |
@@ -38,6 +38,8 @@ lowest ("worst") mark and 5 the highest ("best").
 | mkDocs       | 3 | 5  | 1  | 3  | 4  | 3  | 2  |  3.0  | 1 |
 | mdBook       | 4 | 5  | 1  | 3  | 4  | 4  | 5  |  3.67 | 3 |
 | Jekyll       | 4 | 5  | 1  | 3  | 4  | 2  | 2  |  2.83 | 2 |
+
+> *Table:* Scores for the different requirements, cf. list above. x̄(3) is the mean of all Usability sub-requirements.
 
 
 ### Sustainability
@@ -56,7 +58,13 @@ level of documentation, maturity of its dependencies, etc.
 
 In the evaluation process, we have tried to approximate each candidate's
 potential for sustainability, which we present in the following.
-Additionally, we give the [SourceRank metric for high quality packages]() used by libraries.io, based on the actual products we would employ.
+Additionally, we give the [SourceRank metric for high quality packages](http://web.archive.org/web/20190927154132/https://docs.libraries.io/overview.html#sourcerank) used by libraries.io, based on the actual products we would employ.
+
+[1] S. Druskat, 'A proposal for the measurement and documentation of research 
+software sustainability in interactive metadata repositories', in Proceedings of 
+the Fourth Workshop on Sustainable Software for Science: Practice and 
+Experiences (WSSSPE4), University of Manchester, Manchester, UK, 2016 [Online]. 
+Available: <http://ceur-ws.org/Vol-1686/>
 
 #### Sphinx <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
 
@@ -67,9 +75,9 @@ language](https://docs.python.org/) itself as well as many large
 documentation platform [Read the Docs](https://readthedocs.org/) uses Sphinx to
 automate the creation and deployment of software documentation.
 
-We have rated the sustainability of Sphinx as very high (5).  
-TODO Sphinx CM only 3  
-SourceRank metric: [23](https://libraries.io/pypi/Sphinx/sourcerank)
+We have rated the sustainability of Sphinx with rST as very high (5).  
+We have rated the sustainability of Sphinx with CM as medium (3) due to additionally required extensions and the non-standard use case which is not as well supported as the standard one using rST.  
+SourceRank metric for the Sphinx project: [23](https://libraries.io/pypi/Sphinx/sourcerank)
 
 Python, Sphinx' implementation language, is a highly used programming language, with an estimated [**41% market share**](https://insights.stackoverflow.com/survey/2019#technology-_-programming-scripting-and-markup-languages),
 as of 2019, and [**increasing interest**](https://trends.google.com/trends/explore?date=all&q=%2Fm%2F05z1_#TIMESERIES) as of June 2019.
@@ -260,12 +268,14 @@ are also available as a [Jupyter notebook](https://nbviewer.jupyter.org/github/s
 
 |     Tool     | 1 | 3a | 3b | 3c | 3d | 3e | 3f | x̄(3) | 4 | final score |
 |--------------|---|----|----|----|----|----|----|-------|---|-------------|
-| Sphinx (rST) | 5 |  3 |  1 |  3 |  4 |  3 |  4 |   3.0 | 4 |         4.0 |
-| mdBook       | 4 |  5 |  1 |  3 |  4 |  4 |  5 |  3.67 | 3 |        3.56 |
-| Sphinx (CM)  | 3 |  5 |  1 |  3 |  2 |  3 |  4 |   3.0 | 4 |        3.33 |
-| Asciidoctor  | 3 |  4 |  1 |  4 |  3 |  3 |  3 |   3.0 | 3 |         3.0 |
-| Jekyll       | 4 |  5 |  1 |  3 |  4 |  2 |  2 |  2.83 | 2 |        2.94 |
-| mkDocs       | 3 |  5 |  1 |  3 |  4 |  3 |  2 |   3.0 | 1 |        2.33 |
+| Sphinx (rST) | 5 |  3 |  1 |  3 |  4 |  3 |  4 |   3.0 | 4 |         **4.0** |
+| mdBook       | 4 |  5 |  1 |  3 |  4 |  4 |  5 |  3.67 | 3 |        **3.56** |
+| Sphinx (CM)  | 3 |  5 |  1 |  3 |  2 |  3 |  4 |   3.0 | 4 |        **3.33** |
+| Asciidoctor  | 3 |  4 |  1 |  4 |  3 |  3 |  3 |   3.0 | 3 |         **3.0** |
+| Jekyll       | 4 |  5 |  1 |  3 |  4 |  2 |  2 |  2.83 | 2 |        **2.94** |
+| mkDocs       | 3 |  5 |  1 |  3 |  4 |  3 |  2 |   3.0 | 1 |        **2.33** |
+
+> *Table:* Scores for the different requirements, and final scores, cf. list above. x̄(3) is the mean of all Usability sub-requirements.
 
 Due to the restrictions in usability (and slightly decreased human-readability) that reStructuredText represents (cf. section [Human-readable source format](#human-readable-source-format)),
 as well as a personal preference for markdown, we have decided to use **mdBook** for the text-based documentation of Hexatomic.
@@ -280,13 +290,6 @@ The sources for the project website reside in a dedicated repository, [github.co
 The sources for the Hexatomic software are held in the development repository for Hexatomic, [github.com/hexatomic/hexatomic](https://github.com/hexatomic/hexatomic).
 
 ---
-
-
-[1] S. Druskat, 'A proposal for the measurement and documentation of research 
-software sustainability in interactive metadata repositories', in Proceedings of 
-the Fourth Workshop on Sustainable Software for Science: Practice and 
-Experiences (WSSSPE4), University of Manchester, Manchester, UK, 2016 [Online]. 
-Available: <http://ceur-ws.org/Vol-1686/>
 
 [^1]: The evaluation was carried out by [S. Druskat](https://sdruskat.net/) and 
 [T. Krause](https://www.linguistik.hu-berlin.de/de/institut/professuren/korpuslinguistik/mitarbeiter-innen/thomas).
