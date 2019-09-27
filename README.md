@@ -32,7 +32,7 @@ releases page](https://github.com/rust-lang-nursery/mdBook/releases).
 
 In order to build, you need:
 
-- [**mdBook >= v0.2.1**](https://github.com/rust-lang-nursery/mdBook/releases/tag/v0.2.1)
+- [**mdBook >= v0.3.1**](https://github.com/rust-lang-nursery/mdBook/releases/tag/v0.3.1)
 [[Installation guide](https://rust-lang-nursery.github.io/mdBook/cli/index.html)]
 
 ## Setup
