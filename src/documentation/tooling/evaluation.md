@@ -9,29 +9,30 @@
 > empirical, and non-reproducible. Nevertheless we feel that publishing them
 > here may be useful to record the criteria we have taken into account.
 
+---
 
 Requirements for single tool documentation software (cf. [documentation tooling section](./index.md)):
 - (1) Sustainability
 - (2) Single tool toolchain
 - (3) Usability  
-	- (3a) Human-readable source format  
-	- (3b) Javadoc integration  
-	- (3c) Continuous integration capabilities  
-	- (3d) Maintainability
-	- (3e) Maintainability (dependencies)
-	- (3f) Usability of representations
+    - (3a) Human-readable source format  
+    - (3b) Javadoc integration  
+    - (3c) Continuous integration capabilities  
+    - (3d) Maintainability
+    - (3e) Maintainability (dependencies)
+    - (3f) Usability of representations
 - (4) Different representation forms  
+
+---
 
 To evaluate which documentation tool may be the most suitable for our needs, we
 have marked it with a value from 1-5 for each requirement, with 1 being the
 lowest ("worst") mark and 5 the highest ("best").
 
-The calculations below are also available as a 
-[Jupyter notebook](https://nbviewer.jupyter.org/github/sdruskat/hexatomic.github.io/blob/src/src/static/ipynb/Hexatomic%20Project%20-%20Documentation%20Tooling%20Evaluation.ipynb).
 
 |     Tool     | 1 | 3a | 3b | 3c | 3d | 3e | 3f | x̄(3)  | 4 |
 |--------------|---|----|----|----|----|----|----|-------|---|
-| Sphinx (rST) | 5 | 3  | 4  | 3  | 4  | 3  | 4  |  3.5  | 4 |
+| Sphinx (rST) | 5 | 3  | 1  | 3  | 4  | 3  | 4  |  3.0  | 4 |
 | Sphinx (CM)  | 3 | 5  | 1  | 3  | 2  | 3  | 4  |  3.0  | 4 |
 | Asciidoctor  | 3 | 4  | 1  | 4  | 3  | 3  | 3  |  3.0  | 3 |
 | mkDocs       | 3 | 5  | 1  | 3  | 4  | 3  | 2  |  3.0  | 1 |
@@ -67,6 +68,7 @@ documentation platform [Read the Docs](https://readthedocs.org/) uses Sphinx to
 automate the creation and deployment of software documentation.
 
 We have rated the sustainability of Sphinx as very high (5).  
+TODO Sphinx CM only 3  
 SourceRank metric: [23](https://libraries.io/pypi/Sphinx/sourcerank)
 
 Python, Sphinx' implementation language, is a highly used programming language, with an estimated [**41% market share**](https://insights.stackoverflow.com/survey/2019#technology-_-programming-scripting-and-markup-languages),
@@ -188,22 +190,94 @@ tool for the project. Javadoc-based HTML generation has been a standard feature 
 running text documentation to the respective API documentation is trivial, and can be automated in continuous integration. 
 Nevertheless we provide a quick overview of the evaluations here.
 
+At the time of the evaluation, only Sphinx with reStructuredText offered a clear way to integrate Javadoc, 
+via the [javasphinx](https://github.com/bronto/javasphinx) extension.
+This extension has since been deprecated, and therefore, the requirement is of no consequence for the
+evaluation anymore.
+This is why all tools have been evaluated as not providing Javadoc integration with a score of `1`.
 
+#### Continuous integration capabilities
 
+All evaluated tools can be automated via a continuous integration solution such as Travis CI (used in our project).
+However, bespoke scripts have to be created (and maintained) to produce and deploy the respective HTML representations,
+as none of the tools provide this functionality out-of-the-box.
+Therefore, all tools have been evaluated with medium capabilities (`3`), with the exception of Asciidoctor, for which a
+Maven plugin exists, which you can read about on the [Asciidoctor website](https://web.archive.org/web/20190927065918/https://asciidoctor.org/docs/asciidoctor-maven-plugin/). As Hexatomic uses Maven in the build process, this is helpful, and Asciidoctor has therefore been
+evaluated with a score of `4`.
 
-- (3a) Human-readable source format  
-    - (3b) Javadoc integration  
-    - (3c) Continuous integration capabilities  
-    - (3d) Maintainability
-    - (3e) Maintainability (dependencies)
-    - (3f) Usability of representations
+#### Maintainability
 
-| Sphinx (rST) | 5 | 3  | 4  | 3  | 4  | 3  | 4  |  3.5  | 4 |
-| Sphinx (CM)  | 3 | 5  | 1  | 3  | 2  | 3  | 4  |  3.0  | 4 |
-| Asciidoctor  | 3 | 4  | 1  | 4  | 3  | 3  | 3  |  3.0  | 3 |
-| mkDocs       | 3 | 5  | 1  | 3  | 4  | 3  | 2  |  3.0  | 1 |
-| mdBook       | 4 | 5  | 1  | 3  | 4  | 4  | 5  |  3.67 | 3 |
-| Jekyll       | 4 | 5  | 1  | 3  | 4  | 2  | 2  |  2.83 | 2 |
+We have looked at the maintainability of the tools, and have mainly evaluated ease-of-installation and updates, and dependencies.
+
+Sphinx with rST and mkDocs are installable and updatable via standard Python technologies, i.e., an installation of Python and `pip`.
+mdBook is provided as a binary, which can be downloaded and used as is; alternatively, the standard way to install Rust software also works, i.e., via a Rust and `cargo`
+installation. All three tools are more or less self-contained to run required functionality such as tables of contents, search, etc., out-of-the-box, with existing modules for further
+functionality, and have therefore been scored with `4`.
+
+Asciidoctor requires an implementation of Ruby, and can be installed from an OS package manager or as a Ruby gem. It also requires extensions for
+processing documentation sources, which has led to a lower evaluation at `3`.
+
+Finally, Sphinx with CM has bee evaluated at `2`, as it requires hacks to include directives in Markdown which are not natively supported, such
+as the ones needed to create a table of concents. These leads to manual work which in turn needs to be standardized within the project, documented, and followed.
+This leads to a loss of maintainability for Sphinx with CM.
+
+#### Mainainability of dependencies
+
+Dependencies in our evaluation are additional software which has to be installed in order to use the respective tool in our project.
+mdBook has fared best, as it did not need additional software that needed to be actively installed, although a large number of its runtime dependencies do not have
+major releases.
+Jekyll has achieved the lowest score, as specific functionality required the inclusion of many plugins in the configuration file.
+The other tools have received scores of `3`, as they needed a modicum of configuration via extensions and/or had a larger number of runtime dependencies with non-major releases.
+
+#### Usability of representations
+
+mkDocs and Jekyll have both received low scores in assessing the usability of their HTML outputs.
+mkDocs can handle multiple pages, and contains global search, but it generally does not provide
+many features. This includes a maximum navigation depth of 2, which is not sufficient for our use case.
+Jekyll does not provide search or tables of contents out-of-the-box, and has to be customized to achieve
+the required level of functionality.
+Asciidoctor provides no client-side search, and per default procudes single pages only.
+Sphinx does provide access to different versions of the documentation, and provides
+multi-page functionality and tables of contents, but its search does not provide good results.
+mdBook provides good search, different themes per default, menu fold functionality, multiple pages and a table of contents, as well
+as forward and backward buttons, code copy, and single page prints which can also be used to generate PDFs.
+
+### Different representations
+
+Only Sphinx can comfortably handle a large number of different representations of documentations,
+such as LaTeX, EPub3, man pages, and more. The common PDF format has to be produced using an extension.
+mdBook uses a generic approach by providing a print button which compiles a single page view of the documentation.
+This can then be used to produce PDFs or other outputs via the browser's print dialogue.
+Asciidoctor has an external PDF converter, which, however, requires Ruby. It can produce manpages natively.
+Producing different presentations from Jekyll is cumbersome. PDFs can be produced via HTML to PDF conversion software, and a wrapper plugin for Jekyll exists.
+mkDocs does not support PDF conversion natively, although a plugin exists, which, however, relies on different other software which have to be installed separately.
+
+### Conclusion
+
+To calculate a final score for each tool, we have calculated the mean for all usability sub-categories in (3), and
+have calculated the mean across the three values. The results are presented in the table below, and
+are also available as a [Jupyter notebook](https://nbviewer.jupyter.org/github/sdruskat/hexatomic.github.io/blob/src/src/static/ipynb/Hexatomic%20Project%20-%20Documentation%20Tooling%20Evaluation.ipynb).
+
+|     Tool     | 1 | 3a | 3b | 3c | 3d | 3e | 3f | x̄(3) | 4 | final score |
+|--------------|---|----|----|----|----|----|----|-------|---|-------------|
+| Sphinx (rST) | 5 |  3 |  1 |  3 |  4 |  3 |  4 |   3.0 | 4 |         4.0 |
+| mdBook       | 4 |  5 |  1 |  3 |  4 |  4 |  5 |  3.67 | 3 |        3.56 |
+| Sphinx (CM)  | 3 |  5 |  1 |  3 |  2 |  3 |  4 |   3.0 | 4 |        3.33 |
+| Asciidoctor  | 3 |  4 |  1 |  4 |  3 |  3 |  3 |   3.0 | 3 |         3.0 |
+| Jekyll       | 4 |  5 |  1 |  3 |  4 |  2 |  2 |  2.83 | 2 |        2.94 |
+| mkDocs       | 3 |  5 |  1 |  3 |  4 |  3 |  2 |   3.0 | 1 |        2.33 |
+
+Due to the restrictions in usability (and slightly decreased human-readability) that reStructuredText represents (cf. section [Human-readable source format](#human-readable-source-format)),
+as well as a personal preference for markdown, we have decided to use **mdBook** for the text-based documentation of Hexatomic.
+
+#### Implementation
+
+We use local installations of mdBook on development machines to write the user, the developer & maintainer, and this project documentation.
+We use the Travis CI continuous integration platform to produce the documentation representations, and deploy them
+to GitHub Pages.
+
+The sources for the project website reside in a dedicated repository, [github.com/hexatomic/hexatomic.github.io](https://github.com/hexatomic/hexatomic.github.io).
+The sources for the Hexatomic software are held in the development repository for Hexatomic, [github.com/hexatomic/hexatomic](https://github.com/hexatomic/hexatomic).
 
 ---
 
