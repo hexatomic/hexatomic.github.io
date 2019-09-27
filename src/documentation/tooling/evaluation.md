@@ -236,7 +236,7 @@ mkDocs can handle multiple pages, and contains global search, but it generally d
 many features. This includes a maximum navigation depth of 2, which is not sufficient for our use case.
 Jekyll does not provide search or tables of contents out-of-the-box, and has to be customized to achieve
 the required level of functionality.
-Asciidoctor provides no client-side search, and per default procudes single pages only.
+Asciidoctor provides no client-side search, and per default produces single pages only.
 Sphinx does provide access to different versions of the documentation, and provides
 multi-page functionality and tables of contents, but its search does not provide good results.
 mdBook provides good search, different themes per default, menu fold functionality, multiple pages and a table of contents, as well
