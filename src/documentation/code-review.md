@@ -58,6 +58,6 @@ An example would be to have two time slots of one hour each per maintainer, on t
 This would allow the contributor to update the pull request with the requested changes and still get a new review in the same week.
 Ideally, a pull request with minor remarks could be merged in the same week it is created.
 
-We think it is important to limit the amount of per-week time a maintainer has to invest in code reviews.
+We think it is important to limit the amount of time per week a maintainer has to invest in code reviews.
 This allows calculating man-hours required to maintain a software project and to plan to finance the maintenance.
 If too many code reviews are requested at the same time, we propose to triage them first and give them a visible priority.
