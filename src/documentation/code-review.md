@@ -30,7 +30,7 @@ In Hexatomic we have three areas where contributions require code review.
 
 ### Project documentation
 
-The project documentation is similar to a formal project report.
+One of the purposes of the project documentation is to report progress and outcomes of our research, similar to a formal project report. In fact, it is our approach to generate the project report based on the project documentation.
 We, therefore, argue that ideally, the documentation should be reviewed by the Project Instructors (PIs).
 To avoid a “chicken or egg” problem, project maintainers (who are also the researches in the project) can review each other pull requests to bootstrap the initial documentation, e.g. about how code review is performed.
 
