@@ -59,5 +59,5 @@ This would allow the contributor to update the pull request with the requested c
 Ideally, a pull request with minor remarks could be merged in the same week it is created.
 
 We think it is important to limit the amount of time per week a maintainer has to invest in code reviews.
-This allows calculating man-hours required to maintain a software project and to plan to finance the maintenance.
+This allows the calculation of man-hours required to maintain a software project, and to plan funding of  maintenance work.
 If too many code reviews are requested at the same time, we propose to triage them first and give them a visible priority.
