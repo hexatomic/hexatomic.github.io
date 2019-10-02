@@ -6,7 +6,7 @@ We are using the tools of the GitHub platform for performing code reviews in pub
 Having a platform like GitHub allows us to discuss changes, make these discussions transparent to others, and also use the public discussions as an additional history
 of *how* and *why* the code has become part of Hexatomic.
 Having a central place for discussions is especially important for distributed teams, where team members might be split over several institutions and cannot meet regularly in the same room.
-GitHub was chosen as the general platform for hosting the code, issues, and documentation and GitHub code reviews are highly integrated into the platform.
+GitHub was chosen as the general platform for hosting the code, issues, and documentation, and GitHub code reviews are an integral part of the platform.
 While we are currently using GitHub code reviews for convenience, the same principles and standards for code review could be applied for other platforms/tools like [Gerrit](https://www.gerritcodereview.com/) or [git-appraise](https://github.com/google/git-appraise).
 
 ## Objectives
