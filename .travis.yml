@@ -1,4 +1,4 @@
-language: generic
+language: rust
 sudo: false
 
 before_script:
