@@ -16,7 +16,7 @@ An objective is, therefore, to *keep the effort for code review proportional* to
 
 Code reviews can request changes and it is important that this feedback loop is *not obstructing the development process*.
 It must be ensured that there is both enough time for the developer to address the requested changes and that these changes are reviewed quickly.
-Also, as longer a pull request is not processed, more conflicts to other developments can occur and features can not be deployed.
+Also, the longer a pull request is not processed, the more conflicts to other developments can occur, which may lead to features not being deployed in a timely manner.
 
 ## Responsibilities
 
