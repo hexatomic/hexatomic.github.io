@@ -3,7 +3,7 @@
 Code review is an essential part of our project: Code and documentation changes come in as pull requests, and all pull requests will undergo review.
 We are using the tools of the GitHub platform for performing code reviews in public and do not distinguish between
 "internal" contributions from core team members and "external" ones.
-Having a platform like GitHub allows to discuss code changes, make these discussions transparent to others and also serve as an additional history
+Having a platform like GitHub allows us to discuss changes, make these discussions transparent to others, and also use the public discussions as an additional history
 of *how* and *why* the code become part of Hexatomic.
 Having such a central place for discussions is especially important for teams where the team members might be split between several institutions and can't meet regularly in the same room.
 GitHub was chosen as the general platform for hosting the code, issues, and documentation and GitHub code reviews are highly integrated into the platform.
