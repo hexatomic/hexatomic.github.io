@@ -56,7 +56,7 @@ How much time and when these time slots depend on the work schedule of the actua
 The time slots should be documented in the `CONTRIBUTING.md` file to make them transparent to external contributors.
 An example would be to have two time slots of one hour each per maintainer, on two different days in the week, with one day in between the review slots.
 This would allow the contributor to update the pull request with the requested changes and still get a new review in the same week.
-Ideally, a pull request with minor remarks could be merged in the same week.
+Ideally, a pull request with minor remarks could be merged in the same week it is created.
 
 We think it is important to limit the amount of per-week time a maintainer has to invest in code reviews.
 This allows calculating man-hours required to maintain a software project and to plan to finance the maintenance.
