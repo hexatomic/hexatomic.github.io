@@ -39,7 +39,7 @@ If an update is still necessary, the maintainers can decide who should review it
 
 ### User, developer and maintainer documentation
 
-The maintainer should suggest a suitable person for a code review of documentation.
+The maintainer should suggest a suitable person for a review of changes to documentation.
 This can include other project members and PIs who are not developers but also external users.
 We argue that especially user documentation can benefit from a user perspective in the review process.
 This means that the documentation updates and the review interface must be usable for informed users.
