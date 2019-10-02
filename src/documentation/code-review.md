@@ -54,7 +54,7 @@ To find a balance between a quick code review feedback loop and a justifiable ov
 to have weekly dedicated time slots where the maintainers perform the code review.
 How much time and when these time slots depend on the work schedule of the actual maintainer.
 The time slots should be documented in the `CONTRIBUTING.md` file to make them transparent to external contributors.
-An example would be having two time slots of one hour per maintainer at two days in the week with a day in between.
+An example would be to have two time slots of one hour each per maintainer, on two different days in the week, with one day in between the review slots.
 This would allow the contributor to update the pull request with the requested changes and still get a new review in the same week.
 Ideally, a pull request with minor remarks could be merged in the same week.
 
