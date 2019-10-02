@@ -34,7 +34,7 @@ One of the purposes of the project documentation is to report progress and outco
 We therefore argue that ideally, the documentation should be reviewed by the principal investigators (PIs).
 To avoid a "chicken and egg" problem, project maintainers who are also the researches in the project. can review each other's pull requests to bootstrap the initial documentation, e.g., about how code review is performed.
 
-When the project is finished, the project documentation will probably not need any updates.
+Once the project is completed, the project documentation will probably not need any updates.
 If an update is still necessary, the maintainers can decide who should review it.
 
 ### User, developer and maintainer documentation
