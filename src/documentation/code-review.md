@@ -52,7 +52,7 @@ For changes to the actual Hexatomic software, a maintainer is responsible for co
 
 To find a balance between a quick code review feedback loop and a justifiable overhead for the maintainers, we propose
 to have weekly dedicated time slots where the maintainers perform the code review.
-How much time and when these time slots depend on the work schedule of the actual maintainer.
+How much time is allocated, and when exactly these time slots are, depends on the work schedule of the actual maintainer.
 The time slots should be documented in the `CONTRIBUTING.md` file to make them transparent to external contributors.
 An example would be to have two time slots of one hour each per maintainer, on two different days in the week, with one day in between the review slots.
 This would allow the contributor to update the pull request with the requested changes and still get a new review in the same week.
