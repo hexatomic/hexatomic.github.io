@@ -1,86 +1,84 @@
 <!DOCTYPE HTML>
 <html lang="en" class="sidebar-visible no-js">
-    <head>
-        <!-- Book generated using mdBook -->
-        <meta charset="UTF-8">
-        <title>Hexatomic - Hexatomic</title>
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
-        <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
-        <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
-        <!-- Custom theme stylesheets -->
-        
-        
-        
-        <!-- Matomo -->
-        <script type="text/javascript">
-        var _paq = _paq || [];
-        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-        _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-        _paq.push(["setDomains", ["*.hexatomic.github.io","*.hexatomic.github.io"]]);
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-        var u="//stats.sdruskat.net/";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
-        _paq.push(['setSiteId', '5']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-        })();
-        </script>
-        <noscript><p><img src="//stats.sdruskat.net/piwik.php?idsite=5&amp;rec=1" style="border:0;" alt="" /></p></noscript>
-        <!-- End Matomo Code -->
-    </head>
-    <body class="light">
-        <!-- Provide site root to javascript -->
-        <script type="text/javascript">var path_to_root = "";</script>
-        <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script type="text/javascript">
+<head>
+    <!-- Book generated using mdBook -->
+    <meta charset="UTF-8">
+    <title>The Hexatomic project - Hexatomic</title>
+    
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/chrome.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+    <!-- Highlight.js Stylesheets -->
+    <link rel="stylesheet" href="highlight.css">
+    <link rel="stylesheet" href="tomorrow-night.css">
+    <link rel="stylesheet" href="ayu-highlight.css">
+
+    <!-- Custom theme stylesheets -->
+    
+
+    
+</head>
+<body class="light">
+    <!-- Provide site root to javascript -->
+    <script type="text/javascript">
+        var path_to_root = "";
+        var default_theme = "light";
+    </script>
+
+    <!-- Work around some values being stored in localStorage wrapped in quotes -->
+    <script type="text/javascript">
         try {
-        var theme = localStorage.getItem('mdbook-theme');
-        var sidebar = localStorage.getItem('mdbook-sidebar');
-        if (theme.startsWith('"') && theme.endsWith('"')) {
-        localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
-        }
-        if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
-        localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
-        }
+            var theme = localStorage.getItem('mdbook-theme');
+            var sidebar = localStorage.getItem('mdbook-sidebar');
+
+            if (theme.startsWith('"') && theme.endsWith('"')) {
+                localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+            }
+
+            if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+            }
         } catch (e) { }
-        </script>
-        <!-- Set the theme before any content is loaded, prevents flash -->
-        <script type="text/javascript">
+    </script>
+
+    <!-- Set the theme before any content is loaded, prevents flash -->
+    <script type="text/javascript">
         var theme;
         try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
-        if (theme === null || theme === undefined) { theme = 'light'; }
+        if (theme === null || theme === undefined) { theme = default_theme; }
         document.body.className = theme;
         document.querySelector('html').className = theme + ' js';
-        </script>
-        <!-- Hide / unhide sidebar before it is displayed -->
-        <script type="text/javascript">
+    </script>
+
+    <!-- Hide / unhide sidebar before it is displayed -->
+    <script type="text/javascript">
         var html = document.querySelector('html');
         var sidebar = 'hidden';
         if (document.body.clientWidth >= 1080) {
-        try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
-        sidebar = sidebar || 'visible';
+            try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+            sidebar = sidebar || 'visible';
         }
         html.classList.remove('sidebar-visible');
         html.classList.add("sidebar-" + sidebar);
-        </script>
-        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <ol class="chapter"><li class="affix"><a href="index.html">Hexatomic</a></li><li class="affix"><a href="about.html">Project documentation</a></li><li class="spacer"></li><li class="affix"><a href="people.html">People</a></li></ol>
+    </script>
+
+    <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <div class="sidebar-scrollbox">
+            <ol class="chapter"><li class="affix"><a href="index.html" class="active">The Hexatomic project</a></li><li class="affix"><a href="about.html">About this project documentation</a></li><li class="spacer"></li><li><a href="documentation/index.html"><strong aria-hidden="true">1.</strong> Documentation</a></li><li><ol class="section"><li><a href="documentation/sustainability/index.html"><strong aria-hidden="true">1.1.</strong> Sustainability</a></li><li><a href="documentation/tooling/index.html"><strong aria-hidden="true">1.2.</strong> Tooling</a></li><li><ol class="section"><li><a href="documentation/tooling/evaluation.html"><strong aria-hidden="true">1.2.1.</strong> Evaluation and implementation</a></li><li class="spacer"></li></ol></li></ol></li><li><a href="people.html">People</a></li></ol>
             <!-- Customizations of the vanilla index.hbs follow below -->
             <ol class="chapter">
                 <li class="affix">
@@ -91,26 +89,31 @@
             <p><i class="fa fa-copyright"></i> 2018ff. <a href="https://github.com/orgs/hexatomic/teams/project/members" target="_blank">Hexatomic project team</a></p>
             <p><i class="fa fa-envelope"></i> hexatomic [at] corpus-tools.org</p>
             <p><i class="fa fa-github"></i> <a href="https://github.com/hexatomic" target="_blank">github.com/hexatomic</a></p>
+            <p style="color: lightgrey;"><i class="fa fa-floppy-o"></i> Hexatomic software documentation</p>
             <p><a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="_blank"><img src="https://img.shields.io/github/license/hexatomic/hexatomic.github.io.svg?style=flat-square"></a></p>
             <p><a href="https://github.com/rust-lang-nursery/mdBook" target="_blank"><img src="https://img.shields.io/badge/made%20with-mdBook-lightgrey.svg?style=flat-square"></a></p>
             <p><a href="https://github.com/hexatomic/hexatomic.github.io" target="_blank"><img src="https://img.shields.io/badge/open-source-violet.svg?logo=github&style=flat-square&logoColor=white"></a></a>
-            <p><a href="https://travis-ci.org/hexatomic/hexatomic.github.io" target="_blank"><img src="https://img.shields.io/travis/hexatomic/hexatomic.github.io.svg?style=flat-square&color=lightgrey"></a></p>
-            <!-- End of customizations of the vanilla index.hbs -->
+                <p><a href="https://travis-ci.org/hexatomic/hexatomic.github.io" target="_blank"><img src="https://img.shields.io/travis/hexatomic/hexatomic.github.io.svg?style=flat-square"></a></p>
+                <!-- End of customizations of the vanilla index.hbs -->
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
+
         <div id="page-wrapper" class="page-wrapper">
+
             <div class="page">
                 
                 <div id="menu-bar" class="menu-bar">
                     <div id="menu-bar-sticky-container">
                         <div class="left-buttons">
                             <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
-                            <i class="fa fa-bars"></i>
+                                <i class="fa fa-bars"></i>
                             </button>
                             <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
-                            <i class="fa fa-paint-brush"></i>
+                                <i class="fa fa-paint-brush"></i>
                             </button>
                             <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
                                 <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                                 <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                                 <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
@@ -118,18 +121,22 @@
                             </ul>
                             
                             <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
-                            <i class="fa fa-search"></i>
+                                <i class="fa fa-search"></i>
                             </button>
                             
                         </div>
+
                         <h1 class="menu-title">Hexatomic</h1>
+
                         <div class="right-buttons">
                             <a href="print.html" title="Print this book" aria-label="Print this book">
                                 <i id="print-button" class="fa fa-print"></i>
                             </a>
+                            
                         </div>
                     </div>
                 </div>
+
                 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
@@ -142,62 +149,90 @@
                     </div>
                 </div>
                 
+
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script type="text/javascript">
-                document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
-                document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
-                Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
-                link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
-                });
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
                 </script>
+
                 <div id="content" class="content">
                     <main>
-                        <a class="header" href="#hexatomic" id="hexatomic"><h1>Hexatomic</h1></a>
-<p><strong>&quot;A minimal infrastructure for the sustainable provision of extensible multi-layer
+                        <h1><a class="header" href="#the-hexatomic-project" id="the-hexatomic-project">The Hexatomic project</a></h1>
+<p><strong>&quot;A minimal infrastructure for the sustainable provision of extensible multi-layer 
 annotation software for linguistic corpora&quot; (Hexatomic)</strong> is a joint research project
 at Friedrich-Schiller-Universität Jena and Humboldt-Universität zu Berlin.</p>
 <p>It is funded under the call <a href="http://www.dfg.de/en/research_funding/programmes/infrastructure/lis/funding_opportunities/call_proposal_software/">&quot;Research Software Sustainability&quot;</a>
 issued by <a href="http://www.dfg.de/en/">Deutsche Forschungsgemeinschaft</a> under grant
-number GA 1288/11-1 and runs from October 2018 until September 2021.</p>
+number GA 1288/11-1 and runs from October 2018 until September 2021. </p>
 <p>The project aims to implement, test, and document <em>a minimal infrastructure for
 the sustainable development, provision, and maintenance of research software</em>.
 The <a href="./static/pdf/hexatomic_project_description_website.pdf">complete project proposal is available as a PDF</a>.</p>
 <p>This infrastructure will be used to provide the linguistic community with
 <em>software for deep multi-layer annotation of linguistic corpora</em>.</p>
-<p>The project is located at the
+<p>The project is located at the 
 <a href="https://www.iaa.uni-jena.de/en/">Department of English Studies</a> (Jena) and the
-<a href="https://www.linguistik.hu-berlin.de/en">Department for German Studies and Linguistics</a>
+<a href="https://www.linguistik.hu-berlin.de/en">Department for German Studies and Linguistics</a> 
 (Berlin).</p>
 <p><a href="https://www.uni-jena.de/en/start.html"><img src="fsu.png" alt="Logo of Friedrich-Schiller Universität Jena" /></a></p>
 <p><a href="https://www.hu-berlin.de/en?set_language=en"><img src="hu.png" alt="Logo of Humboldt-Universität zu Berlin" /></a></p>
+<blockquote>
+<p>The <strong>Hexatomic software documentation</strong> will be hosted at<br />
+<i class="fa fa-floppy-o"></i> <strong>https://hexatomic.github.io/hexatomic</strong>.</p>
+</blockquote>
 
                     </main>
+
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
+
                         
+                        <a rel="next" href="about.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                        
+
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
+
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
+
+                
+                <a href="about.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             </nav>
+
         </div>
+
         
+
         
+
         
+
         
         <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
         
+
         <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
         <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
         <!-- Custom JS scripts -->
         
+
         
+
     </body>
-</html>
+    </html>

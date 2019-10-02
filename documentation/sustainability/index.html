@@ -3,7 +3,7 @@
 <head>
     <!-- Book generated using mdBook -->
     <meta charset="UTF-8">
-    <title>About this project documentation - Hexatomic</title>
+    <title>Sustainability - Hexatomic</title>
     
 
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -11,21 +11,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ffffff" />
 
-    <link rel="shortcut icon" href="favicon.png">
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/chrome.css">
-    <link rel="stylesheet" href="css/print.css" media="print">
+    <link rel="shortcut icon" href="../../favicon.png">
+    <link rel="stylesheet" href="../../css/variables.css">
+    <link rel="stylesheet" href="../../css/general.css">
+    <link rel="stylesheet" href="../../css/chrome.css">
+    <link rel="stylesheet" href="../../css/print.css" media="print">
 
     <!-- Fonts -->
-    <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
 
     <!-- Highlight.js Stylesheets -->
-    <link rel="stylesheet" href="highlight.css">
-    <link rel="stylesheet" href="tomorrow-night.css">
-    <link rel="stylesheet" href="ayu-highlight.css">
+    <link rel="stylesheet" href="../../highlight.css">
+    <link rel="stylesheet" href="../../tomorrow-night.css">
+    <link rel="stylesheet" href="../../ayu-highlight.css">
 
     <!-- Custom theme stylesheets -->
     
@@ -35,7 +35,7 @@
 <body class="light">
     <!-- Provide site root to javascript -->
     <script type="text/javascript">
-        var path_to_root = "";
+        var path_to_root = "../../";
         var default_theme = "light";
     </script>
 
@@ -78,11 +78,11 @@
 
     <nav id="sidebar" class="sidebar" aria-label="Table of contents">
         <div class="sidebar-scrollbox">
-            <ol class="chapter"><li class="affix"><a href="index.html">The Hexatomic project</a></li><li class="affix"><a href="about.html" class="active">About this project documentation</a></li><li class="spacer"></li><li><a href="documentation/index.html"><strong aria-hidden="true">1.</strong> Documentation</a></li><li><ol class="section"><li><a href="documentation/sustainability/index.html"><strong aria-hidden="true">1.1.</strong> Sustainability</a></li><li><a href="documentation/tooling/index.html"><strong aria-hidden="true">1.2.</strong> Tooling</a></li><li><ol class="section"><li><a href="documentation/tooling/evaluation.html"><strong aria-hidden="true">1.2.1.</strong> Evaluation and implementation</a></li><li class="spacer"></li></ol></li></ol></li><li><a href="people.html">People</a></li></ol>
+            <ol class="chapter"><li class="affix"><a href="../../index.html">The Hexatomic project</a></li><li class="affix"><a href="../../about.html">About this project documentation</a></li><li class="spacer"></li><li><a href="../../documentation/index.html"><strong aria-hidden="true">1.</strong> Documentation</a></li><li><ol class="section"><li><a href="../../documentation/sustainability/index.html" class="active"><strong aria-hidden="true">1.1.</strong> Sustainability</a></li><li><a href="../../documentation/tooling/index.html"><strong aria-hidden="true">1.2.</strong> Tooling</a></li><li><ol class="section"><li><a href="../../documentation/tooling/evaluation.html"><strong aria-hidden="true">1.2.1.</strong> Evaluation and implementation</a></li><li class="spacer"></li></ol></li></ol></li><li><a href="../../people.html">People</a></li></ol>
             <!-- Customizations of the vanilla index.hbs follow below -->
             <ol class="chapter">
                 <li class="affix">
-                    <a href="/static/pdf/hexatomic_project_description_website.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Project proposal</a>
+                    <a href="../..//static/pdf/hexatomic_project_description_website.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Project proposal</a>
                 </li>
             </ol>
             <hr>
@@ -129,7 +129,7 @@
                         <h1 class="menu-title">Hexatomic</h1>
 
                         <div class="right-buttons">
-                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <a href="../../print.html" title="Print this book" aria-label="Print this book">
                                 <i id="print-button" class="fa fa-print"></i>
                             </a>
                             
@@ -161,53 +161,65 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#about-this-project-documentation" id="about-this-project-documentation">About this project documentation</a></h1>
-<p>Our project is funded as part of the call 
-<a href="http://www.dfg.de/en/research_funding/programmes/infrastructure/lis/funding_opportunities/call_proposal_software/">&quot;Research Software Sustainability&quot;</a>
-by <a href="http://www.dfg.de/en/">Deutsche Forschungsgemeinschaft (DFG)</a>.</p>
-<p>The call description read</p>
-<blockquote>
-<p>The objective of this call for proposals is the building and testing of 
-infrastructures in order to make research software available and provide it in 
-a sustainable manner to a larger audience. As best-practice examples, projects 
-should have a positive impact on research-software development and on 
-infrastructure facilities.</p>
-</blockquote>
-<p>To fulfill this requirement, we will establish a minimal infrastructure
-for the sustainable development and provision of research software, cf. also
-the original 
-<a href="./static/pdf/hexatomic_project_description_website.pdf">project proposal</a>.</p>
-<p>Not only will the resulting software, <strong>Hexatomic</strong>, have to be sustainable, 
-the infrastructure that is used to develop and provide it will need to as well.</p>
-<p>One of the explicit aims of the call is to provide &quot;best practice examples&quot; for
-future projects. In order to make the extraction of best practices from our
-project possible, it is necessary to document not only the actual software and
-infrastructure, but also the <em>processes through which decisions have been
-arrived at</em> in the course of the project. This concerns all levels of decisions,
-including software engineering decisions, infrastructural components, 
-architectural decisions, workflow decisions, tooling decisions, etc.</p>
-<p>The right place to document processes and decisions is the documentation of the
-project itself which is provided here. Among other things, the project 
-documentation will therefore serve as a decision log.</p>
-<p>The project documentation is a &quot;living document&quot;, i.e., it is constantly added
-to and changed, and may change in its structure. It does not refer to a specific 
-version of <strong>Hexatomic</strong>, and is not versioned like the user, developer and 
-maintainer documentation for the software. Instead, it is a place where the
-practices of our project are iteratively developed as a base for discussion and
-extraction of good practices in sustainable research software development.</p>
+                        <h1><a class="header" href="#documentation-sustainability" id="documentation-sustainability">Documentation sustainability</a></h1>
+<p>The sustainability of software documentation is directly related to the
+sustainability of the software it pertains to. Without documentation that is 
+<em>correct</em> and <em>complete</em><sup class="footnote-reference"><a href="#1">1</a></sup> at all times, a software cannot be expected to be
+usable at any point in the future. </p>
+<p>&quot;At all times&quot; here describes the <em>synchronic</em> aspect of documentation 
+sustainability. In practice, this is related to engineering, development and
+maintenance practices of a qualitative nature, as all involved parties must take
+care to keep documentation up-to-date, while only parts of this process may be
+easily automatable or measurable. Some methods for documenting source code in 
+situ, e.g., 
+<a href="https://en.wikipedia.org/wiki/Literate_programming">literate programming</a>, aid
+efforts to achieve synchronic sustainability, but they are not applicable in all
+projects, and usually additional documentation, e.g., for end users, must be
+created. Contribution and maintenance workflows can support the fulfillment of
+the completeness and correctness requirements by implementing methods such as
+code review, static code analysis, etc.</p>
+<p>There is also a <em>diachronic</em> aspect to documentation sustainability, which is of
+a more technical nature, and is equivalent to technical sustainability of 
+software. It pertains to the sustainability of the documentation <em>tooling</em>, and
+to the sustainability of the documentation artifacts, i.e., the documentation
+&quot;products&quot;, such as rendered files (PDF, HTML, etc.) and sources, but also to
+compatibility with rendering systems (e.g., browsers), and the availability and 
+findability of sources and artifacts.</p>
+<p>In the context of software projects, this yields the following concrete
+requirements:</p>
+<ol>
+<li>
+<p>Synchronic sustainability must be ensured by applying software engineering
+methods to the documentation workflow. This includes code and 
+documentation review, leveraging IDE support for in situ documentation of source 
+code, implementation of code styles such as naming conventions, <a href="https://githubengineering.com/runnable-documentation/">runnable 
+documentation</a>, etc.</p>
+</li>
+<li>
+<p>Diachronic sustainability must be ensured by choosing sustainable tooling,
+and implementing documentation sources and artifacts so that they remain
+findable, available, and accessible.</p>
+</li>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>It is important to note that <em>complete</em> may mean different things in
+different situations. Private/internal functions, e.g., private methods in Java,
+may not have to be documented, while public/external functions that may use them
+must be.</p>
+</div>
+</ol>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                        <a rel="prev" href="index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <a rel="prev" href="../../documentation/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                             <i class="fa fa-angle-left"></i>
                         </a>
                         
 
                         
-                        <a rel="next" href="documentation/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <a rel="next" href="../../documentation/tooling/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                             <i class="fa fa-angle-right"></i>
                         </a>
                         
@@ -219,13 +231,13 @@ extraction of good practices in sustainable research software development.</p>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                <a href="index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                <a href="../../documentation/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
 
                 
-                <a href="documentation/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                <a href="../../documentation/tooling/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -240,14 +252,14 @@ extraction of good practices in sustainable research software development.</p>
         
 
         
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
         
 
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
         
