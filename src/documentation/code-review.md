@@ -21,7 +21,7 @@ Also, the longer a pull request is not processed, the more conflicts to other de
 ## Responsibilities
 
 It must be clear who is responsible for performing code reviews, and these responsibilities have to be documented in the maintainer documentation.
-In research projects like Hexatomic, we propose that in general, the maintainer has this responsibility.
+In research projects like Hexatomic, we propose that this should be the general responsibility of the maintainer(s).
 They can delegate the code reviews to others if appropriate or necessary.
 E.g., if the maintainer is submitting a pull request by themselves, another person should responsible for code review.
 Delegating code reviews can be helpful to distribute the workload between several persons.
