@@ -1,11 +1,5 @@
-language: rust
+language: minimal
 sudo: false
-
-cache:
-  - cargo
-
-rust:
-  - stable
 
 before_script:
   # Retrieve and install latest mdbook version
