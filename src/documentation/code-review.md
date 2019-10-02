@@ -46,7 +46,7 @@ This means that informed users must be enabled to make updates in and add change
 
 ### Software code
 
-For changes to the actual Hexatomic software, a maintainer is responsible for code review.
+For changes to the actual Hexatomic software, a maintainer is responsible for code review. They may also enlist additional reviews from others.
 
 ## Review schedules
 
