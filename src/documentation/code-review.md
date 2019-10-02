@@ -50,7 +50,7 @@ For changes to the actual Hexatomic software, a maintainer is responsible for co
 
 ## Review schedules
 
-To find a balance between a quick code review feedback loop and a justifiable overhead for the maintainers, we propose
+To find the right balance between a quick code review feedback loop, and justifiable overhead for maintainers, we propose
 to have weekly dedicated time slots where the maintainers perform the code review.
 How much time is allocated, and when exactly these time slots are, depends on the work schedule of the actual maintainer.
 The time slots should be documented in the `CONTRIBUTING.md` file to make them transparent to external contributors.
