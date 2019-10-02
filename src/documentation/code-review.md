@@ -1,6 +1,6 @@
 # Code Review
 
-Code review is an essential part of our project and we decided that code and documentation changes in the form of a pull request are reviewed.
+Code review is an essential part of our project: Code and documentation changes come in as pull requests, and all pull requests will undergo review.
 We are using the tools of the GitHub platform for performing code reviews in the public and don't distinguish between
 “internal” contributions from core team members and “external” ones.
 Having a platform like GitHub allows to discuss code changes, make these discussions transparent to others and also serve as an additional history
