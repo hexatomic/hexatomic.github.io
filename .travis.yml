@@ -8,9 +8,12 @@ rust:
   - stable
 
 before_script:
-  - (test -x $HOME/.cargo/bin/cargo-install-update || cargo install cargo-update)
-  - (test -x $HOME/.cargo/bin/mdbook || cargo install --vers "^0.2.1" mdbook)
-  - cargo install-update -a
+  # Retrieve and install latest mdbook version
+  - export MDBOOK_VERSION='0.3.1' # Change to use newer version
+  - mkdir $HOME/.mdbook
+  - curl -L -o mdbook.tar.gz https://github.com/rust-lang-nursery/mdBook/releases/download/v$MDBOOK_VERSION/mdbook-v$MDBOOK_VERSION-x86_64-unknown-linux-gnu.tar.gz && tar -C $HOME/.mdbook -xzvf mdbook.tar.gz
+  - rm mdbook.tar.gz
+  - export PATH=$HOME/.mdbook/mdbook:$PATH
 
 script:
   - mdbook build && mdbook test
