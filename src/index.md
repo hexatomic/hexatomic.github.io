@@ -25,4 +25,4 @@ The project is located at the
 [![Logo of Humboldt-Universität zu Berlin](hu.png)](https://www.hu-berlin.de/en?set_language=en)
 
 > The **Hexatomic software documentation** is hosted at  
-<i class="fa fa-floppy-o"></i> [**hexatomic.github.io/hexatomic**](https://hexatomic.github.io/hexatomic).
+<i class="fa fa-book"></i> [**hexatomic.github.io/hexatomic**](https://hexatomic.github.io/hexatomic).
