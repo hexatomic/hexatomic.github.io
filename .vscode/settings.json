@@ -4,5 +4,10 @@
     ],
     "cSpell.enableFiletypes": [
         "markdown"
-    ]
+    ],
+    "ltex.disabledRules": {
+        "en-US": [
+            "THEMSELF"
+        ]
+    }
 }
