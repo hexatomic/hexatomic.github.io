@@ -28,7 +28,19 @@ We initially thought that student assistants might be able to fill the gap as se
 An alternative solution is to have RSE teams at an institution who can contribute as code reviewer on demand.
 This is essentially a professionalized and paid community of maintainers for a whole institution.
 Unfortunately, very few organizations do have such RSE teams as pool for reviewers yet.
-It is also also not an easy task to develop the permanent funding at each institution and as such this is not a short term solution.
+It is also not an easy task to develop the permanent funding at each institution and as such this is not a short term solution.
 If such a pool could be provided on a larger scale and on a volunteer base, for example as some kind of "Stack Overflow for open source research software code reviewers", this could enhance the situation for smaller projects.
 Still, some way of scheduling this resource is needed and it is not clear who should do the organization and funding of the platform itself.
+
+## Postponing the review with unreviewed code triages
+
+This idea is based on the current funding situation for smaller projects, especially in the humanities where it is only guaranteed to have one maintainer throughout the life-time of the software project and there is no institutional pool of reviewers.
+It is inspired by the "Weekly performance triage" of the Rust compiler,[^rust-triage] where regressions for new code in performance of the compiler is not measured and detected for each pull request, but triaged every week and the offending pull request is only identified when a regression has been found in any of the changes since last week.
+
+[^rust-triage]: See <https://blog.mozilla.org/nnethercote/2020/08/05/how-to-speed-up-the-rust-compiler-some-more-in-2020/> for a description of the process.
+
+For critical bug fixes that hinder the execution of the software (but not for new features or non-urgent bug fixes), the single maintainer can author the fix, add a regular pull request but decide not to request a code review.
+All required and also all optional checks of the continuous integration pipelines must execute successfully.
+This is especially true for static code analysis, where the goal should be to not introduce any new issue and to stay in the acceptable limits of metrics like test coverage percentage for new code or maximum line duplication.
+The maintainer than marks the pull request with a special label for unreviewed pull requests and merges it, producing a new hot fix release of the software.
 
