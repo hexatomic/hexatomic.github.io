@@ -15,7 +15,7 @@ picks up the changes from this branch, makes the build, and pushes the product
 to the 
 [`master` branch](https://github.com/hexatomic/hexatomic.github.io/tree/master), 
 from where it is automatically rendered on 
-[hexatomic.guithub.io](https://hexatomic.guithub.io) via the 
+[hexatomic.github.io](https://hexatomic.github.io) via the 
 [GitHub Pages](https://pages.github.com/) functionality. 
 
 GitHub Pages looks for a repository in
