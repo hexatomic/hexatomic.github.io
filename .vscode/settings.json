@@ -1,5 +1,8 @@
 {
     "cSpell.words": [
         "Hexatomic"
+    ],
+    "cSpell.enableFiletypes": [
+        "markdown"
     ]
 }
