@@ -49,9 +49,11 @@ A reviewer will start to look into a special triage log file in the repository t
 Next, all pull requests with the "unreviewed" label are merged into a branch of this last triaged commit.
 The changes are reviewed and if there are any issues found, they are added to the issue tracker of the project, so they can be resolved later.
 A report on the triage is added to the log file and the "unreviewed" label is removed from all triaged pull requests, so that the next reviewer can start from the latest commit at this point of time.
+The process itself is documented in our developer/maintainer documentation, so anyone can perform the triage.
 
 An advantage of this approach is, that these code audits can bundle several pull requests and if there is short-term funding for another developer or the possibility to contract an external company or freelancer to perform these audits, someone who did not write the code is reviewing it.
 But even if no external developer is reviewing these changes and the original maintainer performs them after some time, we expect that the maintainer is able to find issues in the code which where overlooked the first time when the code was still actively present in her or his mind.
+
 
 
 [^rust-triage]: See <https://blog.mozilla.org/nnethercote/2020/08/05/how-to-speed-up-the-rust-compiler-some-more-in-2020/> for a description of the process.
