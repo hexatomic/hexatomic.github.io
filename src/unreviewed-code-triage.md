@@ -37,10 +37,21 @@ Still, some way of scheduling this resource is needed and it is not clear who sh
 This idea is based on the current funding situation for smaller projects, especially in the humanities where it is only guaranteed to have one maintainer throughout the life-time of the software project and there is no institutional pool of reviewers.
 It is inspired by the "Weekly performance triage" of the Rust compiler,[^rust-triage] where regressions for new code in performance of the compiler is not measured and detected for each pull request, but triaged every week and the offending pull request is only identified when a regression has been found in any of the changes since last week.
 
-[^rust-triage]: See <https://blog.mozilla.org/nnethercote/2020/08/05/how-to-speed-up-the-rust-compiler-some-more-in-2020/> for a description of the process.
-
 For critical bug fixes that hinder the execution of the software (but not for new features or non-urgent bug fixes), the single maintainer can author the fix, add a regular pull request but decide not to request a code review.
 All required and also all optional checks of the continuous integration pipelines must execute successfully.
-This is especially true for static code analysis, where the goal should be to not introduce any new issue and to stay in the acceptable limits of metrics like test coverage percentage for new code or maximum line duplication.
+Beside the obvious successful test execution, this is especially true for static code analysis, where the goal should be to not introduce any new issue and to stay in the acceptable limits of metrics like test coverage percentage for new code or maximum line duplication.
+Having an advanced static code analysis in the continuous integration pipeline is a must for this approach.
 The maintainer than marks the pull request with a special label for unreviewed pull requests and merges it, producing a new hot fix release of the software.
 
+To ensure that all fixes are still reviewed at some point in the future, the project should introduce periodic reviews of previously unreviewed changes.
+In Hexatomic, we use a quarterly approach.
+A reviewer will start to look into a special triage log file in the repository to determine which source revision was triaged last.
+Next, all pull requests with the "unreviewed" label are merged into a branch of this last triaged commit.
+The changes are reviewed and if there are any issues found, they are added to the issue tracker of the project, so they can be resolved later.
+A report on the triage is added to the log file and the "unreviewed" label is removed from all triaged pull requests, so that the next reviewer can start from the latest commit at this point of time.
+
+An advantage of this approach is, that these code audits can bundle several pull requests and if there is short-term funding for another developer or the possibility to contract an external company or freelancer to perform these audits, someone who did not write the code is reviewing it.
+But even if no external developer is reviewing these changes and the original maintainer performs them after some time, we expect that the maintainer is able to find issues in the code which where overlooked the first time when the code was still actively present in her or his mind.
+
+
+[^rust-triage]: See <https://blog.mozilla.org/nnethercote/2020/08/05/how-to-speed-up-the-rust-compiler-some-more-in-2020/> for a description of the process.
