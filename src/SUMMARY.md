@@ -9,7 +9,11 @@
 	- [Sustainability](./documentation/sustainability/index.md)
 	- [Tooling](./documentation/tooling/index.md)
 		- [Evaluation and implementation](./documentation/tooling/evaluation.md)
-- [Code Review](./code-review.md) 
+- [Code Review](./code-review.md)
+- [Architecture](./architecture.md)
+    - [Extensibility](./architecture/extensibility.md)
+        - [Natural Language Processing libraries](./architecture/extensibility/nlp.md)
+ 
 
 
 ---
