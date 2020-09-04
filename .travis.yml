@@ -3,7 +3,7 @@ sudo: false
 
 before_script:
   # Retrieve and install latest mdbook version
-  - misc/download-mdbook.sh 0.3.5
+  - misc/download-mdbook.sh 0.4.2
   - export PATH=$HOME/.mdbook:$PATH
 
 script:
