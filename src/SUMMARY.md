@@ -1,18 +1,18 @@
 # Summary
 
-[The Hexatomic project](./index.md)
+[The Hexatomic project](./README.md)
 [About this project documentation](./about.md)
 
 ---
 
-- [Documentation](./documentation/index.md)
-	- [Sustainability](./documentation/sustainability/index.md)
-	- [Tooling](./documentation/tooling/index.md)
+- [Documentation](./documentation/README.md)
+	- [Sustainability](./documentation/sustainability/README.md)
+	- [Tooling](./documentation/tooling/README.md)
 		- [Evaluation and implementation](./documentation/tooling/evaluation.md)
 - [Code Review](./code-review.md)
-- [Architecture](./architecture.md)
-    - [Extensibility](./architecture/extensibility.md)
-        - [Natural Language Processing libraries](./architecture/extensibility/nlp.md)
+- [Architecture](./architecture/README.md)
+    - [Extensibility](./architecture/extensibility/README.md)
+        - [Natural Language Processing libraries](./architecture/extensibility/nlp-survey.md)
  
 
 
