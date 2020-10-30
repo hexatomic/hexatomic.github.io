@@ -1,5 +1,4 @@
 language: rust
-sudo: false
 
 before_script:
   # Retrieve and install latest mdbook version
@@ -11,7 +10,7 @@ script:
 
 deploy:
   provider: pages
-  skip-cleanup: true
+  cleanup: false
   github-token: $GITHUB_TOKEN
   local-dir: book
   keep-history: true
