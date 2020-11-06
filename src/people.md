@@ -6,3 +6,4 @@
 |      Principal Investigator (Humboldt-Universität zu Berlin) | [Anke Lüdeling](https://www.linguistik.hu-berlin.de/de/institut/professuren/korpuslinguistik/mitarbeiter-innen/anke)   |
 |             Researcher (Friedrich-Schiller-Universität Jena) | [Stephan Druskat](https://sdruskat.net)                                                                                |
 |                  Researcher (Humboldt-Universität zu Berlin) | [Thomas Krause](https://www.linguistik.hu-berlin.de/de/institut/professuren/korpuslinguistik/mitarbeiter-innen/thomas) |
+| Research Assistent (Friedrich-Schiller-Universität Jena) | Clara Lachenmaier |
