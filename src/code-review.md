@@ -32,7 +32,7 @@ In Hexatomic we have three areas where contributions require code review.
 
 One of the purposes of the project documentation is to report progress and outcomes of our research, similar to a formal project report. In fact, it is our approach to generate the project report based on the project documentation.
 We therefore argue that ideally, the documentation should be reviewed by the principal investigators (PIs).
-To avoid a "chicken and egg" problem, project maintainers who are also the researches in the project. can review each other's pull requests to bootstrap the initial documentation, e.g., about how code review is performed.
+To avoid a "chicken and egg" problem, project maintainers who are also the researchers in the project can review each other's pull requests to bootstrap the initial documentation, e.g., about how code review is performed.
 
 Once the project is completed, the project documentation will probably not need any updates.
 If an update is still necessary, the maintainers can decide who should review it.
