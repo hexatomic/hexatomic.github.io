@@ -28,7 +28,7 @@ We initially thought that student assistants may be able to fill the gap as seco
 An alternative solution is to have Research Software Engineering (*RSE*) teams at an institution, who can contribute as code reviewer-on-demand.
 These RSE groups are essentially professionalized and paid communities of maintainers for a whole institution.
 Unfortunately, very few organizations do have such RSE teams as pool for reviewers yet.
-It is also not an easy task to develop the permanent funding at each institution that is neede for the establishment of an RSE group, and as such RSE groups do therefore not provide a short term solution.
+It is also not an easy task to develop the permanent funding at each institution that is needed for the establishment of an RSE group, and as such RSE groups do therefore not provide a short term solution.
 If a pool of code reviewers could be provided on a larger scale and on a volunteer basis, for example as some kind of "Stack Overflow for open source research software code reviewers", this could enhance the situation for smaller projects.
 Still, some way of scheduling this resource is needed, and it is not clear who should do the organization and funding of the platform itself.
 
