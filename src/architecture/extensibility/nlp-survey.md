@@ -79,6 +79,34 @@ The results of the survey are below.
 <!-- additional features: Language Detector, NER, Document Categorizer, Lemmatization, Chunking, Coreference Resolution-->
 
 
+### [SpaCy](<https://www.nltk.org/>)
+
+1. [ ] Implemented in Java
+   1. [ ] Not Java, but API can be addressed from Java
+      - Can be addressed as follows: n/a <or add brief description of how to address the API>
+2. [ ] Uses Maven (`pom.xml` exists)
+3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
+4. [ ] Is available from a p2 repository: n/a
+
+#### Feature matrix
+
+<div style="font-size:.8rem;">
+
+|                           | Has functionality        | Functionality extensible | Functionality documentation | Extension documentation      | Input data                           | Output data |
+|---------------------------|--------------------------|--------------------------|-----------------------------|------------------------------|--------------------------------------|-------------|
+| Tokenization/segmentation | X | X | <https://spacy.io/usage/linguistic-features#native-tokenizers> | -<https://spacy.io/usage/linguistic-features#special-cases> </br> -<https://spacy.io/usage/linguistic-features#native-tokenizers> | raw document text | SpaCy's `Doc` type |
+| Sentencing                | X | X | <https://spacy.io/usage/linguistic-features#sbd> | <https://spacy.io/usage/linguistic-features#sbd-custom> | SpaCy's `Doc` type | SpaCy's `Doc` type |
+| POS-tagging               | X |  | <https://spacy.io/usage/linguistic-features#pos-tagging> | | Spacy's `Doc` type                        |Spacy's `Doc` type |
+| Constituency parsing      | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              | <!--Spacy's `Doc` type--> | <!--Spacy's `Doc` type--> |
+| Dependency parsing | X | | <https://spacy.io/usage/linguistic-features#dependency-parse> |                              | Spacy's `Doc` type | Spacy's `Doc` type |
+| Trainable models          | X | <!-- X or leave empty--> | <https://spacy.io/usage/models>          |                              |                                      |             |
+| Can consume own models    | X | <!-- X or leave empty--> | <https://spacy.io/usage/training> |                              |                                      |             |
+
+
+</div>
+
+
+
 <!-- end of template -->
 
 [^1]: The survey was carried out by Clara Lachenmaier.
