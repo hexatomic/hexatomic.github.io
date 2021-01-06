@@ -52,6 +52,33 @@ The results of the survey are below.
 </div>
 
 ---
+
+### [Apache OpenNLP](<https://opennlp.apache.org/>)
+
+1. [x] Implemented in Java
+   1. [ ] Not Java, but API can be addressed from Java
+      - Can be addressed as follows: n/a <or add brief description of how to address the API>
+2. [x] Uses Maven (`pom.xml` exists)
+3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)<!-- Not sure about that. MANIFEST.MF doesn't exist but there is this: https://opennlp.apache.org/docs/1.8.3/apidocs/opennlp-tools/opennlp/tools/util/ext/OSGiExtensionLoader.html-->
+4. [ ] Is available from a p2 repository: n/a
+#### Feature matrix
+
+<div style="font-size:.8rem;">
+
+|                           | Has functionality          | Functionality extensible   | Functionality documentation | Extension documentation      | Input data                           | Output data |
+|---------------------------|:--------------------------:|:--------------------------:|-----------------------------|------------------------------|--------------------------------------|-------------|
+| Tokenization/segmentation | X                          | X                          | <https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.tokenizer.api> |<https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.extension.writing>                                                                                                  | string of (untokenized) text |-array of strings</br> -array of token spans|
+| Sentencing                | X                          | X                          |<https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.sentdetect.detection.api>| <https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.extension.writing>                                                                          | string of document text | -array of strings</br> -array of sentence spans|
+| POS-tagging               | X                          | X                          | <https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.postagger.tagging.api>                   | <https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.extension.writing>                                                                  | string array of tokens               | string array of tags |
+| Constituency parsing      | X                          | X                          | <https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.parser.parsing.api> | <https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.extension.writing> | String of whitespace tokenized Sentence | array of OpenNLP's Parse Type |
+| Dependency parsing        |                            |                            |                             |                               |                                     |            |
+| Trainable models          | X                          | X                          | <http://opennlp.sourceforge.net/models-1.5/> | <https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.extension.writing>              |                                      |             |
+| Can consume own models    | X                          | X                          | - <https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.postagger.training.api> </br> -<https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.sentdetect.training.api> </br> -<https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.tokenizer.training.api> </br> -<https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.parser.training.api> | <https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.extension.writing> |             |
+
+</div>
+<!-- additional features: Language Detector, NER, Document Categorizer, Lemmatization, Chunking, Coreference Resolution-->
+
+
 <!-- end of template -->
 
-[^1]: The survey was carried out by Prashant Dangwal.
+[^1]: The survey was carried out by Clara Lachenmaier.
