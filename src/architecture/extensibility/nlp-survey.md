@@ -79,6 +79,33 @@ The results of the survey are below.
 <!-- additional features: Language Detector, NER, Document Categorizer, Lemmatization, Chunking, Coreference Resolution-->
 
 
+### [CoreNLP](<https://stanfordnlp.github.io/CoreNLP/>)
+
+1. [X] Implemented in Java
+   1. [ ] Not Java, but API can be addressed from Java
+      - Can be addressed as follows: n/a <or add brief description of how to address the API>
+2. [X] Uses Maven (`pom.xml` exists)
+3. [X] Is available as OSGi bundle (has `MANIFEST.MF`)
+4. [ ] Is available from a p2 repository: n/a <!--<https://mvnrepository.com/artifact/edu.stanford.nlp/stanford-corenlp>-->
+
+#### Feature matrix
+
+<div style="font-size:.8rem;">
+
+|                           | Has functionality        | Functionality extensible | Functionality documentation | Extension documentation      | Input data                           | Output data |
+|---------------------------|--------------------------|--------------------------|-----------------------------|------------------------------|--------------------------------------|-------------|
+| Tokenization/segmentation | X                        | X                        | <https://stanfordnlp.github.io/CoreNLP/tokenize.html> | <https://stanfordnlp.github.io/CoreNLP/faq.html#can-you-say-more-about-adding-a-custom-annotator>   | -string of document text </br> -CoreNLPs `CoreDocument` (Instatiated with string document text) | -list of strings </br> -list of characteroffsetbegin indices </br> -list of characteroffsetendindices </br> `CoreDocument` with previous annotation properties |
+| Sentencing                | X                        | X                        | <https://stanfordnlp.github.io/CoreNLP/ssplit.html> | <https://stanfordnlp.github.io/CoreNLP/faq.html#can-you-say-more-about-adding-a-custom-annotator> | tokenized `CoreDocument` | `CoreDocument` with Sentence List of POS-Tags as property |
+| POS-tagging               | X                        | X                        | <https://stanfordnlp.github.io/CoreNLP/pos.html> | <https://stanfordnlp.github.io/CoreNLP/faq.html#can-you-say-more-about-adding-a-custom-annotator> | tokenized and sentence-splitted `CoreDocument` | `CoreDocument` with String List of POS-Tags as property |
+| Constituency parsing      | X                        | X                        | <https://stanfordnlp.github.io/CoreNLP/parse.html>  | <https://stanfordnlp.github.io/CoreNLP/faq.html#can-you-say-more-about-adding-a-custom-annotator> | tokenized, sentence-splitted (and for some models POS-tagged) `CoreDocument` | `CoreDocument` with TreeAnnotation (exact form depends on chosen parser) |
+| Dependency parsing        | X                        | X                        |<https://stanfordnlp.github.io/CoreNLP/depparse.html> | <https://stanfordnlp.github.io/CoreNLP/faq.html#can-you-say-more-about-adding-a-custom-annotator> | tokenized, sentence-splitted and POS-tagged `CoreDocument` | `CoreDocument` with DependencyAnnotation (exact form depends on chosen parser)            |
+| Trainable models          | X                        |                          | <https://stanfordnlp.github.io/CoreNLP/human-languages.html#models> | |                                |             |
+| Can consume own models    | X                        | <!-- X or leave empty--> | <https://stanfordnlp.github.io/CoreNLP/caseless.html#training-caseless-models>                   |                           |                                      |             |
+
+
+</div>
+
+
 ### [SpaCy](<https://www.nltk.org/>)
 
 1. [ ] Implemented in Java
