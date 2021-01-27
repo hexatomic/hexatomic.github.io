@@ -106,6 +106,34 @@ The results of the survey are below.
 </div>
 
 
+### [Lingpipe](<http://www.alias-i.com/lingpipe/>)
+
+1. [X] Implemented in Java
+   1. [ ] Not Java, but API can be addressed from Java
+      - Can be addressed as follows: n/a <or add brief description of how to address the API>
+2. [?] Uses Maven (`pom.xml` exists) <!-- Couldn't find pom.xml but https://mvnrepository.com/artifact/com.aliasi/lingpipe/4.0.1-->
+3. [X] Is available as OSGi bundle (has `MANIFEST.MF`)
+4. [?] Is available from a p2 repository: ? 
+
+#### Feature matrix
+
+<div style="font-size:.8rem;">
+
+|                           | Has functionality        | Functionality extensible | Functionality documentation | Extension documentation      | Input data                           | Output data |
+|---------------------------|--------------------------|--------------------------|-----------------------------|------------------------------|--------------------------------------|-------------|
+| Tokenization/segmentation | X | <!-- X or leave empty--> | <http://www.alias-i.com/lingpipe-book/lingpipe-book-0.5.pdf> Chapter 3 (p.33) </br> <http://www.alias-i.com/lingpipe/docs/api/com/aliasi/tokenizer/Tokenizer.html> </br> -<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/tokenizer/Tokenization.html> |  | -String of text </br> -Character array, Startindex, Endindex |             |
+| Sentencing                | X | <!-- X or leave empty--> | <http://www.alias-i.com/lingpipe/demos/tutorial/sentences/read-me.html>                   |                              |                                      |             |
+| POS-tagging               | X | <!-- X or leave empty--> | <http://www.alias-i.com/lingpipe/demos/tutorial/posTags/read-me.html> |                              |                                      |             |
+| Constituency parsing      | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
+| Dependency parsing        | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
+| Trainable models          | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
+| Can consume own models    | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
+
+
+</div>
+
+<!-- additional features: Topic Classification, Stemming, Lemmatization ,NER, Clustering, Spelling Correction, String Comparison, Interesting Phrase Detection, Hyphenation and Syllabification, Sentiment Analysis, Language Identification, Word Sense Disambiguation-->
+
 ### [SpaCy](<https://www.nltk.org/>)
 
 1. [ ] Implemented in Java
