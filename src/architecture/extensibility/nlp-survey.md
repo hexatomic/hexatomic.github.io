@@ -214,7 +214,7 @@ The results of the survey are below.
 
 <!-- additional features: Topic Classification, Stemming, Lemmatization ,NER, Clustering, Spelling Correction, String Comparison, Interesting Phrase Detection, Hyphenation and Syllabification, Sentiment Analysis, Language Identification, Word Sense Disambiguation-->
 
-### [SpaCy](<https://www.nltk.org/>)
+### [SpaCy](<https://spacy.io/>)
 
 1. [ ] Implemented in Java
    1. [ ] Not Java, but API can be addressed from Java
@@ -227,15 +227,16 @@ The results of the survey are below.
 
 <div style="font-size:.8rem;">
 
-|                           | Has functionality        | Functionality extensible | Functionality documentation | Extension documentation      | Input data                           | Output data |
-|---------------------------|--------------------------|--------------------------|-----------------------------|------------------------------|--------------------------------------|-------------|
-| Tokenization/segmentation | X | X | <https://spacy.io/usage/linguistic-features#native-tokenizers> | -<https://spacy.io/usage/linguistic-features#special-cases> </br> -<https://spacy.io/usage/linguistic-features#native-tokenizers> | raw document text | SpaCy's `Doc` type |
-| Sentencing                | X | X | <https://spacy.io/usage/linguistic-features#sbd> | <https://spacy.io/usage/linguistic-features#sbd-custom> | SpaCy's `Doc` type | SpaCy's `Doc` type |
-| POS-tagging               | X |  | <https://spacy.io/usage/linguistic-features#pos-tagging> | | Spacy's `Doc` type                        |Spacy's `Doc` type |
-| Constituency parsing      | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              | <!--Spacy's `Doc` type--> | <!--Spacy's `Doc` type--> |
-| Dependency parsing | X | | <https://spacy.io/usage/linguistic-features#dependency-parse> |                              | Spacy's `Doc` type | Spacy's `Doc` type |
-| Trainable models          | X | <!-- X or leave empty--> | <https://spacy.io/usage/models>          |                              |                                      |             |
-| Can consume own models    | X | <!-- X or leave empty--> | <https://spacy.io/usage/training> |                              |                                      |             |
+|                           | Has functionality | Multiple Options   | Functionality documentation | Is Trainable| Training documentation      | Input data                           | Output data |
+|---------------------------|:--------------------------:|--------------------------|-----------------------------|:----------:|--------------------------------------|-------------|-------------|
+| Tokenization/segmentation | X |  | [Tokenizer Documentaion](<https://spacy.io/usage/linguistic-features#native-tokenizers> )|  | |raw document text | SpaCy's `Doc` type - tokens accessible through `token.text` property |
+| Sentencing                | X |  | [Sentencizer Documentation](<https://spacy.io/usage/linguistic-features#sbd>) | | | SpaCy's `Doc` type | SpaCy's `Doc` type - sentence access through `doc.sents` property |
+| POS-tagging               | X |  | [POS-Tagger Documentation](<https://spacy.io/usage/linguistic-features#pos-tagging>) |X | [Training Basics](<https://spacy.io/usage/training>)</br> [Updating POS-Tagger](<https://spacy.io/usage/training#example-train-tagger>) | Spacy's `Doc` type                        |Spacy's `Doc` type - POS-Tags access through`token.pos_` attribute|
+| Constituency parsing      |  | | | | | | |
+| Dependency parsing | X | | [Parser Documentation](<https://spacy.io/usage/linguistic-features#dependency-parse>) |     X| [Training Basics](<https://spacy.io/usage/training>)</br>[Updating Dependencs Parser](<https://spacy.io/usage/training#example-train-parser>) | Spacy's `Doc` type | Spacy's `Doc` type - Parse-tags access through `token.dep_` attribute  |
+| Functionalities extensible | X |  | [Extend Tokenizer](<https://spacy.io/usage/linguistic-features#special-cases>)</br> [Customize Tokenizer](<https://spacy.io/usage/linguistic-features#native-tokenizers>) </br> [Custom Component](<https://spacy.io/usage/processing-pipelines#custom-components>)         |                              |                                      |             |
+| Can consume own models    | (X) |  | [Load different Tokenizer](<https://spacy.io/usage/linguistic-features#custom-tokenizer>)
+ |                              |                                      |             |
 
 
 </div>
