@@ -105,6 +105,32 @@ The results of the survey are below.
 
 </div>
 
+### [Pattern](<https://github.com/clips/pattern>)
+
+1. [ ] Implemented in Java
+   1. [ ] Not Java, but API can be addressed from Java
+      - Can be addressed as follows: n/a <or add brief description of how to address the API>
+2. [ ] Uses Maven (`pom.xml` exists)
+3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
+4. [ ] Is available from a p2 repository: ?
+
+#### Feature matrix
+
+<div style="font-size:.8rem;">
+
+|                           | Has functionality | Multiple Options   | Functionality documentation | Is Trainable| Training documentation      | Input data                           | Output data |
+|---------------------------|:--------------------------:|--------------------------|-----------------------------|:----------:|--------------------------------------|-------------|-------------|
+| Tokenization/segmentation | X |  |[General documentation](<https://github.com/clips/pattern/wiki>)  |  | | String of text | nested list : [sentences[chunks[tokens]]]  |
+| Sentencing                | X |  | [General documentation](<https://github.com/clips/pattern/wiki>)| |  | String of text | nested list : [sentences[chunks[tokens]]] |                                     |             |
+| POS-tagging  | X |  | [General documentation](<https://github.com/clips/pattern/wiki>) |  |   | String of text | nested list : [sentences[chunks[tokens]]] |
+| Constituency parsing      |  |  |   |  |   |                   |             |
+| Dependency parsing        |  | | | |        |    |                                               |
+| Functionalities extensible | |  |  |       |                              |             |
+| Can consume own models    |  |  |  |    |                     |                 |             |
+
+
+</div>
+
 
 ### [Lingpipe](<http://www.alias-i.com/lingpipe/>)
 
@@ -160,6 +186,33 @@ The results of the survey are below.
 
 </div>
 
+### [Spark NLP](<https://nlp.johnsnowlabs.com/>)
+
+1. [ ] Implemented in Java
+   1. [ ] Not Java, but API can be addressed from Java
+      - Can be addressed as follows: [Using Spark NLP via Scala and Maven](<https://nlp.johnsnowlabs.com/docs/en/install#scala-and-java>)
+2. [X] Uses Maven (`pom.xml` exists)
+3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
+4. [ ] Is available from a p2 repository: ? https://mvnrepository.com/artifact/JohnSnowLabs/spark-nlp
+
+#### Feature matrix
+
+<div style="font-size:.8rem;">
+
+|                           | Has functionality | Multiple Options   | Functionality documentation | Is Trainable| Training documentation      | Input data                           | Output data |
+|---------------------------|:--------------------------:|--------------------------|-----------------------------|:----------:|--------------------------------------|-------------|-------------|
+| Tokenization/segmentation | X | [^2]  | [Tokenizer Documentation](<https://nlp.johnsnowlabs.com/docs/en/annotators#tokenizer>) |  |  | Document | Token |
+| Sentencing                | X | [^2] | [Sentence Detector Documentation](<https://nlp.johnsnowlabs.com/docs/en/annotators#sentencedetector>) |   |  |  Document | Sentences |
+| POS-tagging               | X | [^2] | [POS-Tagger Documentation](<https://nlp.johnsnowlabs.com/docs/en/annotators#postagger-part-of-speech-tagger>) |  X | [POS Training Documentation](<https://nlp.johnsnowlabs.com/docs/en/training#pos-dataset>) </br> [General Training Documentation](<https://nlp.johnsnowlabs.com/docs/en/concepts#training-annotators>)| Document, Token | POS |
+| Constituency parsing      |  |  |  |  |  |   |  |
+| Dependency parsing        | X | -[Typed Dependency Parser](<https://nlp.johnsnowlabs.com/docs/en/annotators#typed-dependency-parser-labeled-grammatical-relation>)</br>[Untyped Dependency Parser](<https://nlp.johnsnowlabs.com/docs/en/annotators#untyped-dependency-parser-unlabeled-grammatical-relation>) | [Dependency Parser Documentation](<https://nlp.johnsnowlabs.com/docs/en/annotators#dependency-parsers>)| X | [General Training Documentation](<https://nlp.johnsnowlabs.com/docs/en/concepts#training-annotators>)  | Document,POS,Token | (unlabeled) Dependeny |
+| Functionalities extensible  | X | | [Manipulating Pipelines](<https://nlp.johnsnowlabs.com/docs/en/concepts#manipulating-pipelines>) |   |   |      |       |
+| Can consume own models    | X  |  | [General Concept Documentation](<https://nlp.johnsnowlabs.com/docs/en/concepts>)   |  |     |   |  |
+
+
+</div>
+
+[^2]:Spark NLP provides a [library of pretrained Pipelines](<https://nlp.johnsnowlabs.com/docs/en/pipelines>) and a [library of models](<https://nlp.johnsnowlabs.com/models>). This survey however refers to the general Annotators.
 
 
 <!-- end of template -->
