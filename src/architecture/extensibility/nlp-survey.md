@@ -131,7 +131,31 @@ The results of the survey are below.
 
 </div>
 
+### [NLP4J](<https://emorynlp.github.io/nlp4j/>)
 
+1. [x] Implemented in Java
+   1. [ ] Not Java, but API can be addressed from Java
+      - Can be addressed as follows: n/a <or add brief description of how to address the API>
+2. [X] Uses Maven (`pom.xml` exists)
+3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
+4. [ ] Is available from a p2 repository:
+
+#### Feature matrix
+
+<div style="font-size:.8rem;">
+
+|                           | Has functionality | Multiple Options   | Functionality documentation | Is Trainable| Training documentation      | Input data                           | Output data |
+|---------------------------|:--------------------------:|--------------------------|-----------------------------|:----------:|--------------------------------------|-------------|-------------|
+| Tokenization/segmentation | X  | | [Tokenizer basic information](<https://emorynlp.github.io/nlp4j/components/tokenization.html>)</br>[Tokenizer Demo](<https://github.com/emorynlp/nlp4j/blob/master/api/src/test/java/edu/emory/mathcs/nlp/component/tokenizer/TokenizerDemo.java>) | X | [Basic Training information](<https://emorynlp.github.io/nlp4j/quickstart/train.html>) | -string line of text </br> -Raw document text </br> tsv-format | List of Token types |
+| Sentencing | | | | | | | |
+| POS-tagging               | X |  | [POS-Tag basic information](<https://emorynlp.github.io/nlp4j/components/part-of-speech-tagging.html>) | X | [Basic Training information](<https://emorynlp.github.io/nlp4j/quickstart/train.html>) | -string line of text </br> -Raw document text </br> tsv-format | Output-file with annotations|
+| Constituency parsing      |  |  |  |  |  |  |  |
+| Dependency parsing        | X  |  | [Dependency Parse basic information](<https://emorynlp.github.io/nlp4j/components/dependency-parsing.html>)                   | X | [Basic Training information](<https://emorynlp.github.io/nlp4j/quickstart/train.html>) | -string line of text </br> -Raw document text </br> tsv-format | Output-file with annotations |
+| Functionalities extensible |  |  |  |  |  |  |  |
+| Can consume own models    |  |  |  |  |  |  |  |
+
+
+</div>
 
 ### [Pattern](<https://github.com/clips/pattern>)
 
