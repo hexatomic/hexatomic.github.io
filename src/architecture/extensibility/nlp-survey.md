@@ -243,6 +243,34 @@ The results of the survey are below.
 [^2]:Spark NLP provides a [library of pretrained Pipelines](<https://nlp.johnsnowlabs.com/docs/en/pipelines>) and a [library of models](<https://nlp.johnsnowlabs.com/models>). This survey however refers to the general Annotators.
 
 
+### [TextBlob](<https://textblob.readthedocs.io/en/dev/>)
+
+1. [ ] Implemented in Java
+   1. [ ] Not Java, but API can be addressed from Java
+      - Can be addressed as follows: n/a <or add brief description of how to address the API>
+2. [ ] Uses Maven (`pom.xml` exists)
+3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
+4. [ ] Is available from a p2 repository:
+
+#### Feature matrix
+
+<div style="font-size:.8rem;">
+
+|                           | Has functionality | Multiple Options   | Functionality documentation | Is Trainable| Training documentation      | Input data                           | Output data |
+|---------------------------|:--------------------------:|--------------------------|-----------------------------|:----------:|--------------------------------------|-------------|-------------|
+| Tokenization/segmentation | X | | [Tokenization Tutorial](<https://textblob.readthedocs.io/en/dev/quickstart.html#tokenization>)</br>[Advanced Tokenization Documentation](<https://textblob.readthedocs.io/en/dev/advanced_usage.html#tokenizers>) | | | String of raw text | `TextBlob` data type - access through `words` property: WordList of word strings |
+| Sentencing                | X |  | [Sentence-Splitting Tutorial](<https://textblob.readthedocs.io/en/dev/quickstart.html#tokenization>)</br>[Advanced Sentence-Splitting Documentation](<https://textblob.readthedocs.io/en/dev/advanced_usage.html#tokenizers>) | | | String of raw text | `TextBlob` data type - access through `sentences` property: List of Sentence Objects|
+| POS-tagging               | X | -PatternTagger </br> -NLTKTagger  | [POS-Tagger Tutorial](<https://textblob.readthedocs.io/en/dev/quickstart.html#part-of-speech-tagging>) </br> [POS-Tagger Advanced Usage](<https://textblob.readthedocs.io/en/dev/advanced_usage.html#pos-taggers>) | | | String of raw text | `TextBlob` data type - access through `tags` property: List of word string tag string tuples |
+| Constituency parsing      | X |  | [Parser Tutorial](<https://textblob.readthedocs.io/en/dev/quickstart.html#parsing>) </br> [Parser Advanced Usage](<https://textblob.readthedocs.io/en/dev/advanced_usage.html>)|               |               | String of raw text | `TextBlob` data type - access through `parse()` method: TaggedString |
+| Dependency parsing        | X |  |[Parser Tutorial](<https://textblob.readthedocs.io/en/dev/quickstart.html#parsing>) </br> [Parser Advanced Usage](<https://textblob.readthedocs.io/en/dev/advanced_usage.html#>)|  | |String of raw text | `TextBlob` data type - access through `parse()` method: TaggedString |
+|Functionalities extensible | |  |        |                              | | | |
+| Can consume own models    |  X  |  | [Passing models into the Pipeline](<https://textblob.readthedocs.io/en/dev/advanced_usage.html#tokenizers>) </br> [Training own data](<https://textblob.readthedocs.io/en/dev/classifiers.html#classifiers>)       | |         |                              |  |
+
+
+
+</div>
+
+
 <!-- end of template -->
 
 [^1]: The survey was carried out by Clara Lachenmaier.
