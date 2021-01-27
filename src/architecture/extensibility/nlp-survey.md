@@ -79,6 +79,32 @@ The results of the survey are below.
 <!-- additional features: Language Detector, NER, Document Categorizer, Lemmatization, Chunking, Coreference Resolution-->
 
 
+### [CogComp NLP Pipeline](<https://github.com/CogComp/cogcomp-nlp/tree/master/pipeline>)
+
+1. [X] Implemented in Java
+   1. [ ] Not Java, but API can be addressed from Java
+      - Can be addressed as follows: n/a <or add brief description of how to address the API>
+2. [X] Uses Maven (`pom.xml` exists)
+3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
+4. [ ] Is available from a p2 repository: n/a
+
+#### Feature matrix
+
+<div style="font-size:.8rem;">
+
+|                           | Has functionality | Multiple Options   | Functionality documentation | Is Trainable| Training documentation      | Input data                           | Output data |
+|---------------------------|:--------------------------:|--------------------------|-----------------------------|:----------:|--------------------------------------|-------------|-------------|
+| Tokenization/segmentation | X |  | [General description](<https://github.com/CogComp/cogcomp-nlp/tree/master/pipeline#components-and-requirements>) | | | String of raw text | `TextAnnotation` data structure with method `.getView(Viewname)` for each Annotation |
+| Sentencing                |  |  |  |                              |  |  |  |
+| POS-tagging               | X | | [General description](<https://github.com/CogComp/cogcomp-nlp/tree/master/pipeline#components-and-requirements>) |               |             | String of raw text | `TextAnnotation` data structure with `View` for each Annotation |
+| Constituency parsing      | X | | [General description](<https://github.com/CogComp/cogcomp-nlp/tree/master/pipeline#components-and-requirements>)</br> [Parser documentation](<https://nlp.stanford.edu/software/lex-parser.shtml> )                  |             |           | String of raw text | `TextAnnotation` data structure with method `.getView(Viewname)` for each Annotation |
+| Dependency parsing        | X | -Stanford NLP Parser </br> -CogComp Parser (requires POS-Tagger and Chunker as part of the Pipeline) | [General description](<https://github.com/CogComp/cogcomp-nlp/tree/master/pipeline#components-and-requirements>)</br> [Stanford Parser documentation](<https://nlp.stanford.edu/software/lex-parser.shtml> )  |         |                     | String of raw text | `TextAnnotation` data structure with method `.getView(Viewname)` for each Annotation |
+| Functionalities extensible  | X |  | [Configuration documentation](<https://github.com/CogComp/cogcomp-nlp/tree/master/pipeline#configuration-options>)  |                              |  |  | |
+| Can consume own models    | X | | [Use own Tokenizer](<https://github.com/CogComp/cogcomp-nlp/tree/master/pipeline#usage>) |                              |  |  | |
+
+
+</div>
+
 ### [CoreNLP](<https://stanfordnlp.github.io/CoreNLP/>)
 
 1. [X] Implemented in Java
