@@ -105,6 +105,34 @@ The results of the survey are below.
 
 </div>
 
+### [NLP Architect](<https://intellabs.github.io/nlp-architect/>)
+
+1. [ ] Implemented in Java
+   1. [ ] Not Java, but API can be addressed from Java
+      - Can be addressed as follows: n/a <or add brief description of how to address the API>
+2. [ ] Uses Maven (`pom.xml` exists)
+3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
+4. [ ] Is available from a p2 repository: n/a
+
+#### Feature matrix
+
+<div style="font-size:.8rem;">
+
+|                           | Has functionality | Multiple Options   | Functionality documentation | Is Trainable| Training documentation      | Input data                           | Output data |
+|---------------------------|:--------------------------:|--------------------------|-----------------------------|:----------:|--------------------------------------|-------------|-------------|
+| Tokenization/segmentation | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   | <eg string of document text> | <eg comma-separated list of strings> |             |
+| Sentencing                | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
+| POS-tagging               | X | X | [POS-Tagger Documentation](<https://intellabs.github.io/nlp-architect/tagging/sequence_tagging.html>) | https://intellabs.github.io/nlp-architect/tagging/sequence_tagging.html#custom-training-parameters |                                      |             |
+| Constituency parsing      | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
+| Dependency parsing        | X | X | [DepParse Documentation](<https://intellabs.github.io/nlp-architect/bist_parser.html>) |                              |                                      | - Filepath with POS-tagged Dataset in CONNLL-U format </br> -list of list of `ConllEntry`, where each entry represents a POS-tagged Token and each nested List a sentence  |          |
+| Trainable models          | X | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
+| Can consume own models    | X | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
+
+
+</div>
+
+
+
 ### [Pattern](<https://github.com/clips/pattern>)
 
 1. [ ] Implemented in Java
