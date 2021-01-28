@@ -52,6 +52,33 @@ The results of the survey are below.
 </div>
 
 ---
+### [AllenNLP](<https://allennlp.org/>)
+
+1. [ ] Implemented in Java
+   1. [ ] Not Java, but API can be addressed from Java
+      - Can be addressed as follows: n/a <or add brief description of how to address the API>
+2. [ ] Uses Maven (`pom.xml` exists)
+3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
+4. [ ] Is available from a p2 repository: n/a
+
+#### Feature matrix
+
+<div style="font-size:.8rem;">
+
+|                           | Has functionality | Multiple Options   | Functionality documentation | Is Trainable| Training documentation      | Input data                           | Output data |
+|---------------------------|:--------------------------:|--------------------------|-----------------------------|:----------:|--------------------------------------|-------------|-------------|
+| Tokenization/segmentation | X | [-SpacyTokenizer](<https://docs.allennlp.org/v1.3.0/api/data/tokenizers/spacy_tokenizer/>)</br> [-PretrainedTransformerTokenizer](<https://docs.allennlp.org/v1.3.0/api/data/tokenizers/pretrained_transformer_tokenizer/>) | [AllenNLP Tokenizer Documentation](<https://docs.allennlp.org/v1.3.0/api/data/tokenizers/tokenizer/>) | | | String of document text | List of Token Strings |
+| Sentencing | X | -Sentence Splitter </br> -SpaCy Sentence Splitter | [Sentence Splitter API](<https://docs.allennlp.org/v1.3.0/api/data/tokenizers/sentence_splitter/>) | |  | Text as String  |  List of Sentence Strings |
+| POS-tagging               |  |  |   |  |   |  |  |
+| Constituency parsing      | X |  | [Constituency Parser Demo](<https://demo.allennlp.org/constituency-parsing/constituency-parser>)                   |                              |                                      |             |    |
+| Dependency parsing        | X |  | [Dependency Parser Demo](<https://demo.allennlp.org/dependency-parsing/dependency-parser>)    |    |       |                                      |             |
+| Functionalities extensible |  |  |   |  |  |  |  |
+| Can consume own models    | X  |  | [Building own models in AllenNLP](<https://guide.allennlp.org/building-your-model>) |  |  |  |  |
+
+
+</div>
+
+
 
 ### [Apache OpenNLP](<https://opennlp.apache.org/>)
 
