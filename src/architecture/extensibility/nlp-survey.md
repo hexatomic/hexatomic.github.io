@@ -87,7 +87,7 @@ The results of the survey are below.
       - Can be addressed as follows: n/a <or add brief description of how to address the API>
 2. [x] Uses Maven (`pom.xml` exists)
 3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)<!-- Not sure about that. MANIFEST.MF doesn't exist but there is this: https://opennlp.apache.org/docs/1.8.3/apidocs/opennlp-tools/opennlp/tools/util/ext/OSGiExtensionLoader.html-->
-4. [ ] Is available from a p2 repository: n/a
+4. [X] Is available from a p2 repository: <https://mvnrepository.com/artifact/org.apache.opennlp/opennlp-tools>
 #### Feature matrix
 
 <div style="font-size:.8rem;">
@@ -113,7 +113,7 @@ The results of the survey are below.
       - Can be addressed as follows: n/a <or add brief description of how to address the API>
 2. [X] Uses Maven (`pom.xml` exists)
 3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
-4. [ ] Is available from a p2 repository: n/a
+4. [X] Is available from a p2 repository: <https://mvnrepository.com/artifact/edu.illinois.cs.cogcomp/illinois-nlp-pipeline>
 
 #### Feature matrix
 
@@ -165,7 +165,7 @@ The results of the survey are below.
       - Can be addressed as follows: n/a <or add brief description of how to address the API>
 2. [X] Uses Maven (`pom.xml` exists)
 3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
-4. [ ] Is available from a p2 repository:
+4. [X] Is available from a p2 repository: <https://mvnrepository.com/artifact/org.nlp4j/nlp4j-core>
 
 #### Feature matrix
 
@@ -246,7 +246,7 @@ The results of the survey are below.
       - Can be addressed as follows: n/a <or add brief description of how to address the API>
 2. [?] Uses Maven (`pom.xml` exists) <!-- Couldn't find pom.xml but https://mvnrepository.com/artifact/com.aliasi/lingpipe/4.0.1-->
 3. [X] Is available as OSGi bundle (has `MANIFEST.MF`)
-4. [?] Is available from a p2 repository: ? 
+4. [X] Is available from a p2 repository: <https://mvnrepository.com/artifact/com.aliasi/lingpipe>
 
 #### Feature matrix
 
@@ -301,7 +301,7 @@ The results of the survey are below.
       - Can be addressed as follows: [Using Spark NLP via Scala and Maven](<https://nlp.johnsnowlabs.com/docs/en/install#scala-and-java>)
 2. [X] Uses Maven (`pom.xml` exists)
 3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
-4. [ ] Is available from a p2 repository: ? https://mvnrepository.com/artifact/JohnSnowLabs/spark-nlp
+4. [X] Is available from a p2 repository: <https://mvnrepository.com/artifact/JohnSnowLabs/spark-nlp>
 
 #### Feature matrix
 
@@ -329,7 +329,7 @@ The results of the survey are below.
       - Can be addressed as follows: n/a <or add brief description of how to address the API>
 2. [X] Uses Maven (`pom.xml` exists)
 3. [X] Is available as OSGi bundle (has `MANIFEST.MF`)
-4. [ ] Is available from a p2 repository: n/a <!--<https://mvnrepository.com/artifact/edu.stanford.nlp/stanford-corenlp>-->
+4. [X] Is available from a p2 repository: <https://mvnrepository.com/artifact/edu.stanford.nlp/stanford-corenlp>
 
 #### Feature matrix
 
