@@ -135,6 +135,36 @@ The results of the survey are below.
 
 </div>
 
+
+### [GATE & ANNIE](<https://gate.ac.uk/family/embedded.html>)
+
+1. [X] Implemented in Java
+   1. [ ] Not Java, but API can be addressed from Java
+      - Can be addressed as follows: n/a <or add brief description of how to address the API>
+2. [X] Uses Maven (`pom.xml` exists)
+3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
+4. [ ] Is available from a p2 repository:
+
+#### Feature matrix
+
+<div style="font-size:.8rem;">
+
+|                           | Has functionality | Multiple Options   | Functionality documentation | Is Trainable| Training documentation      | Input data                           | Output data |
+|---------------------------|:--------------------------:|--------------------------|-----------------------------|:----------:|--------------------------------------|-------------|-------------|
+| Tokenization/segmentation | X |  | [ANNIE Tokenizer Documentation](<https://gate.ac.uk/sale/tao/splitch6.html#sec:annie:tokeniser> )| |  | <eg string of document text> | <eg comma-separated list of strings> |          
+| Sentencing                | X | -ANNIE Default Sentence Splitter</br>-ANNIE Regex Sentence Splitter | [ANNIE Sentence Splitter Documentation](<https://gate.ac.uk/sale/tao/splitch6.html#sec:annie:splitter> )                  |                              |                                      |             |
+| POS-tagging               | X | <!-- X or leave empty--> | [ANNIE POS-Tagger Documentation](<https://gate.ac.uk/sale/tao/splitch6.html#sec:annie:tagger>)                   |                              |                                      |             |
+| Constituency parsing      | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
+| Dependency parsing        | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
+| Named Entity Recognition  | x | | [Gazeteer documentation](<https://gate.ac.uk/sale/tao/splitch6.html#sec:annie:gazetteer>) | | | | |
+| Trainable models          | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
+| Can consume own models    | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
+
+<!-- Further Features:gazeteer (i.e. simple NER),  Semantic Tagger, Orthografic and pronominal coreference -->
+</div>
+
+
+
 ### [NLP Architect](<https://intellabs.github.io/nlp-architect/>)
 
 1. [ ] Implemented in Java
