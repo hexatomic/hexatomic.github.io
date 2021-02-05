@@ -246,6 +246,7 @@ The results of the survey are below.
 </div>
 
 
+
 ### [Lingpipe](<http://www.alias-i.com/lingpipe/>)
 
 1. [X] Implemented in Java
@@ -259,16 +260,16 @@ The results of the survey are below.
 
 <div style="font-size:.8rem;">
 
-|                           | Has functionality        | Functionality extensible | Functionality documentation | Extension documentation      | Input data                           | Output data |
-|---------------------------|--------------------------|--------------------------|-----------------------------|------------------------------|--------------------------------------|-------------|
-| Tokenization/segmentation | X | <!-- X or leave empty--> | <http://www.alias-i.com/lingpipe-book/lingpipe-book-0.5.pdf> Chapter 3 (p.33) </br> <http://www.alias-i.com/lingpipe/docs/api/com/aliasi/tokenizer/Tokenizer.html> </br> -<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/tokenizer/Tokenization.html> |  | -String of text </br> -Character array, Startindex, Endindex |             |
-| Sentencing                | X | <!-- X or leave empty--> | <http://www.alias-i.com/lingpipe/demos/tutorial/sentences/read-me.html>                   |                              |                                      |             |
-| POS-tagging               | X | <!-- X or leave empty--> | <http://www.alias-i.com/lingpipe/demos/tutorial/posTags/read-me.html> |                              |                                      |             |
+|                           | Has functionality | Multiple Options   | Functionality documentation | Is Trainable| Training documentation      | Input data                           | Output data |
+|---------------------------|:--------------------------:|--------------------------|-----------------------------|:----------:|--------------------------------------|-------------|-------------|
+| Tokenization/segmentation | X | [-IndoEuropeanTokenizer](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/tokenizer/IndoEuropeanTokenizerFactory.html>)</br>[-CharacterTokenizer](<http://www.alias-i.com/lingpipe/docs/api/index.html>)</br>[-RegExTokenizer](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/tokenizer/RegExTokenizerFactory.html>)</br>[-NGramTokenizer](<http://www.alias-i.com/lingpipe/docs/api/index.html>)</br>[-LineTokenizerFactory](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/tokenizer/LineTokenizerFactory.html>) | [Lingpipe Book](<http://www.alias-i.com/lingpipe-book/lingpipe-book-0.5.pdf>) Chapter 3 (p.33) </br> [Tokenizer API](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/tokenizer/Tokenizer.html>) </br> [Tokenization API](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/tokenizer/Tokenization.html> )| |  | -String of text </br> -Character array, Startindex, Endindex |             |
+| Sentencing                | X |  | [Sentence-Splitter Tutorial](<http://www.alias-i.com/lingpipe/demos/tutorial/sentences/read-me.html> )| X |  |                                     |             |
+| POS-tagging               | X | [-Chain CRF Tagger](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/crf/ChainCrf.html>)</br>[-Classifier Tagger](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/tag/ClassifierTagger.html>)</br>[-HMMDecoder](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/hmm/HmmDecoder.html>) | [-Lingpipe Book Chapter 11](<http://www.alias-i.com/lingpipe-book/lingpipe-book-0.5.pdf#chapter.11>)</br>[-POS-Tagger Tutorial](<http://www.alias-i.com/lingpipe/demos/tutorial/posTags/read-me.html>) | X | [POS-Tagger Tutorial Paragraph: Training Training Part-of-Speech Models](<http://www.alias-i.com/lingpipe/demos/tutorial/posTags/read-me.html>)    | List<String> tokenList | [Tagging<String>](<http://www.alias-i.com/lingpipe/docs/api/index.html>) |
 | Constituency parsing      | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
-| Dependency parsing        | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
+| Dependency parsing        | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |  | |     |
 | Named Entity Recognition  | X | | [NER Documentation](<http://www.alias-i.com/lingpipe/demos/tutorial/ne/read-me.html>)| | | | |
-| Trainable models          | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
-| Can consume own models    | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
+| Functionalities extensible  | X | | [Paragraph 3. Evaluating and Tuning Tagging Models](<http://www.alias-i.com/lingpipe/demos/tutorial/posTags/read-me.html>)  |  |    |                                      |             |
+| Can consume own models    | X  | | [Developing and Tuning Sentence Models](<http://www.alias-i.com/lingpipe/demos/tutorial/sentences/read-me.html>)                   |                              |                                      |             |
 
 
 </div>
