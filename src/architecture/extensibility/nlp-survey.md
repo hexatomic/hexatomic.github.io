@@ -23,34 +23,6 @@ Specifically, the following properties were checked:
 The results of the survey are below.
 
 ---
-<!-- Template, please copy and paste to add entry (check checkboxes by adding an 'x' -> '[x]') -->
-
-### [library-name](<URL-to-library-website>)
-
-1. [ ] Implemented in Java
-   1. [ ] Not Java, but API can be addressed from Java
-      - Can be addressed as follows: n/a <or add brief description of how to address the API>
-2. [ ] Uses Maven (`pom.xml` exists)
-3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
-4. [ ] Is available from a p2 repository: n/a <or add repository URL>
-
-#### Feature matrix
-
-<div style="font-size:.8rem;">
-
-|                           | Has functionality        | Functionality extensible | Functionality documentation | Extension documentation      | Input data                           | Output data |
-|---------------------------|--------------------------|--------------------------|-----------------------------|------------------------------|--------------------------------------|-------------|
-| Tokenization/segmentation | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   | <eg string of document text> | <eg comma-separated list of strings> |             |
-| Sentencing                | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
-| POS-tagging               | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
-| Constituency parsing      | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
-| Dependency parsing        | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
-| Trainable models          | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
-| Can consume own models    | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
-
-
-</div>
-
 ---
 ### [AllenNLP](<https://allennlp.org/>)
 
