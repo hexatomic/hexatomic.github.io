@@ -28,7 +28,7 @@ The results of the survey are below.
 
 1. [ ] Implemented in Java
    1. [ ] Not Java, but API can be addressed from Java
-      - Can be addressed as follows: n/a <or add brief description of how to address the API>
+      - Can be addressed as follows: there are some [taggers](<https://github.com/allenai/taggers>) and [NLPstack](<https://github.com/allenai/nlpstack>) available as Scala-packages. AllenNLP also provides [Docker images](<https://github.com/allenai/allennlp#installing-using-docker>)
 2. [ ] Uses Maven (`pom.xml` exists)
 3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
 4. [ ] Is available from a p2 repository: n/a
@@ -39,12 +39,12 @@ The results of the survey are below.
 
 |                           | Has functionality | Multiple Options   | Functionality documentation | Is Trainable| Training documentation      | Input data                           | Output data |
 |---------------------------|:--------------------------:|--------------------------|-----------------------------|:----------:|--------------------------------------|-------------|-------------|
-| Tokenization/segmentation | X | [-SpacyTokenizer](<https://docs.allennlp.org/v1.3.0/api/data/tokenizers/spacy_tokenizer/>)</br> [-PretrainedTransformerTokenizer](<https://docs.allennlp.org/v1.3.0/api/data/tokenizers/pretrained_transformer_tokenizer/>) | [AllenNLP Tokenizer Documentation](<https://docs.allennlp.org/v1.3.0/api/data/tokenizers/tokenizer/>) | | | String of document text | List of Token Strings |
-| Sentencing | X | -Sentence Splitter </br> -SpaCy Sentence Splitter | [Sentence Splitter API](<https://docs.allennlp.org/v1.3.0/api/data/tokenizers/sentence_splitter/>) | |  | Text as String  |  List of Sentence Strings |
-| POS-tagging               |  |  |   |  |   |  |  |
+| Tokenization/segmentation | X | [-SpacyTokenizer](<https://docs.allennlp.org/v1.3.0/api/data/tokenizers/spacy_tokenizer/>)</br> [-PretrainedTransformerTokenizer](<https://docs.allennlp.org/v1.3.0/api/data/tokenizers/pretrained_transformer_tokenizer/>) | [AllenNLP Tokenizer Documentation](<https://docs.allennlp.org/v1.3.0/api/data/tokenizers/tokenizer/>) | | | Text as str | List[Token] |
+| Sentencing | X | -Sentence Splitter </br> -SpaCy Sentence Splitter | [Sentence Splitter API](<https://docs.allennlp.org/v1.3.0/api/data/tokenizers/sentence_splitter/>) | |  | Text as str  |  List[str] |
+| POS-tagging               |  |  |   | X | [Train SentenceTaggerPredictor](<https://docs.allennlp.org/v1.3.0/api/predictors/sentence_tagger/#sentencetaggerpredictor>) | Sentence as str | Dict[str, numpy.ndarray] |
 | Constituency parsing      | X |  | [Constituency Parser Demo](<https://demo.allennlp.org/constituency-parsing/constituency-parser>)                   |                              |                                      |             |    |
 | Dependency parsing        | X |  | [Dependency Parser Demo](<https://demo.allennlp.org/dependency-parsing/dependency-parser>)    |    |       |                                      |             |
-| Named Entity Recognition  |
+| Named Entity Recognition  | | | | X | [Train SentenceTaggerPredictor](<https://docs.allennlp.org/v1.3.0/api/predictors/sentence_tagger/#sentencetaggerpredictor>) | Sentence as str | Dict[str, numpy.ndarray] | 
 | Functionalities extensible |  |  |   |  |  |  |  |
 | Can consume own models    | X  |  | [Building own models in AllenNLP](<https://guide.allennlp.org/building-your-model>) |  |  |  |  |
 
