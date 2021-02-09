@@ -225,7 +225,7 @@ The results of the survey are below.
 
 1. [ ] Implemented in Java
    1. [ ] Not Java, but API can be addressed from Java
-      - Can be addressed as follows: n/a <or add brief description of how to address the API>
+      - Can be addressed as follows: to the best of our knowledge it's only accesible via common ways to integrate Python scripts in Java (e.g. JEPP, PythonInterpreter, Runtime.exec(),..)
 2. [ ] Uses Maven (`pom.xml` exists)
 3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
 4. [ ] Is available from a p2 repository: ?
