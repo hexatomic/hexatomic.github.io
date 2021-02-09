@@ -136,6 +136,32 @@ The results of the survey are below.
 <!-- Further Features:gazeteer (i.e. simple NER),  Semantic Tagger, Orthografic and pronominal coreference -->
 </div>
 
+### [Lingpipe](<http://www.alias-i.com/lingpipe/>)
+
+1. [X] Implemented in Java
+   1. [ ] Not Java, but API can be addressed from Java
+      - Can be addressed as follows: n/a <or add brief description of how to address the API>
+2. [?] Uses Maven (`pom.xml` exists) <!-- Couldn't find pom.xml but https://mvnrepository.com/artifact/com.aliasi/lingpipe/4.0.1-->
+3. [X] Is available as OSGi bundle (has `MANIFEST.MF`)
+4. [X] Is available from a p2 repository: <https://mvnrepository.com/artifact/com.aliasi/lingpipe>
+
+#### Feature matrix
+
+<div style="font-size:.8rem;">
+
+|                           | Has functionality | Multiple Options   | Functionality documentation | Is Trainable| Training documentation      | Input data                           | Output data |
+|---------------------------|:--------------------------:|--------------------------|-----------------------------|:----------:|--------------------------------------|-------------|-------------|
+| Tokenization/segmentation | X | [-IndoEuropeanTokenizer](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/tokenizer/IndoEuropeanTokenizerFactory.html>)</br>[-CharacterTokenizer](<http://www.alias-i.com/lingpipe/docs/api/index.html>)</br>[-RegExTokenizer](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/tokenizer/RegExTokenizerFactory.html>)</br>[-NGramTokenizer](<http://www.alias-i.com/lingpipe/docs/api/index.html>)</br>[-LineTokenizerFactory](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/tokenizer/LineTokenizerFactory.html>) | [Lingpipe Book](<http://www.alias-i.com/lingpipe-book/lingpipe-book-0.5.pdf>) Chapter 3 (p.33) </br> [Tokenizer API](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/tokenizer/Tokenizer.html>) </br> [Tokenization API](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/tokenizer/Tokenization.html> )| |  | -String of text </br> -Character array, Startindex, Endindex | array of token strings |
+| Sentencing                | X |  | [Sentence-Splitter Tutorial](<http://www.alias-i.com/lingpipe/demos/tutorial/sentences/read-me.html> )| X |  |    Char[] array of text                                 | Sentences as set of chunks |
+| POS-tagging               | X | [-Chain CRF Tagger](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/crf/ChainCrf.html>)</br>[-Classifier Tagger](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/tag/ClassifierTagger.html>)</br>[-HMMDecoder](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/hmm/HmmDecoder.html>) | [-Lingpipe Book Chapter 11](<http://www.alias-i.com/lingpipe-book/lingpipe-book-0.5.pdf#chapter.11>)</br>[-POS-Tagger Tutorial](<http://www.alias-i.com/lingpipe/demos/tutorial/posTags/read-me.html>) | X | [POS-Tagger Tutorial Paragraph: Training Training Part-of-Speech Models](<http://www.alias-i.com/lingpipe/demos/tutorial/posTags/read-me.html>)    | List<String> tokenList | [Tagging<String>](<http://www.alias-i.com/lingpipe/docs/api/index.html>) |
+| Constituency parsing      | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
+| Dependency parsing        | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |  | |     |
+| Named Entity Recognition  | X | | [NER Documentation](<http://www.alias-i.com/lingpipe/demos/tutorial/ne/read-me.html>)| | | | |
+| Functionalities extensible  | X | | [Paragraph 3. Evaluating and Tuning Tagging Models](<http://www.alias-i.com/lingpipe/demos/tutorial/posTags/read-me.html>)  |  |    |                                      |             |
+| Can consume own models    | X  | | [Developing and Tuning Sentence Models](<http://www.alias-i.com/lingpipe/demos/tutorial/sentences/read-me.html>)                   |                              |                                      |             |
+
+
+</div>
 
 
 ### [NLP Architect](<https://intellabs.github.io/nlp-architect/>)
@@ -250,32 +276,6 @@ The results of the survey are below.
 
 
 
-### [Lingpipe](<http://www.alias-i.com/lingpipe/>)
-
-1. [X] Implemented in Java
-   1. [ ] Not Java, but API can be addressed from Java
-      - Can be addressed as follows: n/a <or add brief description of how to address the API>
-2. [?] Uses Maven (`pom.xml` exists) <!-- Couldn't find pom.xml but https://mvnrepository.com/artifact/com.aliasi/lingpipe/4.0.1-->
-3. [X] Is available as OSGi bundle (has `MANIFEST.MF`)
-4. [X] Is available from a p2 repository: <https://mvnrepository.com/artifact/com.aliasi/lingpipe>
-
-#### Feature matrix
-
-<div style="font-size:.8rem;">
-
-|                           | Has functionality | Multiple Options   | Functionality documentation | Is Trainable| Training documentation      | Input data                           | Output data |
-|---------------------------|:--------------------------:|--------------------------|-----------------------------|:----------:|--------------------------------------|-------------|-------------|
-| Tokenization/segmentation | X | [-IndoEuropeanTokenizer](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/tokenizer/IndoEuropeanTokenizerFactory.html>)</br>[-CharacterTokenizer](<http://www.alias-i.com/lingpipe/docs/api/index.html>)</br>[-RegExTokenizer](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/tokenizer/RegExTokenizerFactory.html>)</br>[-NGramTokenizer](<http://www.alias-i.com/lingpipe/docs/api/index.html>)</br>[-LineTokenizerFactory](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/tokenizer/LineTokenizerFactory.html>) | [Lingpipe Book](<http://www.alias-i.com/lingpipe-book/lingpipe-book-0.5.pdf>) Chapter 3 (p.33) </br> [Tokenizer API](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/tokenizer/Tokenizer.html>) </br> [Tokenization API](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/tokenizer/Tokenization.html> )| |  | -String of text </br> -Character array, Startindex, Endindex | array of token strings |
-| Sentencing                | X |  | [Sentence-Splitter Tutorial](<http://www.alias-i.com/lingpipe/demos/tutorial/sentences/read-me.html> )| X |  |    Char[] array of text                                 | Sentences as set of chunks |
-| POS-tagging               | X | [-Chain CRF Tagger](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/crf/ChainCrf.html>)</br>[-Classifier Tagger](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/tag/ClassifierTagger.html>)</br>[-HMMDecoder](<http://www.alias-i.com/lingpipe/docs/api/com/aliasi/hmm/HmmDecoder.html>) | [-Lingpipe Book Chapter 11](<http://www.alias-i.com/lingpipe-book/lingpipe-book-0.5.pdf#chapter.11>)</br>[-POS-Tagger Tutorial](<http://www.alias-i.com/lingpipe/demos/tutorial/posTags/read-me.html>) | X | [POS-Tagger Tutorial Paragraph: Training Training Part-of-Speech Models](<http://www.alias-i.com/lingpipe/demos/tutorial/posTags/read-me.html>)    | List<String> tokenList | [Tagging<String>](<http://www.alias-i.com/lingpipe/docs/api/index.html>) |
-| Constituency parsing      | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
-| Dependency parsing        | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |  | |     |
-| Named Entity Recognition  | X | | [NER Documentation](<http://www.alias-i.com/lingpipe/demos/tutorial/ne/read-me.html>)| | | | |
-| Functionalities extensible  | X | | [Paragraph 3. Evaluating and Tuning Tagging Models](<http://www.alias-i.com/lingpipe/demos/tutorial/posTags/read-me.html>)  |  |    |                                      |             |
-| Can consume own models    | X  | | [Developing and Tuning Sentence Models](<http://www.alias-i.com/lingpipe/demos/tutorial/sentences/read-me.html>)                   |                              |                                      |             |
-
-
-</div>
 
 <!-- additional features: Topic Classification, Stemming, Lemmatization ,NER, Clustering, Spelling Correction, String Comparison, Interesting Phrase Detection, Hyphenation and Syllabification, Sentiment Analysis, Language Identification, Word Sense Disambiguation-->
 
