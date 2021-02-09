@@ -28,7 +28,7 @@ The results of the survey are below.
 
 1. [ ] Implemented in Java
    1. [ ] Not Java, but API can be addressed from Java
-      - Can be addressed as follows: there are some [taggers](<https://github.com/allenai/taggers>) and [NLPstack](<https://github.com/allenai/nlpstack>) available as Scala-packages. AllenNLP also provides [Docker images](<https://github.com/allenai/allennlp#installing-using-docker>)
+      - Can be addressed as follows: There are some [taggers](<https://github.com/allenai/taggers>) and [NLPstack](<https://github.com/allenai/nlpstack>) available as Scala-packages. AllenNLP also provides [Docker images](<https://github.com/allenai/allennlp#installing-using-docker>)
 2. [ ] Uses Maven (`pom.xml` exists)
 3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
 4. [ ] Is available from a p2 repository: n/a
@@ -39,8 +39,8 @@ The results of the survey are below.
 
 |                           | Has functionality | Multiple Options   | Functionality documentation | Is Trainable| Training documentation      | Input data                           | Output data |
 |---------------------------|:--------------------------:|--------------------------|-----------------------------|:----------:|--------------------------------------|-------------|-------------|
-| Tokenization/segmentation | X | [-SpacyTokenizer](<https://docs.allennlp.org/v1.3.0/api/data/tokenizers/spacy_tokenizer/>)</br> [-PretrainedTransformerTokenizer](<https://docs.allennlp.org/v1.3.0/api/data/tokenizers/pretrained_transformer_tokenizer/>) | [AllenNLP Tokenizer Documentation](<https://docs.allennlp.org/v1.3.0/api/data/tokenizers/tokenizer/>) | | | Text as str | List[Token] |
-| Sentencing | X | -Sentence Splitter </br> -SpaCy Sentence Splitter | [Sentence Splitter API](<https://docs.allennlp.org/v1.3.0/api/data/tokenizers/sentence_splitter/>) | |  | Text as str  |  List[str] |
+| Tokenization/segmentation | X | [-SpacyTokenizer](<https://docs.allennlp.org/v1.3.0/api/data/tokenizers/spacy_tokenizer/>)</br> [-PretrainedTransformerTokenizer](<https://docs.allennlp.org/v1.3.0/api/data/tokenizers/pretrained_transformer_tokenizer/>) | [Tokenizer Documentation](<https://docs.allennlp.org/v1.3.0/api/data/tokenizers/tokenizer/>) | | | Text as str | List[Token] |
+| Sentencing | X | -Sentence Splitter </br> -SpaCy Sentence Splitter | [Sentence-Splitter API](<https://docs.allennlp.org/v1.3.0/api/data/tokenizers/sentence_splitter/>) | |  | Text as str  |  List[str] |
 | POS-tagging               |  |  |   | X | [Train SentenceTaggerPredictor](<https://docs.allennlp.org/v1.3.0/api/predictors/sentence_tagger/#sentencetaggerpredictor>) | Sentence as str | Dict[str, numpy.ndarray] |
 | Constituency parsing      | X |  | [Constituency Parser Demo](<https://demo.allennlp.org/constituency-parsing/constituency-parser>)                   |                              |                                      |             |    |
 | Dependency parsing        | X |  | [Dependency Parser Demo](<https://demo.allennlp.org/dependency-parsing/dependency-parser>)    |    |       |                                      |             |
@@ -51,7 +51,7 @@ The results of the survey are below.
 
 </div>
 
-
+---
 
 ### [Apache OpenNLP](<https://opennlp.apache.org/>)
 
@@ -60,25 +60,26 @@ The results of the survey are below.
       - Can be addressed as follows: n/a <or add brief description of how to address the API>
 2. [x] Uses Maven (`pom.xml` exists)
 3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)<!-- Not sure about that. MANIFEST.MF doesn't exist but there is this: https://opennlp.apache.org/docs/1.8.3/apidocs/opennlp-tools/opennlp/tools/util/ext/OSGiExtensionLoader.html-->
-4. [X] Is available from a p2 repository: <https://mvnrepository.com/artifact/org.apache.opennlp/opennlp-tools>
+4. [X] Is available from a p2 repository: [OpenNLP Repository](<https://mvnrepository.com/artifact/org.apache.opennlp/opennlp-tools>)
 #### Feature matrix
 
 <div style="font-size:.8rem;">
 
 |                           | Has functionality | Multiple Options | Functionality documentation | Is Trainable | Training documentation | Input data                           | Output data |
 |---------------------------|:--------------------------:|--------------------------|-----------------------------|:----------:|--------------------------------------|-------------|-------------|
-| Tokenization/segmentation |X|-Whitespace Tokenizer </br> -Character Tokenizer </br> -Maximum Entropy Tokenizer |<https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.tokenizer.api>| X | <https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.tokenizer.training.api> |string of (untokenized) text | array of strings</br> -array of token spans|
-| Sentencing|X| |<https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.sentdetect.detection.api>| X | <https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.sentdetect.training.api> |string of document text | -array of strings</br> -array of sentence spans |
-| POS-tagging| X |  | <https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.postagger.tagging.api> | x | <https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.postagger.training.api> | string array of tokens | string array of tags |
-| Constituency parsing      | X |  | <https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.parser.parsing.api> | X | <https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.parser.training.api> | String of whitespace tokenized Sentence | array of OpenNLP's Parse Type |
+| Tokenization/segmentation |X|[-Whitespace Tokenizer](<https://opennlp.apache.org/docs/1.9.3/apidocs/opennlp-tools/index.html>) </br> [-Character Tokenizer](<https://opennlp.apache.org/docs/1.9.3/apidocs/opennlp-tools/opennlp/tools/tokenize/SimpleTokenizer.html>) </br> [-Maximum Entropy Tokenizer](<https://opennlp.apache.org/docs/1.9.3/apidocs/opennlp-tools/opennlp/tools/tokenize/TokenizerME.html>) |[Tokenizer Documentation](<https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.tokenizer.api>)| X | [Tokenizer Training Documentation](<https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.tokenizer.training.api>) |Text as String | -Array of Strings</br> -Array of Token Spans|
+| Sentencing|X|[-Newline Sentence-Splitter](<https://opennlp.apache.org/docs/1.9.3/apidocs/opennlp-tools/opennlp/tools/sentdetect/NewlineSentenceDetector.html>) </br> [-Maximum Entropy Sentence-Splitter](<https://opennlp.apache.org/docs/1.9.3/apidocs/opennlp-tools/index.html>) |[Sentence-Splitter Documentation](<https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.sentdetect.detection.api>)| X | [Sentence-Splitter Training Documentation](<https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.sentdetect.training.api>) |Text as String | -Array of Strings</br> -Array of sentence Spans |
+| POS-tagging| X |  | [POS-Tagger Documentation](<https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.postagger.tagging.api>) | x | [POS-Tagger Training Documentation](<https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.postagger.training.api>) | String Array of Tokens | String Array of POS-tags |
+| Constituency parsing      | X |  | [Constituency Parser Documentation](<https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.parser.parsing.api>) | X | [Constituency Parser Documentation](<https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.parser.training.api>)| String of whitespace tokenized Sentence | Array of OpenNLP's Parse Type |
 | Dependency parsing  | | | | | | | |
-| Named Entity Recognition  | X | | [NER Documentaion](<https://opennlp.apache.org/docs/1.9.3/manual/opennlp.html#tools.namefind>)| X | [NER Training Documentation] (<https://opennlp.apache.org/docs/1.9.3/manual/opennlp.html#tools.namefind.training>) | | |
-|Functionalities extensible|X| | <https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.extension.writing>| |String of Text | Span Array |
-| Can consume own models    |  |  | |  |             | | |
+| Named Entity Recognition  | X | | [NER Documentaion](<https://opennlp.apache.org/docs/1.9.3/manual/opennlp.html#tools.namefind>)| X | [NER Training Documentation](<https://opennlp.apache.org/docs/1.9.3/manual/opennlp.html#tools.namefind.training>) | String Array of Tokens | Array of name Spans |
+|Functionalities extensible|X| | [Extension writing Documentation](<https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html#tools.extension.writing>)| | |  |
+| Can consume own models    | X |  | [General API description](<https://opennlp.apache.org/docs/1.6.0/manual/opennlp.html#intro.api>) |  |             | | |
 
 </div>
-<!-- additional features: Language Detector, NER, Document Categorizer, Lemmatization, Chunking, Coreference Resolution-->
+<!-- additional features: Language Detector, Document Categorizer, Lemmatization, Chunking, Coreference Resolution-->
 
+---
 
 ### [CogComp NLP Pipeline](<https://github.com/CogComp/cogcomp-nlp/tree/master/pipeline>)
 
