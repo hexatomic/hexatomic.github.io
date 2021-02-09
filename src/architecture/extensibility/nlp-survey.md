@@ -23,7 +23,7 @@ Specifically, the following properties were checked:
 The results of the survey are below.
 
 ---
----
+
 ### [AllenNLP](<https://allennlp.org/>)
 
 1. [ ] Implemented in Java
@@ -51,7 +51,6 @@ The results of the survey are below.
 
 </div>
 
----
 
 ### [Apache OpenNLP](<https://opennlp.apache.org/>)
 
@@ -79,7 +78,35 @@ The results of the survey are below.
 </div>
 <!-- additional features: Language Detector, Document Categorizer, Lemmatization, Chunking, Coreference Resolution-->
 
----
+
+### [Clear NLP](<https://github.com/clir/clearnlp-guidelines>)
+
+1. [X] Implemented in Java
+   1. [ ] Not Java, but API can be addressed from Java
+      - Can be addressed as follows: n/a <or add brief description of how to address the API>
+2. [X] Uses Maven (`pom.xml` exists)
+3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
+4. [X] Is available from a p2 repository: <https://mvnrepository.com/artifact/com.clearnlp/clearnlp>
+
+#### Feature matrix
+
+<div style="font-size:.8rem;">
+
+|                           | Has functionality | Multiple Options   | Functionality documentation | Is Trainable| Training documentation      | Input data                           | Output data |
+|---------------------------|:--------------------------:|--------------------------|-----------------------------|:----------:|--------------------------------------|-------------|-------------|
+| Tokenization/segmentation | X |  | [Tokenizer Documentation](<https://github.com/clir/clearnlp-guidelines/blob/master/md/components/tokenization.md>) | | | input file in [raw format](<https://github.com/clir/clearnlp-guidelines/blob/master/md/formats/data_format.md#raw-format-raw>) | output file in [line format](<https://github.com/clir/clearnlp-guidelines/blob/master/md/formats/data_format.md#line-format-line>) |
+| Sentencing                | X |  | [Sentence-Splitter Documentation](<https://github.com/clir/clearnlp-guidelines/blob/master/md/components/tokenization.md>) |  | | input file in [raw format](<https://github.com/clir/clearnlp-guidelines/blob/master/md/formats/data_format.md#raw-format-raw>) | output file in [line format](<https://github.com/clir/clearnlp-guidelines/blob/master/md/formats/data_format.md#line-format-line>)  |
+| POS-tagging               | X | |  |  X | [POS-Tagger Documentation](<https://github.com/clir/clearnlp-guidelines/blob/master/md/components/pos_tagging.md>)  | input file in [raw format](<https://github.com/clir/clearnlp-guidelines/blob/master/md/formats/data_format.md#raw-format-raw>) | output file in [tab separated values format](<https://github.com/clir/clearnlp-guidelines/blob/master/md/formats/data_format.md#tab-separated-values-format-tsv>) |
+| Constituency parsing      |  | | |             |           | |  |
+| Dependency parsing        | X | | [DepParse Documentation](<https://github.com/clir/clearnlp-guidelines/blob/master/md/components/dependency_parsing.md>) | X | [General Training Documentation](<https://github.com/clir/clearnlp-guidelines/blob/master/md/quick_start/train.md>) | input file in [raw format](<https://github.com/clir/clearnlp-guidelines/blob/master/md/formats/data_format.md#raw-format-raw>)  | output file in [tab separated values format](<https://github.com/clir/clearnlp-guidelines/blob/master/md/formats/data_format.md#tab-separated-values-format-tsv>) |
+| Named Entity Recognition  | X | | [NER Documentation](<https://github.com/clir/clearnlp-guidelines/blob/master/md/components/named_entity_recognition.md>) | X | [General Training Documentation](<https://github.com/clir/clearnlp-guidelines/blob/master/md/quick_start/train.md>) | input file in [raw format](<https://github.com/clir/clearnlp-guidelines/blob/master/md/formats/data_format.md#raw-format-raw>)  | output file in [tab separated values format](<https://github.com/clir/clearnlp-guidelines/blob/master/md/formats/data_format.md#tab-separated-values-format-tsv>) |
+| Functionalities extensible  | X |  | [Configuration documentation](<https://github.com/CogComp/cogcomp-nlp/tree/master/pipeline#configuration-options>)  |                              |  |  | |
+| Can consume own models    | X | | [How to add models](<https://github.com/clir/clearnlp-guidelines/blob/master/md/quick_start/models.md>) |                              |  |  | |
+
+
+</div>
+
+
 
 ### [CogComp NLP Pipeline](<https://github.com/CogComp/cogcomp-nlp/tree/master/pipeline>)
 
