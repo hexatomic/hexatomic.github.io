@@ -124,13 +124,13 @@ The results of the survey are below.
 
 |                           | Has functionality | Multiple Options   | Functionality documentation | Is Trainable| Training documentation      | Input data                           | Output data |
 |---------------------------|:--------------------------:|--------------------------|-----------------------------|:----------:|--------------------------------------|-------------|-------------|
-| Tokenization/segmentation | X |  | [ANNIE Tokenizer Documentation](<https://gate.ac.uk/sale/tao/splitch6.html#sec:annie:tokeniser> )| |  | <eg string of document text> | <eg comma-separated list of strings> |          
+| Tokenization/segmentation | X |  | [ANNIE Tokenizer Documentation](<https://gate.ac.uk/sale/tao/splitch6.html#sec:annie:tokeniser> )| |  |  string of document text | output file           |
 | Sentencing                | X | -ANNIE Default Sentence Splitter</br>-ANNIE Regex Sentence Splitter | [ANNIE Sentence Splitter Documentation](<https://gate.ac.uk/sale/tao/splitch6.html#sec:annie:splitter> )                  |                              |                                      |             |
 | POS-tagging               | X | <!-- X or leave empty--> | [ANNIE POS-Tagger Documentation](<https://gate.ac.uk/sale/tao/splitch6.html#sec:annie:tagger>)                   |                              |                                      |             |
 | Constituency parsing      | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
 | Dependency parsing        | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
-| Named Entity Recognition  | x | | [Gazeteer documentation](<https://gate.ac.uk/sale/tao/splitch6.html#sec:annie:gazetteer>) | | | | |
-| Trainable models          | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
+| Named Entity Recognition  | x | | [Gazeteer documentation](<https://gate.ac.uk/sale/tao/splitch6.html#sec:annie:gazetteer>) </br> [-Semantic Tagger](<https://gate.ac.uk/sale/tao/splitch6.html#sec:annie:semantic-tagger>) | | | | |
+| Functionalities extensible         | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
 | Can consume own models    | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
 
 <!-- Further Features:gazeteer (i.e. simple NER),  Semantic Tagger, Orthografic and pronominal coreference -->
@@ -142,7 +142,7 @@ The results of the survey are below.
 
 1. [ ] Implemented in Java
    1. [ ] Not Java, but API can be addressed from Java
-      - Can be addressed as follows: n/a <or add brief description of how to address the API>
+      - Can be addressed as follows: to the best of our knowledge it's only accesible via common ways to integrate Python scripts in Java (e.g. JEPP, PythonInterpreter, Runtime.exec(),..)
 2. [ ] Uses Maven (`pom.xml` exists)
 3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
 4. [ ] Is available from a p2 repository: n/a
@@ -155,7 +155,7 @@ The results of the survey are below.
 |---------------------------|:--------------------------:|--------------------------|-----------------------------|:----------:|--------------------------------------|-------------|-------------|
 | Tokenization/segmentation | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   | <eg string of document text> | <eg comma-separated list of strings> |             |
 | Sentencing                | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
-| POS-tagging               | X | X | [POS-Tagger Documentation](<https://intellabs.github.io/nlp-architect/tagging/sequence_tagging.html>) | https://intellabs.github.io/nlp-architect/tagging/sequence_tagging.html#custom-training-parameters |                                      |             |
+| POS-tagging               | X | X | [POS-Tagger Documentation](<https://intellabs.github.io/nlp-architect/tagging/sequence_tagging.html>) | X|[POS-Tagger Training Documentation](<https://intellabs.github.io/nlp-architect/tagging/sequence_tagging.html#custom-training-parameters>) |                                      |             |
 | Constituency parsing      | <!-- X or leave empty--> | <!-- X or leave empty--> | <add url>                   |                              |                                      |             |
 | Dependency parsing        | X | X | [DepParse Documentation](<https://intellabs.github.io/nlp-architect/bist_parser.html>) |                              |                                      | - Filepath with POS-tagged Dataset in CONNLL-U format </br> -list of list of `ConllEntry`, where each entry represents a POS-tagged Token and each nested List a sentence  |          |
 | Named Entity Recognition  | X | [Neural Tagger- CNNLSTM module](<https://intellabs.github.io/nlp-architect/tagging/sequence_tagging.html#cnnlstm>)</br> [Neural Tagger- IDCNN](<https://intellabs.github.io/nlp-architect/tagging/sequence_tagging.html#idcnn>)</br>[Transformer Token Classifier](<https://intellabs.github.io/nlp-architect/tagging/sequence_tagging.html#transformertokenclassifier>) | [NER Documentation](<https://intellabs.github.io/nlp-architect/tagging/sequence_tagging.html#named-entity-recognition>) | X | [NER Training Documentation](<https://intellabs.github.io/nlp-architect/tagging/sequence_tagging.html#cnnlstm>) | | |
