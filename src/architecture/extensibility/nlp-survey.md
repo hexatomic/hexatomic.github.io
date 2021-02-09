@@ -283,7 +283,7 @@ The results of the survey are below.
 
 1. [ ] Implemented in Java
    1. [ ] Not Java, but API can be addressed from Java
-      - Can be addressed as follows: n/a <or add brief description of how to address the API>
+      - Can be addressed as follows: [SpaCy Container & APIs](<https://spacy.io/universe/category/apis>)
 2. [ ] Uses Maven (`pom.xml` exists)
 3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
 4. [ ] Is available from a p2 repository: n/a
