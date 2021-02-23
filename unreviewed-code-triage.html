@@ -178,11 +178,11 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#periodic-unreviewed-code-triage" id="periodic-unreviewed-code-triage">Periodic unreviewed code triage</a></h1>
+                        <h1 id="periodic-unreviewed-code-triage"><a class="header" href="#periodic-unreviewed-code-triage">Periodic unreviewed code triage</a></h1>
 <p>The maintainer has a very central position in our proposal for a minimal sustainable research software infrastructure.
 While a maintainer is responsible for integrating external contributions, and for releasing new versions of the software, we did not envision this position as someone who actively extends the software with new features.
 Having a maintainer for a project makes sure that there is always a point of contact for other developers who want to contribute to the project. This can help to keep the project alive, and ensures that certain software engineering standards such as code review can be followed.</p>
-<h2><a class="header" href="#issues-with-the-maintainer-role" id="issues-with-the-maintainer-role">Issues with the maintainer role</a></h2>
+<h2 id="issues-with-the-maintainer-role"><a class="header" href="#issues-with-the-maintainer-role">Issues with the maintainer role</a></h2>
 <p>Keeping a project alive can mean different things depending on the software and the expectation of the community.
 We tried to minimize the work that needs to be done by the maintainer and moved responsibility to the community that uses the software to help keep it alive, e.g. by providing funding for a limited time to add a specific feature or fix a bug which is of a particular interest for this user.</p>
 <p>However, there are issues that threaten the fundamental availability of the software itself, if not fixed.
@@ -192,7 +192,7 @@ If a software can't be run on current systems, but only on out-of-date virtual m
 Some issues can be mitigated to a certain degree by carefully choosing the software your project depends on, but some issues just cannot be predicted.
 Thus, maintaining a software may also mean fixing these kinds of issues, and therefore the maintainer may actually have to change code.</p>
 <p>This leads to a dilemma: if the maintainer themself is changing the code, who is reviewing it for correctness?</p>
-<h2><a class="header" href="#pool-of-reviewers" id="pool-of-reviewers">Pool of reviewers</a></h2>
+<h2 id="pool-of-reviewers"><a class="header" href="#pool-of-reviewers">Pool of reviewers</a></h2>
 <p>One possible solution to this problem is to have larger developer community with at least two maintainers.
 For projects with a small user base, this may not be achievable even if the software is essential for their research.
 In research areas like the humanities, funding for developers is typically limited to an active project phase and there is often only funding for a single developer.
@@ -200,10 +200,10 @@ We initially thought that student assistants may be able to fill the gap as seco
 <p>An alternative solution is to have Research Software Engineering (<em>RSE</em>) teams at an institution, who can contribute as code reviewer-on-demand.
 These RSE groups are essentially professionalized and paid communities of maintainers for a whole institution.
 Unfortunately, very few organizations do have such RSE teams as pool for reviewers yet.
-It is also not an easy task to develop the permanent funding at each institution that is neede for the establishment of an RSE group, and as such RSE groups do therefore not provide a short term solution.
+It is also not an easy task to develop the permanent funding at each institution that is needed for the establishment of an RSE group, and as such RSE groups do therefore not provide a short term solution.
 If a pool of code reviewers could be provided on a larger scale and on a volunteer basis, for example as some kind of &quot;Stack Overflow for open source research software code reviewers&quot;, this could enhance the situation for smaller projects.
 Still, some way of scheduling this resource is needed, and it is not clear who should do the organization and funding of the platform itself.</p>
-<h2><a class="header" href="#postponing-the-review-with-unreviewed-code-triages" id="postponing-the-review-with-unreviewed-code-triages">Postponing the review with unreviewed code triages</a></h2>
+<h2 id="postponing-the-review-with-unreviewed-code-triages"><a class="header" href="#postponing-the-review-with-unreviewed-code-triages">Postponing the review with unreviewed code triages</a></h2>
 <p>This idea is based on the current funding situation for smaller projects, especially in the humanities, where the presence of only a single maintainer can be guaranteed for the originally funded lifetime of a software project at most, and where there is no institutional pool of reviewers.
 It is inspired by the &quot;weekly performance triage&quot; of the Rust compiler,<sup class="footnote-reference"><a href="#rust-triage">1</a></sup> where performance regressions for new code in the compiler are not measured and detected for each pull request, but are triaged every week, and the offending pull request is only identified if a regression has been found in any of the changes since the week before.</p>
 <p>For critical bug fixes that hinder the execution of the software (but not for new features or non-urgent bug fixes), the single maintainer can author the fix and add a regular pull request, but decide not to request a code review.
