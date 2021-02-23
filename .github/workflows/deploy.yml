@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Deploy
-      - uses: JamesIves/github-pages-deploy-action@4.0.0
+        uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
           branch: master # The branch the action should deploy to.
           folder: book # The folder the action should deploy.
