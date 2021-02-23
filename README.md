@@ -10,7 +10,7 @@ in [*Rust*](https://www.rust-lang.org).
 
 Development, i.e., additions and changes to the project documentation, are
 pushed to the [**`src`**](https://github.com/hexatomic/hexatomic.github.io/tree/src) 
-branch, i.e., the default branch. Travis CI automatically
+branch, i.e., the default branch. GitHub Actions automatically
 picks up the changes from this branch, makes the build, and pushes the product
 to the 
 [`master` branch](https://github.com/hexatomic/hexatomic.github.io/tree/master), 
@@ -58,9 +58,8 @@ repository. Without customization, the documentation will be served at
 The documentation is hosted as a [GitHub page](https://pages.github.com/) on 
 <hexatomic.github.io>.
 
-The deployment is automated via [Travis CI](https://travis-ci.org/) continuous 
-integration, see section `deploy` in the Travis configuration file 
-[`.travis.yml`](.travis.yml).
+The deployment is automated via [GitHub Actions](https://docs.github.com/en/actions) continuous 
+integration, see the workflow file [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
 
 ## Making changes
 
