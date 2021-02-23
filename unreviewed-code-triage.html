@@ -11,12 +11,17 @@
         <!-- Custom HTML head -->
         
 
+
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
         
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
         
         <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
@@ -25,6 +30,8 @@
 
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
         
 
         <!-- Highlight.js Stylesheets -->
@@ -41,7 +48,7 @@
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "" : "light";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -86,7 +93,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="affix"><a href="index.html">The Hexatomic project</a></li><li class="affix"><a href="about.html">About this project documentation</a></li><li class="spacer"></li><li><a href="documentation/index.html"><strong aria-hidden="true">1.</strong> Documentation</a></li><li><ol class="section"><li><a href="documentation/sustainability/index.html"><strong aria-hidden="true">1.1.</strong> Sustainability</a></li><li><a href="documentation/tooling/index.html"><strong aria-hidden="true">1.2.</strong> Tooling</a></li><li><ol class="section"><li><a href="documentation/tooling/evaluation.html"><strong aria-hidden="true">1.2.1.</strong> Evaluation and implementation</a></li></ol></li></ol></li><li><a href="code-review.html"><strong aria-hidden="true">2.</strong> Code Review</a></li><li><a href="unreviewed-code-triage.html" class="active"><strong aria-hidden="true">3.</strong> Periodic unreviewed code triage</a></li><li class="spacer"></li><li class="affix"><a href="people.html">People</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">The Hexatomic project</a></li><li class="chapter-item expanded affix "><a href="about.html">About this project documentation</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="documentation/index.html"><strong aria-hidden="true">1.</strong> Documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="documentation/sustainability/index.html"><strong aria-hidden="true">1.1.</strong> Sustainability</a></li><li class="chapter-item expanded "><a href="documentation/tooling/index.html"><strong aria-hidden="true">1.2.</strong> Tooling</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="documentation/tooling/evaluation.html"><strong aria-hidden="true">1.2.1.</strong> Evaluation and implementation</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="code-review.html"><strong aria-hidden="true">2.</strong> Code Review</a></li><li class="chapter-item expanded "><a href="unreviewed-code-triage.html" class="active"><strong aria-hidden="true">3.</strong> Periodic unreviewed code triage</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="people.html">People</a></li></ol>
                 <!-- Customizations of the vanilla index.hbs follow below -->
                 <ol class="chapter">
                     <li class="affix">
@@ -193,7 +200,7 @@ We initially thought that student assistants may be able to fill the gap as seco
 <p>An alternative solution is to have Research Software Engineering (<em>RSE</em>) teams at an institution, who can contribute as code reviewer-on-demand.
 These RSE groups are essentially professionalized and paid communities of maintainers for a whole institution.
 Unfortunately, very few organizations do have such RSE teams as pool for reviewers yet.
-It is also not an easy task to develop the permanent funding at each institution that is needed for the establishment of an RSE group, and as such RSE groups do therefore not provide a short term solution.
+It is also not an easy task to develop the permanent funding at each institution that is neede for the establishment of an RSE group, and as such RSE groups do therefore not provide a short term solution.
 If a pool of code reviewers could be provided on a larger scale and on a volunteer basis, for example as some kind of &quot;Stack Overflow for open source research software code reviewers&quot;, this could enhance the situation for smaller projects.
 Still, some way of scheduling this resource is needed, and it is not clear who should do the organization and funding of the platform itself.</p>
 <h2><a class="header" href="#postponing-the-review-with-unreviewed-code-triages" id="postponing-the-review-with-unreviewed-code-triages">Postponing the review with unreviewed code triages</a></h2>
@@ -260,6 +267,10 @@ But even if no external developer is available, and instead the original maintai
 
         
 
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
         
 
         
