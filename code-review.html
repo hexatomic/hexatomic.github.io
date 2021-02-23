@@ -11,17 +11,12 @@
         <!-- Custom HTML head -->
         
 
-
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
         
-        <link rel="icon" href="favicon.svg">
-        
-        
-        <link rel="shortcut icon" href="favicon.png">
         
         <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
@@ -30,8 +25,6 @@
 
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        
-        <link rel="stylesheet" href="fonts/fonts.css">
         
 
         <!-- Highlight.js Stylesheets -->
@@ -48,7 +41,7 @@
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -93,7 +86,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">The Hexatomic project</a></li><li class="chapter-item expanded affix "><a href="about.html">About this project documentation</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="documentation/index.html"><strong aria-hidden="true">1.</strong> Documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="documentation/sustainability/index.html"><strong aria-hidden="true">1.1.</strong> Sustainability</a></li><li class="chapter-item expanded "><a href="documentation/tooling/index.html"><strong aria-hidden="true">1.2.</strong> Tooling</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="documentation/tooling/evaluation.html"><strong aria-hidden="true">1.2.1.</strong> Evaluation and implementation</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="code-review.html" class="active"><strong aria-hidden="true">2.</strong> Code Review</a></li><li class="chapter-item expanded "><a href="unreviewed-code-triage.html"><strong aria-hidden="true">3.</strong> Periodic unreviewed code triage</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="people.html">People</a></li></ol>
+                <ol class="chapter"><li class="affix"><a href="index.html">The Hexatomic project</a></li><li class="affix"><a href="about.html">About this project documentation</a></li><li class="spacer"></li><li><a href="documentation/index.html"><strong aria-hidden="true">1.</strong> Documentation</a></li><li><ol class="section"><li><a href="documentation/sustainability/index.html"><strong aria-hidden="true">1.1.</strong> Sustainability</a></li><li><a href="documentation/tooling/index.html"><strong aria-hidden="true">1.2.</strong> Tooling</a></li><li><ol class="section"><li><a href="documentation/tooling/evaluation.html"><strong aria-hidden="true">1.2.1.</strong> Evaluation and implementation</a></li></ol></li></ol></li><li><a href="code-review.html" class="active"><strong aria-hidden="true">2.</strong> Code Review</a></li><li><a href="unreviewed-code-triage.html"><strong aria-hidden="true">3.</strong> Periodic unreviewed code triage</a></li><li class="spacer"></li><li class="affix"><a href="people.html">People</a></li></ol>
                 <!-- Customizations of the vanilla index.hbs follow below -->
                 <ol class="chapter">
                     <li class="affix">
@@ -203,7 +196,7 @@ Delegating code reviews can help distribute the workload over several people.</p
 <h3><a class="header" href="#project-documentation" id="project-documentation">Project documentation</a></h3>
 <p>One of the purposes of the project documentation is to report progress and outcomes of our research, similar to a formal project report. In fact, it is our approach to generate the project report based on the project documentation.
 We therefore argue that ideally, the documentation should be reviewed by the principal investigators (PIs).
-To avoid a &quot;chicken and egg&quot; problem, project maintainers who are also the researches in the project. can review each other's pull requests to bootstrap the initial documentation, e.g., about how code review is performed.</p>
+To avoid a &quot;chicken and egg&quot; problem, project maintainers who are also the researchers in the project can review each other's pull requests to bootstrap the initial documentation, e.g., about how code review is performed.</p>
 <p>Once the project is completed, the project documentation will probably not need any updates.
 If an update is still necessary, the maintainers can decide who should review it.</p>
 <h3><a class="header" href="#user-developer-and-maintainer-documentation" id="user-developer-and-maintainer-documentation">User, developer and maintainer documentation</a></h3>
@@ -268,10 +261,6 @@ If too many code reviews are requested at the same time, we propose to triage th
 
         
 
-        
-        <script type="text/javascript">
-            window.playground_copyable = true;
-        </script>
         
 
         
