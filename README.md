@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/hexatomic/hexatomic.github.io.svg?branch=src)](https://travis-ci.org/hexatomic/hexatomic.github.io)
+[![Build Status](https://github.com/hexatomic/hexatomic.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/hexatomic/hexatomic.github.io/actions/workflows/deploy.yml/)
 
 # Sources for the Hexatomic project documentation
 
