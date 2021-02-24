@@ -58,8 +58,8 @@ The results of the survey are below.
    1. [ ] Not Java, but API can be addressed from Java
       - Can be addressed as follows: n/a <or add brief description of how to address the API>
 2. [x] Uses Maven (`pom.xml` exists)
-3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)<!-- Not sure about that. MANIFEST.MF doesn't exist but there is this: https://opennlp.apache.org/docs/1.8.3/apidocs/opennlp-tools/opennlp/tools/util/ext/OSGiExtensionLoader.html-->
-4. [X] Is available from a p2 repository: [OpenNLP Repository](<https://mvnrepository.com/artifact/org.apache.opennlp/opennlp-tools>)
+3. [?] Is available as OSGi bundle (has `MANIFEST.MF`)<!-- Not sure about that. MANIFEST.MF doesn't exist but there is this: https://opennlp.apache.org/docs/1.8.3/apidocs/opennlp-tools/opennlp/tools/util/ext/OSGiExtensionLoader.html-->
+4. [?] Is available from a p2 repository: 
 #### Feature matrix
 
 <div style="font-size:.8rem;">
@@ -86,7 +86,7 @@ The results of the survey are below.
       - Can be addressed as follows: n/a <or add brief description of how to address the API>
 2. [X] Uses Maven (`pom.xml` exists)
 3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
-4. [X] Is available from a p2 repository: <https://mvnrepository.com/artifact/com.clearnlp/clearnlp>
+4. [ ] Is available from a p2 repository: 
 
 #### Feature matrix
 
@@ -115,7 +115,7 @@ The results of the survey are below.
       - Can be addressed as follows: n/a <or add brief description of how to address the API>
 2. [X] Uses Maven (`pom.xml` exists)
 3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
-4. [X] Is available from a p2 repository: <https://mvnrepository.com/artifact/edu.illinois.cs.cogcomp/illinois-nlp-pipeline>
+4. [ ] Is available from a p2 repository: 
 
 #### Feature matrix
 
@@ -225,7 +225,7 @@ The results of the survey are below.
       - Can be addressed as follows: n/a <or add brief description of how to address the API>
 2. [X] Uses Maven (`pom.xml` exists)
 3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
-4. [X] Is available from a p2 repository: <https://mvnrepository.com/artifact/org.nlp4j/nlp4j-core>
+4. [ ] Is available from a p2 repository: 
 
 #### Feature matrix
 
@@ -341,7 +341,7 @@ The results of the survey are below.
       - Can be addressed as follows: [Using Spark NLP via Scala and Maven](<https://nlp.johnsnowlabs.com/docs/en/install#scala-and-java>)
 2. [X] Uses Maven (`pom.xml` exists)
 3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
-4. [X] Is available from a p2 repository: <https://mvnrepository.com/artifact/JohnSnowLabs/spark-nlp>
+4. [ ] Is available from a p2 repository: 
 
 #### Feature matrix
 
@@ -370,17 +370,17 @@ The results of the survey are below.
       - Can be addressed as follows: n/a <or add brief description of how to address the API>
 2. [X] Uses Maven (`pom.xml` exists)
 3. [X] Is available as OSGi bundle (has `MANIFEST.MF`)
-4. [X] Is available from a p2 repository: <https://mvnrepository.com/artifact/edu.stanford.nlp/stanford-corenlp>
-
+4. [X] Is available from a p2 repository: 
++
 #### Feature matrix
 
 <div style="font-size:.8rem;">
 
 |                           | Has functionality | Multiple Options   | Functionality documentation | Is Trainable| Training documentation      | Input data                           | Output data |
 |---------------------------|:--------------------------:|--------------------------|-----------------------------|:----------:|--------------------------------------|-------------|-------------|
-| Tokenization/segmentation | X | see [list](<https://nlp.stanford.edu/nlp/javadoc/javanlp/>) of classes implementing the Tokenizer interface  | [Tokenizer Documentation](<https://stanfordnlp.github.io/CoreNLP/tokenize.html>) | | | -string of document text </br> -CoreNLPs `CoreDocument` (Instatiated with string document text) | -list of strings </br> -list of characteroffsetbegin indices </br> -list of characteroffsetendindices </br> `CoreDocument` with previous annotation properties |
+| Tokenization/segmentation | X | [-Abstract Tokenizer](<https://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/process/AbstractTokenizer.html>)</br>[-CHBT Tokenizer](<https://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/trees/international/pennchinese/CHTBTokenizer.html>)</br>[-Lexer Tokenizer](<https://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/process/LexerTokenizer.html>)</br>[-NegraPennTokenizer](<https://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/trees/international/negra/NegraPennTokenizer.html>)</br> [-PennTreebankTokenizer](<https://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/trees/PennTreebankTokenizer.html>)</br> [-PTBTokenizer](<https://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/process/PTBTokenizer.html>)</br>[-Robust Tokenizer](<https://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/ie/machinereading/domains/ace/reader/RobustTokenizer.html>) </br> [-WhitespaceTokenizer](<https://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/process/WhitespaceTokenizer.html>)   | [Tokenizer Documentation](<https://stanfordnlp.github.io/CoreNLP/tokenize.html>) | | | -string of document text </br> -CoreNLPs `CoreDocument` (Instatiated with string document text) | -list of strings </br> -list of characteroffsetbegin indices </br> -list of characteroffsetendindices </br> `CoreDocument` with previous annotation properties |
 | Sentencing | X |  | [Sentencer Documentation](<https://stanfordnlp.github.io/CoreNLP/ssplit.html>) | | | tokenized `CoreDocument` | `CoreDocument` with Sentence List of POS-Tags as property |
-| POS-tagging               | X |                        | [POS-Tag Documentation](<https://stanfordnlp.github.io/CoreNLP/pos.html>) | | | tokenized and sentence-splitted `CoreDocument` | `CoreDocument` with String List of POS-Tags as property |
+| POS-tagging               | X |                        | [POS-Tag Documentation](<https://stanfordnlp.github.io/CoreNLP/pos.html>) | X | <https://nlp.stanford.edu/nlp/javadoc/javanlp/> | tokenized and sentence-splitted `CoreDocument` | `CoreDocument` with String List of POS-Tags as property |
 | Constituency parsing      | X | [Viterbi Parser](<https://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/parser/ViterbiParserWithOptions.html>) </br> [Shift reduce Parser](<https://nlp.stanford.edu/software/srparser.html>)</br> [Iterative CKYPCFG Parser](<https://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/parser/lexparser/IterativeCKYPCFGParser.html>)</br> [Fast Factored Parser](<https://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/parser/lexparser/FastFactoredParser.html>) </br> [Exhaustive PCFG Parser](<https://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/parser/lexparser/ExhaustivePCFGParser.html>) | [Constituency Parser Documentation](<https://stanfordnlp.github.io/CoreNLP/parse.html>) | |  | tokenized, sentence-splitted (and for some models POS-tagged) `CoreDocument` | `CoreDocument` with TreeAnnotation (exact form depends on chosen parser) |
 | Dependency parsing | X |[BiLexPCFGParser](<https://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/parser/lexparser/BiLexPCFGParser.html>)</br> [Exhaustive Dependency Parser](<https://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/parser/lexparser/ExhaustiveDependencyParser.html>) |[DepParse Documentation](<https://stanfordnlp.github.io/CoreNLP/depparse.html>) | X | [Train own Model](<https://stanfordnlp.github.io/CoreNLP/depparse.html#training-a-model>) |tokenized, sentence-splitted and POS-tagged `CoreDocument` | `CoreDocument` with DependencyAnnotation (exact form depends on chosen parser) |
 | Named Entity Recognition  | X | [NER Classifier Combiner](<https://stanfordnlp.github.io/CoreNLP/ner.html>) </br> [-RegexNERAnnotator](<https://stanfordnlp.github.io/CoreNLP/regexner.html>)  | [NER Documentation](<https://stanfordnlp.github.io/CoreNLP/ner.html>)| X | [NER Training Documentation](<https://stanfordnlp.github.io/CoreNLP/ner.html#training-or-retraining-new-models>) | tokenized, ssplitted, pos-tagged, (lemmatized) `CoreDocument` | `CoreDocument` with `NamedEntityTagAnnotation` or `NormalizedNamedEntityTagAnnotation`|
@@ -397,7 +397,7 @@ The results of the survey are below.
       - Can be addressed as follows: to the best of our knowledge it's only accesible via common ways to integrate Python scripts in Java (e.g. JEPP, PythonInterpreter, Runtime.exec(),..)
 2. [X] Uses Maven (`pom.xml` exists)
 3. [ ] Is available as OSGi bundle (has `MANIFEST.MF`)
-4. [X] Is available from a p2 repository: https://mvnrepository.com/artifact/com.joliciel.talismane/talismane-core
+4. [ ] Is available from a p2 repository: 
 
 #### Feature matrix
 
@@ -406,13 +406,13 @@ The results of the survey are below.
 |                           | Has functionality | Multiple Options   | Functionality documentation | Is Trainable| Training documentation      | Input data                           | Output data |
 |---------------------------|:--------------------------:|--------------------------|-----------------------------|:----------:|--------------------------------------|-------------|-------------|
 | Tokenization/segmentation | X | -Simple tokenizer </br> -pattern tokenizer | [Tokenization Documentation](<>) | X | [Tokenizer Training Documentation](<https://github.com/joliciel-informatique/talismane/wiki/Training-and-evaluating-all-modules-using-the-example-corpus#train-a-tokeniser>) | string of raw text  | CoNLL format   |
-| Sentencing                | X |  | [Sentence-Splitting Tutorial](<https://textblob.readthedocs.io/en/dev/quickstart.html#tokenization>)</br>[Advanced Sentence-Splitting Documentation](<https://textblob.readthedocs.io/en/dev/advanced_usage.html#tokenizers>) | X | [Sentence-Splitter Training Documentation](<https://github.com/joliciel-informatique/talismane/wiki/Training-and-evaluating-all-modules-using-the-example-corpus#train-a-sentence-detector>) | string of raw text | CoNLL format |
-| POS-tagging               | X |  | [POS-Tagger Documentation](<https://textblob.readthedocs.io/en/dev/quickstart.html#part-of-speech-tagging>) </br> [POS-Tagger Advanced Usage](<https://textblob.readthedocs.io/en/dev/advanced_usage.html#pos-taggers>) | X | [POS-Tagger Training Documentation](<https://github.com/joliciel-informatique/talismane/wiki/Training-a-Pos-Tagger>) | String of raw text | CoNLL format |
+| Sentencing                | X |  | | X | [Sentence-Splitter Training Documentation](<https://github.com/joliciel-informatique/talismane/wiki/Training-and-evaluating-all-modules-using-the-example-corpus#train-a-sentence-detector>) | string of raw text | CoNLL format |
+| POS-tagging               | X |  |  | X | [POS-Tagger Training Documentation](<https://github.com/joliciel-informatique/talismane/wiki/Training-a-Pos-Tagger>) | String of raw text | CoNLL format |
 | Constituency parsing      |  |  |        |               | |  |
 | Dependency parsing        | X |  |[DepParser Documentation (under construction)](<https://github.com/joliciel-informatique/talismane/wiki/Syntax-Parser>) | X | [DepParser Training Documentation](<https://github.com/joliciel-informatique/talismane/wiki/Training-and-evaluating-all-modules-using-the-example-corpus#train-a-parser-with-the-lexicon>) | string of raw text | CoNLL format |
 | Named Entity Recognition  | | | | | | | |
 | Functionalities extensible | X |  | [Advanced Usage](<http://joliciel-informatique.github.io/talismane/#section3>)       |                              | | | |
-| Can consume own models    |  X  |  | [Passing models into the Pipeline](<https://textblob.readthedocs.io/en/dev/advanced_usage.html#tokenizers>) </br> [Training own data](<https://textblob.readthedocs.io/en/dev/classifiers.html#classifiers>)       | |         |                              |  |
+| Can consume own models    |   |  |  | |         |                              |  |
 
 
 
