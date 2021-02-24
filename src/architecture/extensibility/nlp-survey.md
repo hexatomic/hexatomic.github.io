@@ -22,8 +22,6 @@ Specifically, the following properties were checked:
 
 The results of the survey are below.
 
-
-
 ### [AllenNLP](<https://allennlp.org/>)
 
 1. [ ] Implemented in Java
