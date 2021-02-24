@@ -22,7 +22,27 @@ Specifically, the following properties were checked:
 
 The results of the survey are below.
 
-### [AllenNLP](<https://allennlp.org/>)
+## Conclusion
+
+The survey helped us to reduce the number of suitable candidates for integration in Hexatomic to four.
+In a first step we eliminated libraries based on their usefulness as all-purpose libraries and feature set, their implementation language, their development status and up-to-dateness, and our own experiences.
+Thus, we excluded most Python-based libraries, with the exeption of NLTK and SpaCy, of which we eliminated NLTK due to its organically grown ecosystemic nature and the integration inpracticabilities this would bring with it.
+SpaCy remained included as it promised implementations closer to the state of the art.
+
+This left us with four potential candidates: [Apache OpenNLP](#apache-opennlp), [SpaCy](#spacy), [Spark NLP](#spark-nlp), and [Stanford CoreNLP](#stanford-corenlp).
+
+Of those, the only candidate in Java that is feature-complete was Stanford CoreNLP:
+Apache OpenNLP did not seem to support dependency parsing, SparkNLP as well as SpaCy did not seem to support constituency parsing (directly).
+
+In the end, we settled on integration of Stanford CoreNLP in Hexatomic.
+It seems to cater best for the core target group of early versions of Hexatomic, i.e., users with a strong linguistic rather than NLP background.
+It also seemed architecturally easiest to integrate, as we will not have to bridge between Java dn Python code at this stage.
+
+When Stanford CoreNLP is successfully integrated in Hexatomic, we will, however, attempt to integrate another, more state-of-the-art library, for which SpaCy and the unsurveyed [flairNLP](https://github.com/flairNLP/flair) seem to be best suited.
+
+### AllenNLP
+
+> <i class="fa fa-link"></i> [AllenNLP website](https://allennlp.org/)
 
 1. [ ] Implemented in Java
    1. [ ] Not Java, but API can be addressed from Java
@@ -50,7 +70,9 @@ The results of the survey are below.
 </div>
 
 
-### [Apache OpenNLP](<https://opennlp.apache.org/>)
+### Apache OpenNLP
+
+> <i class="fa fa-link"></i> [Apache OpenNLP website](https://opennlp.apache.org/)
 
 1. [x] Implemented in Java
    1. [ ] Not Java, but API can be addressed from Java
@@ -77,7 +99,9 @@ The results of the survey are below.
 <!-- additional features: Language Detector, Document Categorizer, Lemmatization, Chunking, Coreference Resolution-->
 
 
-### [Clear NLP](<https://github.com/clir/clearnlp-guidelines>)
+### Clear NLP
+
+> <i class="fa fa-link"></i> [Clear NLP website](<https://github.com/clir/clearnlp-guidelines>)
 
 1. [X] Implemented in Java
    1. [ ] Not Java, but API can be addressed from Java
@@ -106,7 +130,9 @@ The results of the survey are below.
 
 
 
-### [CogComp NLP Pipeline](<https://github.com/CogComp/cogcomp-nlp/tree/master/pipeline>)
+### CogComp NLP Pipeline
+
+> <i class="fa fa-link"></i> [CogComp NLP Pipeline website](<https://github.com/CogComp/cogcomp-nlp/tree/master/pipeline>)
 
 1. [X] Implemented in Java
    1. [ ] Not Java, but API can be addressed from Java
@@ -134,7 +160,9 @@ The results of the survey are below.
 </div>
 
 
-### [GATE & ANNIE](<https://gate.ac.uk/family/embedded.html>)
+### GATE & ANNIE
+
+> <i class="fa fa-link"></i> [GATE & ANNIE website](<https://gate.ac.uk/family/embedded.html>)
 
 1. [X] Implemented in Java
    1. [ ] Not Java, but API can be addressed from Java
@@ -161,7 +189,9 @@ The results of the survey are below.
 <!-- Further Features:gazeteer (i.e. simple NER),  Semantic Tagger, Orthografic and pronominal coreference -->
 </div>
 
-### [Lingpipe](<http://www.alias-i.com/lingpipe/>)
+### Lingpipe
+
+> <i class="fa fa-link"></i> [Lingpipe website](<http://www.alias-i.com/lingpipe/>)
 
 1. [X] Implemented in Java
    1. [ ] Not Java, but API can be addressed from Java
@@ -189,7 +219,9 @@ The results of the survey are below.
 </div>
 
 
-### [NLP Architect](<https://intellabs.github.io/nlp-architect/>)
+### NLP Architect
+
+> <i class="fa fa-link"></i> [NLP Architect website](<https://intellabs.github.io/nlp-architect/>)
 
 1. [ ] Implemented in Java
    1. [ ] Not Java, but API can be addressed from Java
@@ -216,7 +248,9 @@ The results of the survey are below.
 
 </div>
 
-### [NLP4J](<https://emorynlp.github.io/nlp4j/>)
+### NLP4J
+
+> <i class="fa fa-link"></i> [NLP4J website](<https://emorynlp.github.io/nlp4j/>)
 
 1. [x] Implemented in Java
    1. [ ] Not Java, but API can be addressed from Java
@@ -244,7 +278,9 @@ The results of the survey are below.
 </div>
 
 
-### [NLTK](<https://www.nltk.org/>)
+### NLTK
+
+> <i class="fa fa-link"></i> [NLTK website](<https://www.nltk.org/>)
 
 1. [ ] Implemented in Java
    1. [ ] Not Java, but API can be addressed from Java
@@ -272,7 +308,9 @@ The results of the survey are below.
 </div>
 
 
-### [Pattern](<https://github.com/clips/pattern>)
+### Pattern
+
+> <i class="fa fa-link"></i> [Pattern website](<https://github.com/clips/pattern>)
 
 1. [ ] Implemented in Java
    1. [ ] Not Java, but API can be addressed from Java
@@ -304,7 +342,9 @@ The results of the survey are below.
 
 <!-- additional features: Topic Classification, Stemming, Lemmatization ,NER, Clustering, Spelling Correction, String Comparison, Interesting Phrase Detection, Hyphenation and Syllabification, Sentiment Analysis, Language Identification, Word Sense Disambiguation-->
 
-### [SpaCy](<https://spacy.io/>)
+### SpaCy
+
+> <i class="fa fa-link"></i> [SpaCy website](<https://spacy.io/>)
 
 1. [ ] Implemented in Java
    1. [ ] Not Java, but API can be addressed from Java
@@ -332,7 +372,9 @@ The results of the survey are below.
 
 </div>
 
-### [Spark NLP](<https://nlp.johnsnowlabs.com/>)
+### Spark NLP
+
+> <i class="fa fa-link"></i> [Spark NLP website](<https://nlp.johnsnowlabs.com/>)
 
 1. [ ] Implemented in Java
    1. [ ] Not Java, but API can be addressed from Java
@@ -361,7 +403,9 @@ The results of the survey are below.
 
 [^2]:Spark NLP provides a [library of pretrained Pipelines](<https://nlp.johnsnowlabs.com/docs/en/pipelines>) and a [library of models](<https://nlp.johnsnowlabs.com/models>). This survey however refers to the general Annotators.
 
-### [Stanford CoreNLP](<https://stanfordnlp.github.io/CoreNLP/>)
+### Stanford CoreNLP
+
+> <i class="fa fa-link"></i> [Stanford CoreNLP website](<https://stanfordnlp.github.io/CoreNLP/>)
 
 1. [X] Implemented in Java
    1. [ ] Not Java, but API can be addressed from Java
@@ -388,7 +432,9 @@ The results of the survey are below.
 
 </div>
 
-### [Talismane](<http://joliciel-informatique.github.io/talismane/>)
+### Talismane
+
+> <i class="fa fa-link"></i> [Talismane website](<http://joliciel-informatique.github.io/talismane/>)
 
 1. [X] Implemented in Java
    1. [ ] Not Java, but API can be addressed from Java
@@ -417,7 +463,9 @@ The results of the survey are below.
 </div>
 
 
-### [TextBlob](<https://textblob.readthedocs.io/en/dev/>)
+### TextBlob
+
+> <i class="fa fa-link"></i> [TextBlob website](<https://textblob.readthedocs.io/en/dev/>)
 
 1. [ ] Implemented in Java
    1. [ ] Not Java, but API can be addressed from Java
