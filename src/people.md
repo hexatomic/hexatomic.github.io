@@ -7,3 +7,4 @@
 |             Researcher (Friedrich-Schiller-Universität Jena) | [Stephan Druskat](https://sdruskat.net)                                                                                |
 |                  Researcher (Humboldt-Universität zu Berlin) | [Thomas Krause](https://www.linguistik.hu-berlin.de/de/institut/professuren/korpuslinguistik/mitarbeiter-innen/thomas) |
 | Research Assistant (Friedrich-Schiller-Universität Jena) | Clara Lachenmaier |
+|     Research Assistant (Friedrich-Schiller-Universität Jena) | Bastian Bunzeck                                                                                                        |        
