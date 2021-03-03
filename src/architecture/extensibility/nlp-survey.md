@@ -36,7 +36,7 @@ Apache OpenNLP did not seem to support dependency parsing, SparkNLP as well as S
 
 In the end, we settled on integration of Stanford CoreNLP in Hexatomic.
 It seems to cater best for the core target group of early versions of Hexatomic, i.e., users with a strong linguistic rather than NLP background.
-It also seemed architecturally easiest to integrate, as we will not have to bridge between Java dn Python code at this stage.
+It also seemed architecturally easiest to integrate, as we will not have to bridge between Java and Python code at this stage.
 
 When Stanford CoreNLP is successfully integrated in Hexatomic, we will, however, attempt to integrate another, more state-of-the-art library, for which SpaCy and the unsurveyed [flairNLP](https://github.com/flairNLP/flair) seem to be best suited.
 
