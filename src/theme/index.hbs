@@ -101,24 +101,31 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                {{#toc}}{{/toc}}
                 <!-- Customizations of the vanilla index.hbs follow below -->
+                <p><a href="https://github.com/hexatomic/hexatomic/releases/latest"><button style="background-color: #4183c4; border: none; color: white; padding: 12px 30px; cursor: pointer; width: 100%"><i class="fa fa-download"></i> Download Hexatomic</button></a></p>
+                <p><a href="https://sympa.cms.hu-berlin.de/sympa/info/hexatomic-users"><button style="background-color: #00a847; border: none; color: white; padding: 12px 30px; cursor: pointer; width: 100%"><i class="fa fa-envelope"></i> Mailing list</button></a></p>
+                <p><i class="fa fa-github"></i> <a href="https://github.com/hexatomic" target="_blank">github.com/hexatomic</a></p>
+                <p><i class="fa fa-book"></i> <a href="https://hexatomic.github.io/hexatomic" target="_blank">Hexatomic software documentation</a></p>
+
+                <hr>
+                <!-- End of customizations of the vanilla index.hbs -->
+
+                {{#toc}}{{/toc}}
+
+                 <!-- Customizations of the vanilla index.hbs follow below -->
                 <ol class="chapter">
                     <li class="affix">
                         <a href="{{path_to_root}}/static/pdf/hexatomic_project_description_website.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Project proposal</a>
                     </li>
                 </ol>
                 <hr>
-                <p><a href="https://github.com/hexatomic/hexatomic/releases/latest"><button style="background-color: #4183c4; border: none; color: white; padding: 12px 30px; cursor: pointer; width: 100%"><i class="fa fa-download"></i> Download Hexatomic</button></a></p>
-                <p><a href="https://sympa.cms.hu-berlin.de/sympa/info/hexatomic-users"><button style="background-color: #00a847; border: none; color: white; padding: 12px 30px; cursor: pointer; width: 100%"><i class="fa fa-envelope"></i> Mailing list</button></a></p>
                 <p><i class="fa fa-copyright"></i> 2018ff. <a href="https://github.com/orgs/hexatomic/teams/project/members" target="_blank">Hexatomic project team</a></p>
-                <p><i class="fa fa-github"></i> <a href="https://github.com/hexatomic" target="_blank">github.com/hexatomic</a></p>
-                <p><i class="fa fa-book"></i> <a href="https://hexatomic.github.io/hexatomic" target="_blank">Hexatomic software documentation</a></p>
                 <p><a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="_blank"><img src="https://img.shields.io/github/license/hexatomic/hexatomic.github.io.svg?style=flat-square"></a></p>
                 <p><a href="https://github.com/rust-lang-nursery/mdBook" target="_blank"><img src="https://img.shields.io/badge/made%20with-mdBook-lightgrey.svg?style=flat-square"></a></p>
                 <p><a href="https://github.com/hexatomic/hexatomic.github.io" target="_blank"><img src="https://img.shields.io/badge/open-source-violet.svg?logo=github&style=flat-square&logoColor=white"></a></a>
                 <p><a href="https://github.com/hexatomic/hexatomic.github.io/actions/workflows/deploy.yml/" target="_blank"><img src="https://github.com/hexatomic/hexatomic.github.io/actions/workflows/deploy.yml/badge.svg"></a></p>
                 <!-- End of customizations of the vanilla index.hbs -->
+
             </div>
 
             </div>
