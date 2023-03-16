@@ -1,4 +1,4 @@
-# Documentation
+# Implementing documentation
 
 This section describes how we approach and implement documentation.
 
