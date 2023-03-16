@@ -1,14 +1,16 @@
 # The Hexatomic project
 
-**"A minimal infrastructure for the sustainable provision of extensible multi-layer 
-annotation software for linguistic corpora" (Hexatomic)** is a joint research project
+> The Hexatomic **software documentation** is hosted at  
+<i class="fa fa-book"></i> [**hexatomic.github.io/hexatomic**](https://hexatomic.github.io/hexatomic).
+
+*"A minimal infrastructure for the sustainable provision of extensible multi-layer 
+annotation software for linguistic corpora" (Hexatomic)* was a joint research project
 at Friedrich-Schiller-Universität Jena and Humboldt-Universität zu Berlin.
-
-It is funded under the call ["Research Software Sustainability"](http://www.dfg.de/en/research_funding/programmes/infrastructure/lis/funding_opportunities/call_proposal_software/)
+It was funded under the call ["Research Software Sustainability"](http://www.dfg.de/en/research_funding/programmes/infrastructure/lis/funding_opportunities/call_proposal_software/)
 issued by [Deutsche Forschungsgemeinschaft](http://www.dfg.de/en/) under grant
-number 391160252 and runs from October 2018 until September 2021. 
+number 391160252 and ran from October 2018 until September 2021. 
 
-The project aims to implement, test, and document *a minimal infrastructure for
+The project aimed to implement, test, and document *a minimal infrastructure for
 the sustainable development, provision, and maintenance of research software*.
 The [complete project proposal is available as a PDF](./static/pdf/hexatomic_project_description_website.pdf).
 
@@ -24,5 +26,3 @@ The project is located at the
 
 [![Logo of Humboldt-Universität zu Berlin](hu.png)](https://www.hu-berlin.de/en?set_language=en)
 
-> The **Hexatomic software documentation** is hosted at  
-<i class="fa fa-book"></i> [**hexatomic.github.io/hexatomic**](https://hexatomic.github.io/hexatomic).
