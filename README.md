@@ -111,4 +111,5 @@ The Hexatomic documentation is licensed under a Creative Commons
 Attribution-ShareAlike 4.0 International license
 [![CC-By-SA-4.0 badge](src/static/img/cc-by-sa.png)](LICENSE).
 
-Copyright (c) 2018ff. The [Hexatomic project team](https://github.com/orgs/hexatomic/teams/project/members)
+Copyright © 2018 Humboldt-Universität zu Berlin, Friedrich Schiller University Jena.  
+[Hexatomic project team](https://github.com/orgs/hexatomic/teams/project/members).
